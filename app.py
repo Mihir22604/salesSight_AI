@@ -44,17 +44,10 @@ client = ForecastAPIClient()
 with st.sidebar:
     st.markdown("### ⚙️ Forecast Configuration")
 
-    # 1. Forecast Start Date & Demonstration Mode
-    enable_demo = st.toggle("Enable Demonstration Mode (2026)", value=True, help="Maps current 2026 calendar dates onto historical seasonality.")
-    
-    if enable_demo:
-        default_date = date(2026, 10, 24)
-        min_date = date(2025, 1, 1)
-        max_date = date(2028, 12, 31)
-    else:
-        default_date = date(2014, 9, 30)
-        min_date = date(2011, 1, 21)
-        max_date = date(2014, 12, 28)
+    # 1. Forecast Start Date
+    default_date = date(2014, 9, 30)
+    min_date = date(2011, 1, 21)
+    max_date = date(2014, 12, 28)
 
     start_date_val = st.date_input(
         "Forecast Start Date",
@@ -86,7 +79,6 @@ with st.sidebar:
     current_params = {
         "start_date": start_date_val.strftime("%Y-%m-%d"),
         "horizon_days": int(horizon_choice),
-        "enable_demo_mode": enable_demo,
     }
     last_params = st.session_state.get("last_executed_params")
     if last_params is not None and last_params != current_params:
@@ -120,7 +112,7 @@ payload = {
     "start_date": start_date_val.strftime("%Y-%m-%d"),
     "model_selection_mode": "automatic",
     "manual_model_name": None,
-    "enable_demo_mode": enable_demo,
+    "enable_demo_mode": False,
 }
 
 # Execution Policy: Execute forecasting ONLY on initial app load OR when Generate button is clicked
@@ -146,9 +138,8 @@ if "error" in forecast_data.get("detail", {}) if isinstance(forecast_data.get("d
 
 # Header and Dynamic Mode Notice Banner
 banner_text = forecast_data.get("banner_message", "Production forecast pipeline active.")
-active_demo = forecast_data.get("enable_demo_mode", enable_demo)
 active_horizon = forecast_data.get("horizon_days", horizon_choice)
-UIComponents.render_header(banner_text, is_demo_mode=active_demo)
+UIComponents.render_header(banner_text, is_demo_mode=False)
 
 # ROW 1: Executive KPI Metric Cards (Sales Revenue Focus)
 targets = forecast_data.get("targets", {})
