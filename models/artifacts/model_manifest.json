@@ -1,0 +1,249 @@
+{
+  "manifest_version": "2.0.0",
+  "project_name": "SalesSight AI",
+  "schema_standard": "Blueprint Section 18.2 Production Specification",
+  "generation_timestamp": "2026-10-24T12:47:00.629377+00:00",
+  "data_provenance": {
+    "source_file": "data/raw/New_Query_2026_10_22_10_01_37.csv",
+    "dataset_checksum_sha256": "a64ba38f50f5a347a080ce545dd378c815c85d0e733308c83d8e5f3a5dc4c96f",
+    "historical_temporal_span": [
+      "2011-01-21",
+      "2014-09-29"
+    ],
+    "last_historical_date": "2014-09-29",
+    "training_date_range": [
+      "2011-01-21",
+      "2014-01-08"
+    ],
+    "holdout_date_range": [
+      "2014-01-09",
+      "2014-09-29"
+    ]
+  },
+  "production_selected_models": {
+    "Sales": {
+      "model_id": "ridge_regression_sales_v1",
+      "display_name": "Model 5: Ridge Regression",
+      "target": "Sales",
+      "algorithm": "Ridge",
+      "package_artifact": "models/artifacts/production/production_champion_sales_model.joblib",
+      "package_sha256": "0e6c4bf9245bc94f6f8a5b6cfc3b21fd49aecee420fa62e3084e87d2ea8e8c16",
+      "hyperparameters": {
+        "alpha": 200.0,
+        "fit_intercept": true,
+        "solver": "auto",
+        "preprocessor": "StandardScaler"
+      },
+      "validation_metrics": {
+        "out_of_sample_wape": 92.78,
+        "out_of_sample_rmse": 3902.15,
+        "out_of_sample_mae": 1782.48,
+        "seed_stability_std": 0.0,
+        "inference_latency_ms": 1.76,
+        "beats_baseline": true,
+        "baseline_wape": 138.56
+      },
+      "selection_decision": "TIE_BROKEN_BY_SIMPLICITY",
+      "selection_rationale": "Ridge Regression tied LightGBM within 2% relative tolerance (1.71%), achieved lower RMSE ($3,902.15 vs $3,933.55), sub-2ms latency, and maximum interpretability.",
+      "fallback_model": {
+        "model_name": "Seasonal-Naive Baseline (Lag-7)",
+        "artifact_path": "models/artifacts/tuned_sarima_sales_model.joblib",
+        "baseline_wape": 138.56
+      }
+    },
+    "Quantity": {
+      "model_id": "ridge_regression_quantity_v1",
+      "display_name": "Model 5: Ridge Regression",
+      "target": "Quantity",
+      "algorithm": "Ridge",
+      "package_artifact": "models/artifacts/production/production_champion_quantity_model.joblib",
+      "package_sha256": "efdbe5687a89d243059a581ae5492e822577b1c51087ddbbff99e7953ed08649",
+      "hyperparameters": {
+        "alpha": 200.0,
+        "fit_intercept": true,
+        "solver": "auto",
+        "preprocessor": "StandardScaler"
+      },
+      "validation_metrics": {
+        "out_of_sample_wape": 88.43,
+        "out_of_sample_rmse": 99.44,
+        "out_of_sample_mae": 54.78,
+        "seed_stability_std": 0.0,
+        "inference_latency_ms": 1.25,
+        "beats_baseline": true,
+        "baseline_wape": 123.73
+      },
+      "selection_decision": "CLEAR_WAPE_WINNER",
+      "selection_rationale": "Clear accuracy winner with lowest holdout WAPE (88.43%), comfortably beating train-mean benchmark (97.47%) by +9.04 percentage points.",
+      "fallback_model": {
+        "model_name": "Seasonal-Naive Baseline (Lag-7)",
+        "artifact_path": "models/artifacts/tuned_sarima_quantity_model.joblib",
+        "baseline_wape": 123.73
+      }
+    }
+  },
+  "residual_quantiles_calibration": {
+    "method": "Step-Wise Empirical Quantiles (Blueprint Section 14)",
+    "interval_level": "80% Calibrated Prediction Range",
+    "residuals_storage": {
+      "sales_parquet": "models/residuals/empirical_residuals_sales.parquet",
+      "quantity_parquet": "models/residuals/empirical_residuals_quantity.parquet"
+    }
+  },
+  "artifact_inventory": [
+    {
+      "filename": "lightgbm_quantity_model.joblib",
+      "path": "models/artifacts/lightgbm_quantity_model.joblib",
+      "size_kb": 179.17,
+      "sha256": "b90b56343b59e29a2fc6d471c5a7011558b1f35f1f38e13fba9b9c557949290e",
+      "last_modified": "2026-10-24T07:26:20.514808+00:00"
+    },
+    {
+      "filename": "lightgbm_sales_model.joblib",
+      "path": "models/artifacts/lightgbm_sales_model.joblib",
+      "size_kb": 161.99,
+      "sha256": "033cf8d73d28791366c2c8c0433bcd7a417f346335b1ca1fa6f2da0f7b1fc203",
+      "last_modified": "2026-10-24T07:26:18.181916+00:00"
+    },
+    {
+      "filename": "random_forest_quantity_model.joblib",
+      "path": "models/artifacts/random_forest_quantity_model.joblib",
+      "size_kb": 2686.74,
+      "sha256": "374f91b48870a2050f6604bee50cafadd4240fab5806deab10136d453d5fd3a8",
+      "last_modified": "2026-10-24T07:26:20.041660+00:00"
+    },
+    {
+      "filename": "random_forest_sales_model.joblib",
+      "path": "models/artifacts/random_forest_sales_model.joblib",
+      "size_kb": 2548.36,
+      "sha256": "f361a3b08307f8855b7e638220c36795fea3e87d3dff387219e09ee9b5fbecfc",
+      "last_modified": "2026-10-24T07:26:15.551443+00:00"
+    },
+    {
+      "filename": "ridge_quantity_model.joblib",
+      "path": "models/artifacts/ridge_quantity_model.joblib",
+      "size_kb": 2.63,
+      "sha256": "79f849a2e206b18d41d33da4a2f6ca4855c47edc790be993711b024c43c73f45",
+      "last_modified": "2026-10-24T07:26:20.572723+00:00"
+    },
+    {
+      "filename": "ridge_regression_quantity_model.joblib",
+      "path": "models/artifacts/ridge_regression_quantity_model.joblib",
+      "size_kb": 2.63,
+      "sha256": "79f849a2e206b18d41d33da4a2f6ca4855c47edc790be993711b024c43c73f45",
+      "last_modified": "2026-10-24T07:26:20.580042+00:00"
+    },
+    {
+      "filename": "ridge_regression_sales_model.joblib",
+      "path": "models/artifacts/ridge_regression_sales_model.joblib",
+      "size_kb": 2.63,
+      "sha256": "44c70979dce9dcd99c3026d243b659bfa1ae141c5c8773700ba0cb2cc760f2a1",
+      "last_modified": "2026-10-24T07:26:18.251280+00:00"
+    },
+    {
+      "filename": "ridge_sales_model.joblib",
+      "path": "models/artifacts/ridge_sales_model.joblib",
+      "size_kb": 2.63,
+      "sha256": "44c70979dce9dcd99c3026d243b659bfa1ae141c5c8773700ba0cb2cc760f2a1",
+      "last_modified": "2026-10-24T07:26:18.243636+00:00"
+    },
+    {
+      "filename": "tuned_lightgbm_quantity_model.joblib",
+      "path": "models/artifacts/tuned_lightgbm_quantity_model.joblib",
+      "size_kb": 86.3,
+      "sha256": "8324952c74f22034b868705cec871ff08042ea53d4bf4b2b3663ef842c5f0642",
+      "last_modified": "2026-10-24T07:58:55.509021+00:00"
+    },
+    {
+      "filename": "tuned_lightgbm_sales_model.joblib",
+      "path": "models/artifacts/tuned_lightgbm_sales_model.joblib",
+      "size_kb": 85.6,
+      "sha256": "82f3748dccfe5c8abde5c6c7b0c3a9fc528d602121b992efed4a790b602f677d",
+      "last_modified": "2026-10-24T07:58:55.293636+00:00"
+    },
+    {
+      "filename": "tuned_random_forest_quantity_model.joblib",
+      "path": "models/artifacts/tuned_random_forest_quantity_model.joblib",
+      "size_kb": 549.66,
+      "sha256": "295d3c893378514dfe4ca8485e9ad9a6cdb771aee8f37acc4e6ebd5353e38cf5",
+      "last_modified": "2026-10-24T07:58:55.484773+00:00"
+    },
+    {
+      "filename": "tuned_random_forest_sales_model.joblib",
+      "path": "models/artifacts/tuned_random_forest_sales_model.joblib",
+      "size_kb": 101.02,
+      "sha256": "b19eee045ac32906f5b13336b9f3afe2b221294a6267bba54a264fcf1ce381b6",
+      "last_modified": "2026-10-24T07:58:55.265858+00:00"
+    },
+    {
+      "filename": "tuned_ridge_regression_quantity_model.joblib",
+      "path": "models/artifacts/tuned_ridge_regression_quantity_model.joblib",
+      "size_kb": 1.8,
+      "sha256": "3cc5ee370deb5184713441ef4d1d2074f0920a05892d2d3a4418adf9eee01605",
+      "last_modified": "2026-10-24T12:47:00.541893+00:00"
+    },
+    {
+      "filename": "tuned_ridge_regression_sales_model.joblib",
+      "path": "models/artifacts/tuned_ridge_regression_sales_model.joblib",
+      "size_kb": 1.8,
+      "sha256": "f3b26a9b1c038f54005c314bac3fcefb448dd5256860ec1b5d6692bed32e177a",
+      "last_modified": "2026-10-24T12:47:00.513910+00:00"
+    },
+    {
+      "filename": "tuned_sarima_quantity_model.joblib",
+      "path": "models/artifacts/tuned_sarima_quantity_model.joblib",
+      "size_kb": 11385.87,
+      "sha256": "dfae0377d75ce313e9b02df31e4c15d776932795f0f3eb8ab99f58c0fc5b80ca",
+      "last_modified": "2026-10-24T07:58:55.587047+00:00"
+    },
+    {
+      "filename": "tuned_sarima_sales_model.joblib",
+      "path": "models/artifacts/tuned_sarima_sales_model.joblib",
+      "size_kb": 11385.87,
+      "sha256": "b431b1322f4227a7d455b407d60071e52000614e6c1080f911075993661680a2",
+      "last_modified": "2026-10-24T07:58:55.391881+00:00"
+    },
+    {
+      "filename": "tuned_xgboost_quantity_model.joblib",
+      "path": "models/artifacts/tuned_xgboost_quantity_model.joblib",
+      "size_kb": 117.96,
+      "sha256": "ebc7a1ad46e9d76e79d5e7683376d3a29ac9bc85115fdcf54f25474c7935d371",
+      "last_modified": "2026-10-24T07:58:55.496018+00:00"
+    },
+    {
+      "filename": "tuned_xgboost_sales_model.joblib",
+      "path": "models/artifacts/tuned_xgboost_sales_model.joblib",
+      "size_kb": 230.71,
+      "sha256": "c339dce3b3a52624426a46ce4eb6629170130714d77e75de727e3b6ee13d743f",
+      "last_modified": "2026-10-24T07:58:55.276842+00:00"
+    },
+    {
+      "filename": "xgboost_quantity_model.joblib",
+      "path": "models/artifacts/xgboost_quantity_model.joblib",
+      "size_kb": 355.0,
+      "sha256": "4f58edb76cfe76286682eb50ffca0a50f0ddabc8ae7c9ca2be54cf7fbbc4336f",
+      "last_modified": "2026-10-24T07:26:20.370161+00:00"
+    },
+    {
+      "filename": "xgboost_sales_model.joblib",
+      "path": "models/artifacts/xgboost_sales_model.joblib",
+      "size_kb": 324.39,
+      "sha256": "53d06367a904ad552e2cc5deabdd1154e0b241d7b75ddda725960379c78bed32",
+      "last_modified": "2026-10-24T07:26:17.736889+00:00"
+    },
+    {
+      "filename": "production/production_champion_quantity_model.joblib",
+      "path": "models/artifacts/production/production_champion_quantity_model.joblib",
+      "size_kb": 4.34,
+      "sha256": "efdbe5687a89d243059a581ae5492e822577b1c51087ddbbff99e7953ed08649",
+      "last_modified": "2026-10-24T12:47:00.556318+00:00"
+    },
+    {
+      "filename": "production/production_champion_sales_model.joblib",
+      "path": "models/artifacts/production/production_champion_sales_model.joblib",
+      "size_kb": 4.49,
+      "sha256": "0e6c4bf9245bc94f6f8a5b6cfc3b21fd49aecee420fa62e3084e87d2ea8e8c16",
+      "last_modified": "2026-10-24T12:47:00.532366+00:00"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+# ==============================================================================
+# SalesSight AI - Production Multi-Container Orchestration
+# Services:
+#   - api: FastAPI REST Headless Inference Server (Port 8000)
+#   - web: Streamlit Interactive Executive Dashboard (Port 8501)
+# ==============================================================================
+
+version: '3.8'
+
+services:
+  # Backend ML REST Inference API Service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: salessight_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - PORT=8000
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    command: ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  # Frontend Streamlit Dashboard Service
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: salessight_web
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+      - BACKEND_URL=http://api:8000
+      - ENVIRONMENT=production
+    depends_on:
+      api:
+        condition: service_healthy
+    command: ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

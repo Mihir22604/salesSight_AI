@@ -1,0 +1,727 @@
+# Smart Sales Forecasting and Product Demand Intelligence System
+## Complete Feature Research, Functional Specification, and Implementation Blueprint
+
+(Revision 2: adds the missing parts of the original feature definition. See Section 16 for the change log.)
+
+## 1. Feature Description
+
+### 1.1 Overview
+
+The Smart Sales Forecasting and Product Demand Intelligence System is a machine-learning-based application designed to predict future sales and identify products that are likely to experience high demand.
+
+The system allows users to select a forecasting start date, choose a product or category, specify the prediction period, and select the type of sales information they want to predict. Based on these selections, the system generates daily sales predictions and displays them through numerical summaries, interactive charts, and a detailed prediction table.
+
+In addition to forecasting, the system analyzes the generated predictions to identify high-demand products, products with increasing or decreasing demand, categories expected to generate the most sales, and comparisons between products and between time periods.
+
+The primary objective is to help users understand expected future sales and make better-informed business decisions using historical sales data.
+
+### 1.2 Main objectives
+
+The feature will:
+
+1. Predict sales revenue for each day of the selected forecast period.
+2. Predict the quantity of products expected to sell.
+3. Support overall sales, individual products, and product categories.
+4. Allow users to select a forecasting horizon of 30, 60, or 90 days.
+5. Compare four forecasting models and select a suitable model using chronological historical validation.
+6. Identify the five products with the highest predicted demand over the next 30 days.
+7. Highlight increasing and decreasing demand patterns.
+8. Present predictions through charts, tables, and summary cards.
+9. Show a lower and upper forecast range so that users can see uncertainty.
+10. Compare selected products with each other and compare the first forecast period with the following period.
+11. Show expected growth percentage against the previous equivalent period.
+12. Generate plain-language business explanations and demand-based planning recommendations.
+13. Allow users to export the forecast, charts, model metrics, and recommendations as a downloadable report.
+
+All these capabilities are integrated into one forecasting workflow.
+
+---
+
+## 2. User Workflow
+
+The application follows five main steps.
+
+### Step 1: Configure the forecast
+
+The user opens the forecasting dashboard and provides the required inputs. The dashboard has one "Generate forecast" button that submits the form.
+
+**A. Forecast start date**
+
+The user selects the date from which the forecast should begin. The default value is the first day after the last date in the historical data (see Section 5.4 for the full start-date rules).
+
+The dashboard shows the last available historical date next to the date picker so that the user understands the supported range.
+
+**B. Product selection**
+
+The user can select one of the following:
+
+- All products: forecast overall sales and aggregate product demand.
+- Individual product: forecast the selected product's revenue or quantity.
+- Product category: forecast sales or quantity for the selected category.
+- Compare products: select two to five products to forecast and compare side by side (see Section 7.7).
+
+The product and category dropdowns are populated from the dataset rather than maintained manually.
+
+**C. Prediction period**
+
+The user selects one of three options:
+
+- 30 days (1 month).
+- 60 days (2 months).
+- 90 days (3 months).
+
+The application generates one prediction for each calendar day in the selected horizon.
+
+**D. Prediction target**
+
+The user chooses:
+
+- Sales revenue.
+- Product demand in units.
+- Both revenue and quantity.
+
+Revenue and quantity are different targets and are forecast and evaluated separately.
+
+**E. Result format**
+
+The user can select:
+
+- Summary numbers.
+- Interactive chart.
+- Daily prediction table.
+- All formats (numbers, chart, and table).
+
+The selected output format changes how results are presented, not the underlying predictions.
+
+**F. Forecasting model**
+
+Provide two choices:
+
+- Automatic model selection: use the model selected from historical validation for the chosen forecasting task (see Section 8.4).
+- Manual model selection: allow the user to inspect results from one of the supported candidate models.
+
+The automatic selection uses validation results rather than assuming that a particular model is always best.
+
+### Step 2: Generate predictions
+
+After the user submits the form, the backend validates the inputs, loads the required historical data, and generates forecasts for the requested target, scope, and horizon.
+
+The application shows a clear message if there is insufficient history to generate a reliable product-level forecast (see Section 5.2).
+
+### Step 3: Display forecast results
+
+The system displays summary cards, a daily chart, and a prediction table according to the user's chosen output format. Each result includes the lower and upper forecast range where the selected model supports it (see Section 6.5).
+
+### Step 4: Generate product-demand insights
+
+The application analyzes the predictions to identify high-demand products, changes in demand, high-performing categories, product comparisons, period comparisons, expected growth, and planning recommendations.
+
+### Step 5: Export the results
+
+The user can download the daily forecasts as a CSV file and a complete forecast report containing predictions, charts, model metrics, and recommendations (see Section 6.4).
+
+---
+
+## 3. Machine Learning Research and Model Selection
+
+The project evaluates four candidate models: Linear Regression, SARIMA, Random Forest Regressor, and XGBoost Regressor. A simple seasonal-naive baseline is evaluated alongside them as a reference, not as a fifth candidate.
+
+### Model 1: Linear Regression
+
+**Type:** Supervised machine learning.
+
+Linear Regression estimates the relationship between a target value (sales revenue or quantity) and input features. For this forecasting project, the inputs include previous sales values, calendar information, and product or category identifiers where appropriate.
+
+**Project use:**
+- Forecast daily revenue or quantity using prepared historical features.
+- Use lag features such as sales from one day and seven days earlier.
+- Include calendar features such as day of the week and month.
+- Generate 30-, 60-, and 90-day forecasts using the recursive multi-step procedure in Section 5.3.
+
+**Main advantage:** It is comparatively easy to understand, implement, and explain. It also provides a useful simple machine-learning model for comparison with tree-based models.
+
+**Main limitation:** It may not capture complex nonlinear patterns. Its forecasts depend on suitable feature engineering, and multi-day predictions using lagged values must be generated without using future actual sales.
+
+### Model 2: SARIMA
+
+**Type:** Statistical time-series forecasting.
+
+SARIMA models relationships between previous observations and seasonal patterns. It can capture autocorrelation and use differencing to handle some non-stationary series.
+
+**Project use:**
+- Forecast aggregate daily sales and quantity (all products, and categories with sufficient history).
+- Evaluate suitable weekly seasonal configurations (seasonal period of 7).
+- Compare its forecasts against Linear Regression, Random Forest, and XGBoost.
+- Provide native prediction intervals for the confidence range.
+
+**Main advantage:** It provides a different statistical approach for evaluating time-dependent patterns.
+
+**Main limitation:** Parameter selection and seasonal model fitting are more complicated, particularly for sparse product-level series. For that reason SARIMA is not used for individual-product forecasts that fail the history rules in Section 5.2.
+
+### Model 3: Random Forest Regressor
+
+**Type:** Supervised machine learning.
+
+Random Forest combines predictions from multiple decision trees. It can learn nonlinear relationships between previous sales, calendar features, product identifiers, and category information.
+
+**Project use:**
+
+Create features such as:
+- Sales from the previous day.
+- Sales from seven days earlier.
+- Sales from 14 or 28 days earlier, if useful.
+- Rolling averages calculated from previous observations.
+- Day of the week and month.
+- Product ID and category.
+
+The model learns to predict revenue or quantity from these features. A pooled model trained across all products is used for product-level forecasts.
+
+**Main advantage:** It can learn nonlinear patterns and use information across multiple products when trained as a pooled model.
+
+**Main limitation:** It does not naturally extrapolate a continuing trend. Recursive forecasts can also accumulate errors.
+
+### Model 4: XGBoost Regressor
+
+**Type:** Supervised machine learning (gradient-boosted decision trees).
+
+XGBoost builds decision trees sequentially, with each new tree helping correct errors made by the existing ensemble. It can learn nonlinear relationships in structured sales data.
+
+**Project use:**
+
+Use the same target definitions, lagged features, calendar features, and chronological validation periods as Random Forest and Linear Regression.
+
+Tune parameters such as the number of estimators, learning rate, maximum tree depth, and regularization settings. Tuning must use only the training portion of each backtest fold.
+
+**Main advantage:** It is a strong tree-based model for structured data and can capture complex relationships between historical sales and engineered features.
+
+**Main limitation:** It requires careful tuning and may overfit when the training data is limited. It also requires the XGBoost Python package in addition to the general scikit-learn tools.
+
+### Model availability by forecast scope
+
+| Scope | Linear Regression | SARIMA | Random Forest | XGBoost |
+|---|---|---|---|---|
+| All products (aggregate) | Yes | Yes | Yes | Yes |
+| Category | Yes | Yes, if history rules pass | Yes | Yes |
+| Individual product (sufficient history) | Yes (pooled) | No | Yes (pooled) | Yes (pooled) |
+| Individual product (insufficient history) | Baseline only (see Section 5.2) | No | No | No |
+
+### Initial model recommendation
+
+Implement and compare these four candidate models:
+
+1. Linear Regression.
+2. SARIMA.
+3. Random Forest Regressor.
+4. XGBoost Regressor.
+
+Do not decide the final winning model before conducting validation. Different models may perform best for overall sales and for individual-product demand.
+
+**Important:** Each model must be evaluated on the same forecasting task and comparable chronological test periods. A model's accuracy on overall revenue must not be directly compared with its accuracy on product quantity.
+
+---
+
+## 4. Data Preparation and Feature Engineering
+
+The historical dataset contains transaction-level records rather than a complete daily sales series.
+
+The dataset contains approximately 2,172 transaction-line records, 77 products, eight categories, and 90 customers. The available historical period ends in September 2014.
+
+### 4.1 Data cleaning
+
+The preprocessing stage must:
+
+1. Convert `OrderDate` to a valid date type.
+2. Check duplicate records and invalid values.
+3. Investigate negative quantities and possible returns.
+4. Validate the `Sales` and `Quantity` columns.
+5. Check missing product and category information.
+6. Investigate missing dates before assigning zero sales.
+
+### 4.2 Treatment of dates with no transactions
+
+A date with no transaction must not be silently assumed to be a zero-sales day. The following rule applies:
+
+1. Determine the first and last order dates in the dataset. Only dates between them are filled.
+2. If the dataset is an order-level extract in which every order is present (for example, order identifiers are continuous), dates with no orders are treated as genuine zero-sales days within that range.
+3. If the check shows signs of missing data (for example, long unexplained gaps or missing order identifiers), the affected dates are flagged as missing, excluded from model training and evaluation, and reported in the data-quality summary.
+4. For product-level series, zeros are filled only between the dataset start and end dates, and the share of zero days per product is recorded for the history rules in Section 5.2.
+5. The decision taken and the number of filled or flagged dates are displayed in the data-quality summary.
+
+### 4.3 Data aggregation
+
+For overall sales, group records by date and calculate:
+
+- Total daily revenue.
+- Total daily quantity.
+
+For product-level demand, group by date and product and calculate:
+
+- Daily product revenue.
+- Daily product quantity.
+
+For category-level forecasting, aggregate by date and category.
+
+### 4.4 Feature engineering for machine learning
+
+For Linear Regression, Random Forest, and XGBoost, create lagged features and calendar variables. Linear Regression requires numeric input features, so categorical values such as product and category must be encoded before training. SARIMA uses the ordered target time series and seasonal settings rather than the same tabular feature matrix.
+
+| Feature | Meaning |
+|---|---|
+| `lag_1` | Sales one day earlier |
+| `lag_7` | Sales seven days earlier |
+| `lag_14` | Sales fourteen days earlier |
+| `rolling_mean_7` | Average sales over the previous seven days |
+| `day_of_week` | Day of the week |
+| `month` | Calendar month |
+| `ProductID` | Selected product identifier |
+| `CategoryName` | Product category |
+
+Rolling statistics must be shifted so that the model never uses the target day's actual sales to predict that same day's sales.
+
+Future discounts are used as model inputs only if the corresponding planned discount is known at forecast time. Otherwise discount is excluded.
+
+### 4.5 Dataset limitation
+
+Because the data ends in 2014, it cannot directly establish current sales conditions in 2026. A forecast generated from this data must be described as a historical-data-based demonstration, and the dashboard displays this notice with every forecast.
+
+For meaningful forecasts of current business demand, obtain more recent historical sales records. When newer data is loaded, the last-available-date logic in Section 5.4 updates automatically.
+
+---
+
+## 5. Forecasting Logic
+
+### 5.1 Overall sales forecasting
+
+The system aggregates daily sales and forecasts revenue or quantity for the requested period.
+
+If a user selects a 30-day horizon, the output contains exactly 30 daily predictions. A 90-day selection returns 90 daily predictions.
+
+The application calculates summary values from these daily forecasts only (never estimated separately):
+
+- **Total forecast revenue** = sum of the predicted daily revenue values.
+- **Total forecast quantity** = sum of the predicted daily quantities.
+- **Average daily sales** = total forecast value divided by the number of forecast days.
+- **Predicted peak sales day** = the date with the highest predicted value.
+- **Lowest predicted sales day** = the date with the lowest predicted value.
+
+### 5.2 Product-level forecasting and history rules
+
+When a user selects an individual product, the system uses that product's historical sales or quantity to generate the forecast.
+
+The system checks the product's history before returning a forecast:
+
+| Condition | Action |
+|---|---|
+| The product has at least 60 days with sales (non-zero days) AND at least 180 days between its first and last sale | Forecast with the pooled Linear Regression, Random Forest, or XGBoost model |
+| The product has fewer non-zero days than the threshold but at least 10 sales records | Return a baseline forecast (seasonal-naive or recent average) with a visible "low-confidence, baseline method" label |
+| The product has fewer than 10 sales records | Do not forecast; show "Insufficient history for a reliable forecast" and suggest forecasting its category instead |
+
+The thresholds (60 non-zero days, 180 days span, 10 records) are defaults stored in a configuration file and must be reviewed after the data-quality summary is produced.
+
+The same rules apply to categories, but categories normally have enough history.
+
+### 5.3 Multi-day (recursive) forecasting
+
+For machine learning models that use lagged sales features, the system generates multi-day predictions recursively:
+
+1. Generate the first day's prediction from the available historical features.
+2. Use that prediction when preparing the lagged features for the following day.
+3. Generate the next prediction.
+4. Repeat until the requested horizon is complete.
+
+This process is also used during validation because recursive prediction errors can accumulate over a long horizon.
+
+### 5.4 Forecast start-date rules
+
+The dataset's last date is called `last_date` (September 2014 in the current dataset). The forecast start date selected by the user is `start_date`. The system applies these rules in order:
+
+1. **Default.** The dashboard pre-fills `start_date = last_date + 1 day`. This is the only case that produces a direct forecast from the latest available history.
+2. **start_date <= last_date.** This is not a future forecast. The system rejects it for the live forecast and offers "Backtest mode" instead, in which the model is trained only on data before `start_date` and its predictions are shown beside the actual values for the same days, with error metrics.
+3. **start_date within the bridge limit.** If `last_date + 1 < start_date <= last_date + 90 days`, the system recursively forecasts the intervening "bridge" days from `last_date + 1`, discards them from the displayed output, and returns exactly the requested horizon beginning at `start_date`. The dashboard states that the bridge days were forecast, and the prediction ranges are widened because the error from the bridge days carries into the forecast.
+4. **start_date beyond the bridge limit.** If `start_date > last_date + 90 days`, the system does not produce a silent forecast. It shows the message: "The latest available data ends on <last_date>. Forecasts are supported from <last_date + 1> to <last_date + 90 days>. Please choose a date in this range or load newer data." The user can choose either "Use default start date" or "Demonstration mode".
+5. **Demonstration mode.** Because the sample data ends in 2014, a start date such as 10/24/2026 is far beyond the bridge limit. In demonstration mode, the system maps the requested start date onto the historical calendar by keeping the same day of week and day of year, forecasts from `last_date + 1`, and labels every output "Demonstration: forecast derived from data ending <last_date>, displayed with dates shifted to <start_date>". The shift is applied only to displayed dates; the model, metrics, and ranges are unchanged. The system must never present demonstration-mode results as a genuine current forecast.
+
+The bridge limit (90 days) is a configuration value. All displayed dates, table rows, chart points, and CSV rows use the same final date range (FR-12).
+
+---
+
+## 6. Forecast Result Presentation
+
+### 6.1 Summary cards
+
+The results dashboard displays:
+
+- Total predicted revenue.
+- Total predicted quantity.
+- Average daily revenue or quantity.
+- Predicted peak sales day (highest predicted day).
+- Lowest predicted sales day.
+- Expected growth percentage compared with the previous equivalent period (Section 7.8).
+- Selected product, category, model, forecast horizon, and start-date mode (default, bridge, or demonstration).
+
+The cards reflect the selected target and scope, and all values are computed from the daily forecast table.
+
+### 6.2 Interactive chart
+
+Display historical values and future predictions on a daily timeline.
+
+The chart allows users to:
+- Switch between revenue and quantity.
+- View the selected forecast horizon, and switch between shorter and longer periods (30, 60, 90 days) of the same forecast.
+- Inspect values for individual dates (hover tooltip).
+- Compare historical and predicted trends.
+- See the lower and upper forecast range as a shaded band around the prediction.
+
+For "Compare products" the chart overlays one line per selected product.
+
+### 6.3 Daily prediction table
+
+| Field | Description |
+|---|---|
+| Date | Forecast date |
+| Predicted revenue | Expected sales revenue |
+| Predicted quantity | Expected units sold |
+| Lower prediction bound | Lower forecast estimate (80% range) |
+| Upper prediction bound | Upper forecast estimate (80% range) |
+
+The table includes a CSV export button. If only one target is selected, the other target's columns are omitted.
+
+### 6.4 Downloadable results and report
+
+Two downloads are supported in the first version:
+
+1. **CSV:** the daily forecast values (date, predictions, lower and upper bounds) and the selected forecast settings (scope, target, horizon, start-date mode, model).
+2. **Forecast report (PDF or HTML):** contains
+   - the selected settings and data-limitation notice,
+   - summary cards,
+   - the forecast chart,
+   - the daily prediction table (or a summary if longer than the report limit),
+   - model evaluation metrics (MAE, RMSE, WAPE, baseline comparison) for the model used,
+   - the top-five demand ranking, rising and falling products, category ranking, and comparison results,
+   - the business explanations and planning recommendations.
+
+CSV and report values must match the dashboard exactly.
+
+### 6.5 Forecast confidence range
+
+The system shows a lower and upper forecast range for every forecast so that users do not treat predictions as exact.
+
+Method:
+- **SARIMA:** use the model's native 80% prediction intervals.
+- **Linear Regression, Random Forest, XGBoost:** use empirical residual quantiles from the chronological backtests. For each forecast step (day 1, day 2, ... day N), take the 10th and 90th percentiles of the validation errors at that step and add them to the point prediction. This gives an 80% range that widens with the horizon.
+- **Baseline-only forecasts:** use the same empirical-error method from the baseline's own backtest.
+- Bounds are never below zero for revenue or quantity.
+- If there are too few backtest folds to estimate the range, the dashboard shows "Range not available" rather than inventing one.
+- The report states that the range is empirical and approximate, not a guarantee.
+
+---
+
+## 7. Product Demand Intelligence and Recommendations
+
+These insights are calculated from the forecast outputs. They do not require separate machine learning models.
+
+### 7.1 Highest-demand products
+
+This is the most important supporting capability.
+
+The system generates product-level quantity forecasts and calculates the total predicted units for each product over the first 30 days of the forecast, regardless of whether the user selected a 30-, 60-, or 90-day horizon.
+
+Then:
+
+1. Sum each product's daily predicted quantities over those 30 days.
+2. Sort products from highest to lowest predicted quantity.
+3. Display and highlight the top five products.
+4. Show each product's predicted quantity and rank.
+5. Optionally show predicted revenue as a separate, clearly labelled ranking.
+
+The highest-demand product is determined using predicted quantity, not revenue, because expensive products can generate high revenue without selling the most units. Products that only have a baseline forecast (Section 5.2) are listed with a "baseline" label, and products with insufficient history are excluded with a note.
+
+### 7.2 Rising-demand products
+
+Compare the predicted quantity over the first 30 forecast days with the previous 30 days (the reference period, defined in Section 7.8).
+
+Percentage change = (predicted 30-day quantity - previous 30-day quantity) / previous 30-day quantity x 100, calculated only where the previous total is at least 10 units.
+
+A product is labelled "Rising" when the change is at least +15% (configurable) and the absolute change is at least 5 units.
+
+### 7.3 Falling-demand products
+
+Apply the same comparison. A product is labelled "Falling" when the change is at most -15% and the absolute change is at least 5 units.
+
+Changes smaller than the thresholds, or smaller than the model's normal error (WAPE from validation), are labelled "Stable". The system does not describe small differences as meaningful.
+
+### 7.4 Highest-performing category
+
+Aggregate product-level predictions by category and rank categories by predicted quantity or revenue. The interface clearly shows which ranking is being displayed and lets the user switch between the two.
+
+### 7.5 Demand-based planning recommendations
+
+The system converts forecast outputs into a "Planning attention list" using straightforward rules:
+
+- **High priority:** the product is in the top five by predicted quantity AND labelled Rising.
+- **Review:** the product is in the top five OR labelled Rising.
+- **Watch for overstock:** the product is labelled Falling and has a high historical quantity.
+
+Plain-language explanations are generated from templates, for example:
+
+- "Product A has the highest predicted unit demand over the next 30 days."
+- "Product B has a projected increase in demand compared with the previous 30 days."
+- "Category C is expected to generate the highest forecast revenue."
+- "Product A is projected to have higher demand than Product B."
+
+These are forecast-based observations, not guarantees of future outcomes.
+
+### 7.6 Inventory planning limitation
+
+The system highlights products with high or increasing predicted demand and suggests where to focus attention when planning stock or purchasing. However, it cannot reliably calculate actual reorder quantities from sales history alone.
+
+Reorder quantities would require current stock, incoming orders, supplier lead time, and other inventory information, which are outside the dataset. The dashboard states this limitation next to the planning list.
+
+### 7.7 Compare products
+
+The user can select two to five products and compare:
+
+- Predicted total quantity and revenue over the chosen horizon.
+- Daily forecast lines overlaid on one chart.
+- Ranking among the selected products.
+- A generated sentence for each pair, for example: "Product A is projected to sell 22% more units than Product B."
+
+All selected products use the same horizon, start date, and target. Products that fail the history rules are shown with an explanation instead of a forecast.
+
+### 7.8 Compare periods and expected growth
+
+**Compare periods.** For a 60- or 90-day horizon the system compares forecast period 1 (days 1-30) with period 2 (days 31-60), and for 90 days also period 3 (days 61-90), showing totals and percentage change between consecutive periods. For a 30-day horizon, period 2 is forecast internally for comparison only (days 31-60) and labelled as such.
+
+**Expected growth percentage.** Compare the total forecast for the selected horizon with the previous equivalent period of the same length:
+
+Growth % = (forecast total - previous equivalent total) / previous equivalent total x 100.
+
+The previous equivalent period is:
+- the same number of days immediately before `start_date` using actual history, when that period lies fully within the available history (default start date);
+- otherwise, for bridged or demonstration starts, the last available actual period of the same length ending at `last_date`, and the dashboard states this.
+
+If the previous total is zero or too small to be meaningful, growth is shown as "Not available".
+
+---
+
+## 8. Model Training and Evaluation
+
+The project evaluates Linear Regression, SARIMA, Random Forest Regressor, and XGBoost Regressor using chronological backtesting rather than random train-test splitting.
+
+### 8.1 Recommended evaluation procedure
+
+**Step 1:** Create daily series for overall revenue, overall quantity, category series, and the supported product-level targets.
+
+**Step 2:** Divide the historical data into chronological training and validation periods using an expanding window.
+
+**Step 3:** Train each candidate model on earlier observations only.
+
+**Step 4:** Predict the next 30, 60, and 90 days using the same recursive procedure the deployed application uses.
+
+**Step 5:** Compare the predicted values with the actual values for those periods.
+
+**Step 6:** Repeat across at least four historical forecast origins (for example, using scikit-learn's `TimeSeriesSplit` with the test size set to the horizon), where the dataset allows it. If the data supports fewer origins for the 90-day horizon, report the number actually used.
+
+**Step 7:** Select the model with the best combination of forecast accuracy, stability across origins, and implementation suitability.
+
+### 8.2 Evaluation metrics
+
+| Metric | Purpose |
+|---|---|
+| MAE | Measures average absolute prediction error |
+| RMSE | Penalizes larger errors more strongly |
+| WAPE | Measures total absolute error relative to total actual sales |
+| MASE | Optional comparison against the seasonal-naive baseline |
+
+### 8.3 Baseline
+
+Include a simple baseline, predicting the value from the same weekday in the previous week (seasonal-naive with period 7), to check whether machine learning provides a meaningful improvement. A candidate model is considered useful only if its WAPE is lower than the baseline's.
+
+### 8.4 Automatic model selection rule
+
+Automatic selection runs separately for each task (scope x target). For the selected task and horizon:
+
+1. Compute the mean WAPE of each available candidate across backtest origins at the selected horizon (the 90-day horizon is the primary criterion because it is the project's central requirement; shorter horizons use their own results).
+2. Choose the candidate with the lowest mean WAPE.
+3. If two candidates are within 2% relative WAPE of each other, choose the one with the lower RMSE, then the simpler model.
+4. If no candidate beats the baseline, use the baseline and show a notice.
+5. The dashboard displays the selected model, its MAE, RMSE, WAPE, the baseline's WAPE, and the number of backtest origins.
+
+Manual model selection shows the same metrics for whichever model the user picks, and marks the automatically selected model.
+
+Reference: Scikit-learn's [TimeSeriesSplit documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html) explains why time-ordered validation is appropriate for forecasting.
+
+---
+
+## 9. Recommended Technology Stack
+
+| Component | Technology |
+|---|---|
+| Data processing | Pandas and NumPy |
+| Statistical models | Statsmodels |
+| Machine learning models | Scikit-learn and XGBoost |
+| Evaluation | MAE, RMSE, WAPE, chronological backtesting |
+| Interactive charts | Plotly |
+| Frontend | Streamlit |
+| Model persistence | Joblib where suitable |
+| Export | CSV and PDF/HTML report |
+
+Streamlit is a practical choice because the forecasting workflow, charts, tables, and input controls can all be implemented in Python.
+
+---
+
+## 10. Functional Requirements
+
+The completed feature must satisfy the following requirements.
+
+**FR-01 - Forecast configuration:** Users can select the start date, product scope, horizon, prediction target, output format, and model-selection mode.
+
+**FR-02 - Daily forecasting:** The system returns exactly 30, 60, or 90 daily forecast values according to the selected horizon.
+
+**FR-03 - Product selection:** The system supports all products, individual products, and categories where sufficient historical data exists.
+
+**FR-04 - Revenue and quantity:** The system supports separate revenue and unit-demand targets, and both together.
+
+**FR-05 - Model comparison:** The system evaluates the four candidate models and a baseline using comparable chronological test periods.
+
+**FR-06 - Result visualization:** The system displays the forecast as summary cards, an interactive chart, and a daily table, according to the chosen output format.
+
+**FR-07 - Demand ranking:** The system ranks the top five products by predicted quantity over the first 30 forecast days.
+
+**FR-08 - Trend insights:** The system identifies rising, falling, and stable products using the thresholds in Sections 7.2 and 7.3.
+
+**FR-09 - Model evaluation display:** The system reports validation metrics and identifies the model used for the displayed forecast.
+
+**FR-10 - Export:** Users can download the daily predictions as CSV and a complete report (predictions, charts, model metrics, recommendations).
+
+**FR-11 - Data validation:** The system handles invalid selections, missing data, and insufficient product history with clear messages.
+
+**FR-12 - Forecast dates:** The system applies the start-date rules in Section 5.4 and returns the correct dates in the cards, chart, table, and exports.
+
+**FR-13 - Forecast confidence range:** The system shows lower and upper bounds using the method in Section 6.5, or states that the range is unavailable.
+
+**FR-14 - Compare products:** Users can compare two to five products on forecasted quantity and revenue (Section 7.7).
+
+**FR-15 - Compare periods and growth:** The system compares consecutive 30-day periods and shows expected growth percentage against the previous equivalent period (Section 7.8).
+
+**FR-16 - Category performance:** The system identifies the best-performing category by predicted quantity and by predicted revenue.
+
+**FR-17 - Best and slowest days:** The system highlights the highest and lowest predicted sales days.
+
+**FR-18 - Business explanations and planning list:** The system generates plain-language explanations and a planning attention list (Section 7.5) and states the inventory limitation.
+
+**FR-19 - Automatic model selection:** The system applies the selection rule in Section 8.4 and lets the user override it manually.
+
+---
+
+## 11. Non-Functional Requirements
+
+- **Usability:** Inputs and results are understandable to a non-technical user.
+- **Reliability:** Summary metrics, chart values, table values, and exports must agree with the generated daily predictions.
+- **Reproducibility:** Model training and evaluation use documented configurations, fixed random seeds, and repeatable procedures.
+- **Performance:** Forecast generation completes within a reasonable time for the dataset size. Trained models are saved and reused rather than retrained on every request.
+- **Transparency:** The interface discloses the selected model, forecast horizon, start-date mode, confidence-range method, and the historical data limitation.
+- **Maintainability:** Data preparation, model training, forecasting, recommendations, and interface logic are separated into clear components.
+
+---
+
+## 12. Suggested Project Architecture
+
+The system is organized into five logical components.
+
+### Component 1: Data preparation
+Loads, cleans, aggregates, and validates the historical sales data, and produces the data-quality summary.
+
+### Component 2: Model training and evaluation
+Trains Linear Regression, SARIMA, Random Forest, and XGBoost, runs the baseline, performs backtesting, stores metrics, selects the automatic model, and stores backtest residuals for confidence ranges.
+
+### Component 3: Forecasting engine
+Receives the user's selections, applies the start-date and history rules, chooses the relevant model and historical series, and generates daily predictions with prediction ranges.
+
+### Component 4: Product intelligence engine
+Calculates summary metrics, ranks products, identifies rising and falling demand, compares products and periods, computes growth, and generates rule-based explanations and the planning list.
+
+### Component 5: Dashboard and export
+Collects user inputs, displays cards, charts, and tables, and produces the CSV and report downloads.
+
+The dashboard calls these components rather than containing all forecasting logic in a single script.
+
+---
+
+## 13. Implementation Plan
+
+### Phase 1 - Dataset preparation
+Clean the data, decide the treatment of dates with no transactions (Section 4.2), aggregate sales and quantity by date, construct product and category series, and produce the data-quality summary.
+
+### Phase 2 - Model development
+Implement the four candidate models and the baseline. Create lagged and calendar features for Linear Regression, Random Forest, and XGBoost; prepare the daily time series required by SARIMA.
+
+### Phase 3 - Model evaluation
+Conduct chronological backtesting across origins and horizons, compare metrics, apply the selection rule, and store residuals for confidence ranges.
+
+### Phase 4 - Forecasting engine
+Implement the start-date rules, history rules, recursive forecasting, and prediction ranges for 30, 60, and 90 days at all supported scopes.
+
+### Phase 5 - Dashboard
+Build the configuration form, summary cards, interactive chart with range band, and daily prediction table.
+
+### Phase 6 - Demand intelligence
+Implement the top-five ranking, rising/falling labels, category ranking, product comparison, period comparison, growth percentage, planning list, and business explanations.
+
+### Phase 7 - Export and testing
+Add CSV export and the forecast report, then test the full workflow for all supported selections, insufficient history, invalid inputs, each start-date case, and date correctness.
+
+---
+
+## 14. Acceptance Criteria
+
+The feature is ready for demonstration when:
+
+1. Users can configure and generate a forecast without manually editing the dataset.
+2. Each supported horizon returns the correct number of daily predictions.
+3. Revenue and quantity are handled as distinct forecast targets.
+4. Product and category selections return results for the intended scope.
+5. Four candidate models and a baseline have been evaluated using chronological validation.
+6. The selected model's validation metrics are documented and displayed.
+7. The top-five demand ranking is calculated from predicted unit quantities.
+8. The charts, summary cards, table, CSV, and report agree with one another.
+9. Each start-date case in Section 5.4 (default, backtest, bridge, beyond limit, demonstration) behaves as specified and is labelled correctly.
+10. Lower and upper forecast ranges are shown (or explicitly marked unavailable) and widen with the horizon.
+11. Product comparison, period comparison, and expected growth percentage are available and use the defined rules.
+12. Rising, falling, and stable labels use the defined thresholds.
+13. Plain-language explanations and the planning list are generated, with the inventory limitation stated.
+14. Insufficient history and the limitations of the historical dataset are communicated clearly.
+
+---
+
+## 15. Final Feature Definition
+
+The **Smart Sales Forecasting and Product Demand Intelligence System** is a single integrated machine-learning feature that predicts daily sales revenue and product demand for user-selected periods of 30, 60, or 90 days. Users can select a product, category, or all products and view their forecasts through numerical summaries, interactive charts with uncertainty ranges, and daily prediction tables.
+
+The system compares Linear Regression, SARIMA, Random Forest, and XGBoost against a simple baseline using chronological backtesting, then uses validated model performance to select the model automatically. Based on the resulting forecasts, it ranks the five products with the highest predicted unit demand over the next 30 days, highlights rising and falling demand, compares products and periods, reports expected growth, identifies high-performing categories, and provides plain-language business explanations and planning guidance. Users can download the predictions, charts, model metrics, and recommendations as a report.
+
+Because the dataset ends in September 2014, the system uses explicit start-date rules and labels any demonstration-mode output so it is never mistaken for a current forecast.
+
+The central objective remains daily sales forecasting. All additional insights are derived from or directly support the forecasting workflow, keeping the project manageable, explainable, and suitable for an intermediate-level machine learning demonstration.
+
+---
+
+## 16. Change Log (Revision 2)
+
+Items that were missing or incomplete in the previous version and are now implemented:
+
+1. Start-date handling: the previous version said it "must define" the rule but never did. Section 5.4 now defines default, backtest, bridge, beyond-limit, and demonstration cases.
+2. Forecast confidence range: previously optional and deferred. Now a required feature with a defined method (Section 6.5, FR-13).
+3. Compare products (2 to 5 products): added (Section 7.7, FR-14).
+4. Compare periods and expected growth percentage: added (Section 7.8, FR-15).
+5. Downloadable report: previously only CSV with PDF "later". The report with predictions, charts, model metrics, and recommendations is now part of the core scope (Section 6.4).
+6. Demand-based planning recommendations: added a defined planning attention list (Section 7.5).
+7. Top-five ranking window: clarified that it always uses the first 30 forecast days, even for 60- and 90-day horizons (Section 7.1).
+8. Rising/falling rules: added concrete thresholds and a "Stable" label (Sections 7.2, 7.3).
+9. Zero-sales handling: added a concrete rule for dates with no transactions (Section 4.2).
+10. Sparse product histories: added minimum-history thresholds and fallback behaviour (Section 5.2) and a model availability table (Section 3).
+11. Automatic model selection: added an explicit selection rule and baseline check (Section 8.4, FR-19).
+12. Backtesting: added concrete origin count and expanding-window procedure (Section 8.1).
+13. Added the "Generate forecast" action, predicted peak day, lowest day, category ranking switch, and shorter/longer period viewing to the dashboard definition.
+14. Added functional requirements FR-13 to FR-19 and matching acceptance criteria.
+15. Model count: the original idea listed three models; this specification intentionally keeps four (Linear Regression, SARIMA, Random Forest, XGBoost) plus a baseline.

@@ -1,0 +1,27 @@
+application:
+  name: "SalesSight AI"
+  title: "Smart Sales Forecasting and Product Demand Intelligence System"
+  version: "1.0.0"
+  environment: "development"
+  debug: false
+  random_seed: 42
+
+paths:
+  raw_data: "data/raw/New_Query_2026_10_22_10_01_37.csv"
+  processed_dir: "data/processed"
+  models_dir: "models/artifacts"
+  metadata_dir: "models/metadata"
+  reports_dir: "report_stage"
+  logs_dir: "logs"
+
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/salessight.log"
+
+forecasting:
+  supported_horizons: [30, 60, 90]
+  default_horizon: 30
+  bridge_limit_days: 90
+  dataset_last_date: "2014-09-29"
+  demonstration_mode_active: true

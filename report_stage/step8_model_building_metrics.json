@@ -1,0 +1,206 @@
+{
+  "step": 8,
+  "title": "Model Building & Architecture Specification",
+  "candidate_models": [
+    "baseline",
+    "sarima",
+    "random_forest",
+    "xgboost",
+    "lightgbm",
+    "ridge_regression",
+    "ridge"
+  ],
+  "core_model_order": [
+    {
+      "id": "baseline",
+      "name": "Seasonal-Naive Baseline",
+      "type": "Heuristic Persistence (Lag-7)"
+    },
+    {
+      "id": "sarima",
+      "name": "Model 1: SARIMA (m=7)",
+      "type": "Statistical State-Space Time-Series"
+    },
+    {
+      "id": "random_forest",
+      "name": "Model 2: Random Forest",
+      "type": "Bagged Decision Tree Ensemble"
+    },
+    {
+      "id": "xgboost",
+      "name": "Model 3: XGBoost",
+      "type": "Gradient Boosted Decision Tree (Histogram)"
+    },
+    {
+      "id": "lightgbm",
+      "name": "Model 4: LightGBM",
+      "type": "Leaf-wise Light Gradient Boosting Machine"
+    },
+    {
+      "id": "ridge_regression",
+      "name": "Model 5: Ridge Regression",
+      "type": "L2-Regularized Linear Model with StandardScaler"
+    }
+  ],
+  "model_specifications": {
+    "baseline": {
+      "algorithm": "Seasonal-Naive (Lag-7)",
+      "hyperparameters": {
+        "lag": 7,
+        "fallback": "day_of_week_median"
+      }
+    },
+    "sarima": {
+      "algorithm": "SARIMAX",
+      "hyperparameters": {
+        "order": [
+          1,
+          0,
+          1
+        ],
+        "seasonal_order": [
+          1,
+          0,
+          0,
+          7
+        ],
+        "enforce_stationarity": false,
+        "enforce_invertibility": false
+      }
+    },
+    "random_forest": {
+      "algorithm": "RandomForestRegressor",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 12,
+        "min_samples_leaf": 2,
+        "random_state": 42
+      }
+    },
+    "xgboost": {
+      "algorithm": "XGBRegressor",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "random_state": 42
+      }
+    },
+    "lightgbm": {
+      "algorithm": "LGBMRegressor",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 5.0,
+        "random_state": 42
+      }
+    },
+    "ridge_regression": {
+      "algorithm": "Pipeline(StandardScaler, Ridge)",
+      "hyperparameters": {
+        "alpha": 10.0,
+        "fit_intercept": true,
+        "solver": "auto",
+        "regularization": "L2 Frobenius Norm Penalty",
+        "random_state": 42
+      }
+    },
+    "ridge": {
+      "algorithm": "Pipeline(StandardScaler, Ridge)",
+      "hyperparameters": {
+        "alpha": 10.0,
+        "fit_intercept": true,
+        "solver": "auto",
+        "regularization": "L2 Frobenius Norm Penalty",
+        "random_state": 42
+      }
+    }
+  },
+  "targets_evaluated": [
+    "Sales",
+    "Quantity"
+  ],
+  "training_observations": 1056,
+  "holdout_test_observations": 264,
+  "feature_count": 26,
+  "timing_metrics": {
+    "Sales": {
+      "baseline": {
+        "fit_sec": 0.022114899998996407,
+        "pred_ms": 13.379500014707446
+      },
+      "sarima": {
+        "fit_sec": 0.7400856999447569,
+        "pred_ms": 15.424600045662373
+      },
+      "random_forest": {
+        "fit_sec": 0.5912115999963135,
+        "pred_ms": 95.72330000810325
+      },
+      "xgboost": {
+        "fit_sec": 2.1535838999552652,
+        "pred_ms": 20.401199988555163
+      },
+      "lightgbm": {
+        "fit_sec": 0.4226791000110097,
+        "pred_ms": 4.778399947099388
+      },
+      "ridge_regression": {
+        "fit_sec": 0.01713460002792999,
+        "pred_ms": 4.1806999943219125
+      },
+      "ridge": {
+        "fit_sec": 0.010170100023970008,
+        "pred_ms": 4.050899995490909
+      }
+    },
+    "Quantity": {
+      "baseline": {
+        "fit_sec": 0.009259699960239232,
+        "pred_ms": 14.489800028968602
+      },
+      "sarima": {
+        "fit_sec": 0.9807077000150457,
+        "pred_ms": 12.29739998234436
+      },
+      "random_forest": {
+        "fit_sec": 0.5630851000314578,
+        "pred_ms": 90.25649999966845
+      },
+      "xgboost": {
+        "fit_sec": 0.3077252000221051,
+        "pred_ms": 8.825499971862882
+      },
+      "lightgbm": {
+        "fit_sec": 0.11964629997964948,
+        "pred_ms": 5.306800012476742
+      },
+      "ridge_regression": {
+        "fit_sec": 0.011895400006324053,
+        "pred_ms": 3.974699997343123
+      },
+      "ridge": {
+        "fit_sec": 0.010755800001788884,
+        "pred_ms": 3.90249997144565
+      }
+    }
+  },
+  "saved_artifacts": [
+    "models\\artifacts\\lightgbm_quantity_model.joblib",
+    "models\\artifacts\\lightgbm_sales_model.joblib",
+    "models\\artifacts\\random_forest_quantity_model.joblib",
+    "models\\artifacts\\random_forest_sales_model.joblib",
+    "models\\artifacts\\ridge_quantity_model.joblib",
+    "models\\artifacts\\ridge_regression_quantity_model.joblib",
+    "models\\artifacts\\ridge_regression_sales_model.joblib",
+    "models\\artifacts\\ridge_sales_model.joblib",
+    "models\\artifacts\\xgboost_quantity_model.joblib",
+    "models\\artifacts\\xgboost_sales_model.joblib"
+  ]
+}

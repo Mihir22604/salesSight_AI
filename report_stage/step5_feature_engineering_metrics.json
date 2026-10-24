@@ -1,0 +1,143 @@
+{
+  "macro_feature_matrix": {
+    "rows": 1320,
+    "columns": 42,
+    "engineered_features_count": 38,
+    "feature_names": [
+      "day_of_month",
+      "day_of_week",
+      "month",
+      "quarter",
+      "is_weekend",
+      "sin_dow",
+      "cos_dow",
+      "sin_month",
+      "cos_month",
+      "lag_1_rev",
+      "lag_7_rev",
+      "lag_14_rev",
+      "lag_28_rev",
+      "lag_1_qty",
+      "lag_7_qty",
+      "lag_14_qty",
+      "lag_28_qty",
+      "rolling_mean_7_rev",
+      "rolling_mean_14_rev",
+      "rolling_mean_28_rev",
+      "rolling_std_7_rev",
+      "rolling_std_28_rev",
+      "rolling_min_7_rev",
+      "rolling_max_7_rev",
+      "rolling_max_28_rev",
+      "rolling_mean_7_qty",
+      "rolling_mean_14_qty",
+      "rolling_mean_28_qty",
+      "rolling_std_7_qty",
+      "rolling_std_28_qty",
+      "asp_proxy_t1",
+      "mom_ratio_7_28",
+      "vol_ratio_7_28",
+      "volume_tier",
+      "price_tier",
+      "dow_month_cross",
+      "momentum_asp_interaction",
+      "weekend_momentum_interaction"
+    ],
+    "warmup_rows_dropped": 28,
+    "start_date": "2011-02-18",
+    "end_date": "2014-09-29"
+  },
+  "feature_families": {
+    "calendar_and_cyclical": [
+      "day_of_month",
+      "day_of_week",
+      "month",
+      "quarter",
+      "is_weekend",
+      "sin_dow",
+      "cos_dow",
+      "sin_month",
+      "cos_month"
+    ],
+    "autoregressive_lags": [
+      "lag_1_rev",
+      "lag_7_rev",
+      "lag_14_rev",
+      "lag_28_rev",
+      "lag_1_qty",
+      "lag_7_qty",
+      "lag_14_qty",
+      "lag_28_qty"
+    ],
+    "shifted_rolling_stats": [
+      "rolling_mean_7_rev",
+      "rolling_mean_14_rev",
+      "rolling_mean_28_rev",
+      "rolling_std_7_rev",
+      "rolling_std_28_rev",
+      "rolling_min_7_rev",
+      "rolling_max_7_rev",
+      "rolling_max_28_rev",
+      "rolling_mean_7_qty",
+      "rolling_mean_14_qty",
+      "rolling_mean_28_qty",
+      "rolling_std_7_qty",
+      "rolling_std_28_qty"
+    ],
+    "commercial_ratios": [
+      "asp_proxy_t1",
+      "mom_ratio_7_28",
+      "vol_ratio_7_28"
+    ],
+    "discretized_tiers": [
+      "volume_tier",
+      "price_tier"
+    ],
+    "interaction_features": [
+      "dow_month_cross",
+      "momentum_asp_interaction",
+      "weekend_momentum_interaction"
+    ]
+  },
+  "ratio_summary_statistics": {
+    "asp_proxy_t1": {
+      "mean": 14.78,
+      "median": 0.0,
+      "std": 34.42
+    },
+    "mom_ratio_7_28": {
+      "mean": 1.05,
+      "median": 0.79,
+      "expansion_days_pct": 36.52,
+      "contraction_days_pct": 52.05
+    },
+    "vol_ratio_7_28": {
+      "mean": 0.81,
+      "median": 0.68
+    }
+  },
+  "binning_distributions": {
+    "volume_tier": {
+      "small_0_to_10_pct": 27.58,
+      "medium_11_to_40_pct": 33.33,
+      "bulk_over_40_pct": 39.09
+    },
+    "price_tier": {
+      "economy_under_20_pct": 74.55,
+      "standard_20_to_50_pct": 19.02,
+      "premium_over_50_pct": 6.44
+    }
+  },
+  "figure_artifacts": {
+    "ratio_distributions": "report_stage\\assets\\step5_features_distributions.png",
+    "cyclical_encodings": "report_stage\\assets\\step5_features_cyclical_encoding.png",
+    "binning_tiers": "report_stage\\assets\\step5_features_binning_discretization.png",
+    "rolling_momentum": "report_stage\\assets\\step5_features_rolling_momentum.png"
+  },
+  "saved_datasets": {
+    "macro_features_parquet": "data\\processed\\macro_features.parquet",
+    "macro_features_csv": "data\\processed\\macro_features.csv",
+    "category_features_parquet": "data\\processed\\category_features.parquet",
+    "category_features_csv": "data\\processed\\category_features.csv"
+  }
+}

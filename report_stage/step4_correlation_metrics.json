@@ -1,0 +1,1070 @@
+{
+  "transaction_analysis": {
+    "correlations": {
+      "features": [
+        "Sales",
+        "Quantity",
+        "UnitPrice",
+        "Discount",
+        "DiscountRate",
+        "GrossSales"
+      ],
+      "sample_size": 2172,
+      "pearson_matrix": {
+        "Sales": {
+          "Sales": 1.0,
+          "Quantity": 0.3467697092158309,
+          "UnitPrice": 0.7329554292634942,
+          "Discount": 0.690828312019213,
+          "DiscountRate": 0.07711741806802028,
+          "GrossSales": 0.9971270881744867
+        },
+        "Quantity": {
+          "Sales": 0.3467697092158309,
+          "Quantity": 1.0,
+          "UnitPrice": 0.007875445119400097,
+          "Discount": 0.23503312492419676,
+          "DiscountRate": 0.13321496577713904,
+          "GrossSales": 0.345299389006008
+        },
+        "UnitPrice": {
+          "Sales": 0.7329554292634942,
+          "Quantity": 0.007875445119400097,
+          "UnitPrice": 1.0,
+          "Discount": 0.4759629840601489,
+          "DiscountRate": 0.08012503323607129,
+          "GrossSales": 0.7276666117814391
+        },
+        "Discount": {
+          "Sales": 0.690828312019213,
+          "Quantity": 0.23503312492419676,
+          "UnitPrice": 0.4759629840601489,
+          "Discount": 1.0,
+          "DiscountRate": 0.3256209471121391,
+          "GrossSales": 0.743609950017456
+        },
+        "DiscountRate": {
+          "Sales": 0.07711741806802028,
+          "Quantity": 0.13321496577713904,
+          "UnitPrice": 0.08012503323607129,
+          "Discount": 0.3256209471121391,
+          "DiscountRate": 1.0,
+          "GrossSales": 0.1054280802471061
+        },
+        "GrossSales": {
+          "Sales": 0.9971270881744867,
+          "Quantity": 0.345299389006008,
+          "UnitPrice": 0.7276666117814391,
+          "Discount": 0.743609950017456,
+          "DiscountRate": 0.1054280802471061,
+          "GrossSales": 1.0
+        }
+      },
+      "spearman_matrix": {
+        "Sales": {
+          "Sales": 1.0,
+          "Quantity": 0.6306906576987319,
+          "UnitPrice": 0.7154107322569118,
+          "Discount": 0.2892458585716263,
+          "DiscountRate": 0.1510908095219709,
+          "GrossSales": 0.9985369137281376
+        },
+        "Quantity": {
+          "Sales": 0.6306906576987319,
+          "Quantity": 1.0,
+          "UnitPrice": -0.027514551257861092,
+          "Discount": 0.23950437762252522,
+          "DiscountRate": 0.15075434349288314,
+          "GrossSales": 0.6317037200423818
+        },
+        "UnitPrice": {
+          "Sales": 0.7154107322569118,
+          "Quantity": -0.027514551257861092,
+          "UnitPrice": 1.0,
+          "Discount": 0.24461204176209078,
+          "DiscountRate": 0.1536413078306483,
+          "GrossSales": 0.71751180510102
+        },
+        "Discount": {
+          "Sales": 0.2892458585716263,
+          "Quantity": 0.23950437762252522,
+          "UnitPrice": 0.24461204176209078,
+          "Discount": 1.0,
+          "DiscountRate": 0.9593628438166035,
+          "GrossSales": 0.3316749643593466
+        },
+        "DiscountRate": {
+          "Sales": 0.1510908095219709,
+          "Quantity": 0.15075434349288314,
+          "UnitPrice": 0.1536413078306483,
+          "Discount": 0.9593628438166035,
+          "DiscountRate": 1.0,
+          "GrossSales": 0.1985398825482513
+        },
+        "GrossSales": {
+          "Sales": 0.9985369137281376,
+          "Quantity": 0.6317037200423818,
+          "UnitPrice": 0.71751180510102,
+          "Discount": 0.3316749643593466,
+          "DiscountRate": 0.1985398825482513,
+          "GrossSales": 1.0
+        }
+      },
+      "pearson_p_values": {
+        "Sales": {
+          "Sales": 0.0,
+          "Quantity": 2.100844689244216e-62,
+          "UnitPrice": 0.0,
+          "Discount": 5.607044781904679e-308,
+          "DiscountRate": 0.0003215070108652105,
+          "GrossSales": 0.0
+        },
+        "Quantity": {
+          "Sales": 2.100844689244216e-62,
+          "Quantity": 0.0,
+          "UnitPrice": 0.7137478251846209,
+          "Discount": 1.2098087993834885e-28,
+          "DiscountRate": 4.585529536134318e-10,
+          "GrossSales": 7.394938520227613e-62
+        },
+        "UnitPrice": {
+          "Sales": 0.0,
+          "Quantity": 0.7137478251846209,
+          "UnitPrice": 0.0,
+          "Discount": 3.236081128430402e-123,
+          "DiscountRate": 0.00018544105455399059,
+          "GrossSales": 0.0
+        },
+        "Discount": {
+          "Sales": 5.607044781904679e-308,
+          "Quantity": 1.2098087993834885e-28,
+          "UnitPrice": 3.236081128430402e-123,
+          "Discount": 0.0,
+          "DiscountRate": 8.038956741385348e-55,
+          "GrossSales": 0.0
+        },
+        "DiscountRate": {
+          "Sales": 0.0003215070108652105,
+          "Quantity": 4.585529536134318e-10,
+          "UnitPrice": 0.00018544105455399059,
+          "Discount": 8.038956741385348e-55,
+          "DiscountRate": 0.0,
+          "GrossSales": 8.464271601246694e-07
+        },
+        "GrossSales": {
+          "Sales": 0.0,
+          "Quantity": 7.394938520227613e-62,
+          "UnitPrice": 0.0,
+          "Discount": 0.0,
+          "DiscountRate": 8.464271601246694e-07,
+          "GrossSales": 0.0
+        }
+      },
+      "spearman_p_values": {
+        "Sales": {
+          "Sales": 0.0,
+          "Quantity": 2.986608030183277e-241,
+          "UnitPrice": 0.0,
+          "Discount": 3.981631637210702e-43,
+          "DiscountRate": 1.4607978537435397e-12,
+          "GrossSales": 0.0
+        },
+        "Quantity": {
+          "Sales": 2.986608030183277e-241,
+          "Quantity": 0.0,
+          "UnitPrice": 0.19990843899461166,
+          "Discount": 1.035644671445261e-29,
+          "DiscountRate": 1.6386808654290663e-12,
+          "GrossSales": 2.970065644177304e-242
+        },
+        "UnitPrice": {
+          "Sales": 0.0,
+          "Quantity": 0.19990843899461175,
+          "UnitPrice": 0.0,
+          "Discount": 5.868080449845842e-31,
+          "DiscountRate": 6.062422607263297e-13,
+          "GrossSales": 0.0
+        },
+        "Discount": {
+          "Sales": 3.981631637210702e-43,
+          "Quantity": 1.035644671445261e-29,
+          "UnitPrice": 5.868080449846013e-31,
+          "Discount": 0.0,
+          "DiscountRate": 0.0,
+          "GrossSales": 6.239027477846495e-57
+        },
+        "DiscountRate": {
+          "Sales": 1.4607978537435397e-12,
+          "Quantity": 1.6386808654290663e-12,
+          "UnitPrice": 6.062422607263297e-13,
+          "Discount": 0.0,
+          "DiscountRate": 0.0,
+          "GrossSales": 9.569729847582299e-21
+        },
+        "GrossSales": {
+          "Sales": 0.0,
+          "Quantity": 2.970065644177304e-242,
+          "UnitPrice": 0.0,
+          "Discount": 6.239027477846495e-57,
+          "DiscountRate": 9.569729847582299e-21,
+          "GrossSales": 0.0
+        }
+      },
+      "sales_correlations": {
+        "pearson": {
+          "Sales": 1.0,
+          "Quantity": 0.3467697092158309,
+          "UnitPrice": 0.7329554292634942,
+          "Discount": 0.690828312019213,
+          "DiscountRate": 0.07711741806802028,
+          "GrossSales": 0.9971270881744867
+        },
+        "spearman": {
+          "Sales": 1.0,
+          "Quantity": 0.6306906576987319,
+          "UnitPrice": 0.7154107322569118,
+          "Discount": 0.2892458585716263,
+          "DiscountRate": 0.1510908095219709,
+          "GrossSales": 0.9985369137281376
+        }
+      },
+      "quantity_correlations": {
+        "pearson": {
+          "Sales": 0.3467697092158309,
+          "Quantity": 1.0,
+          "UnitPrice": 0.007875445119400097,
+          "Discount": 0.23503312492419676,
+          "DiscountRate": 0.13321496577713904,
+          "GrossSales": 0.345299389006008
+        },
+        "spearman": {
+          "Sales": 0.6306906576987319,
+          "Quantity": 1.0,
+          "UnitPrice": -0.027514551257861092,
+          "Discount": 0.23950437762252522,
+          "DiscountRate": 0.15075434349288314,
+          "GrossSales": 0.6317037200423818
+        }
+      }
+    },
+    "collinear_pairs_screened": [
+      {
+        "feature_1": "Sales",
+        "feature_2": "GrossSales",
+        "correlation": 0.9971,
+        "abs_correlation": 0.9971,
+        "recommendation": "Prune one feature or combine; collinearity |r| = 1.00 >= 0.85"
+      }
+    ],
+    "vif_analysis": [
+      {
+        "feature": "Discount",
+        "vif": 1.53,
+        "r_squared": 0.3476,
+        "tolerance": 0.6524,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "UnitPrice",
+        "vif": 1.32,
+        "r_squared": 0.2433,
+        "tolerance": 0.7567,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "DiscountRate",
+        "vif": 1.13,
+        "r_squared": 0.1156,
+        "tolerance": 0.8844,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "Quantity",
+        "vif": 1.08,
+        "r_squared": 0.0717,
+        "tolerance": 0.9283,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      }
+    ],
+    "price_elasticity": {
+      "spearman_rho": -0.0275,
+      "p_value": 0.19990843899461166,
+      "interpretation": "Negative rank correlation confirms downward-sloping economic demand curve (higher price -> lower unit volume)."
+    }
+  },
+  "timeseries_analysis": {
+    "correlations": {
+      "observations": 1320,
+      "features": [
+        "Sales",
+        "Quantity",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_28",
+        "rolling_mean_7",
+        "rolling_mean_14",
+        "rolling_mean_28",
+        "rolling_std_7",
+        "rolling_std_28",
+        "DayOfWeek",
+        "DayOfMonth",
+        "Month",
+        "IsWeekend"
+      ],
+      "pearson_matrix": {
+        "Sales": {
+          "Sales": 1.0,
+          "Quantity": 0.7184253691948312,
+          "lag_1": 0.09327752978501207,
+          "lag_7": 0.065742937331567,
+          "lag_14": 0.05640914611805396,
+          "lag_28": 0.022331293082325097,
+          "rolling_mean_7": 0.13116444623489265,
+          "rolling_mean_14": 0.1666307482565188,
+          "rolling_mean_28": 0.1673915045294306,
+          "rolling_std_7": 0.10019532076491912,
+          "rolling_std_28": 0.14374881851670798,
+          "DayOfWeek": -0.024805310586573023,
+          "DayOfMonth": 0.01865275871765865,
+          "Month": 0.04059273976881896,
+          "IsWeekend": -0.026584172022597535
+        },
+        "Quantity": {
+          "Sales": 0.7184253691948312,
+          "Quantity": 1.0,
+          "lag_1": 0.16483619536468777,
+          "lag_7": 0.12885447763025248,
+          "lag_14": 0.09881872479282576,
+          "lag_28": 0.02629724991153691,
+          "rolling_mean_7": 0.2100002971620389,
+          "rolling_mean_14": 0.2652002081130406,
+          "rolling_mean_28": 0.26421139163300617,
+          "rolling_std_7": 0.15004883873480182,
+          "rolling_std_28": 0.21492898772771235,
+          "DayOfWeek": -0.009231100752326395,
+          "DayOfMonth": 0.005869802504263353,
+          "Month": -0.10451478294862557,
+          "IsWeekend": -0.03180831535561087
+        },
+        "lag_1": {
+          "Sales": 0.09327752978501207,
+          "Quantity": 0.16483619536468777,
+          "lag_1": 1.0,
+          "lag_7": 0.09031282489144311,
+          "lag_14": 0.1592095195020792,
+          "lag_28": 0.04892593508138649,
+          "rolling_mean_7": 0.43525398800285936,
+          "rolling_mean_14": 0.3607690450106214,
+          "rolling_mean_28": 0.2827590137524564,
+          "rolling_std_7": 0.4069099216955767,
+          "rolling_std_28": 0.28057013140810505,
+          "DayOfWeek": -0.015102017094981164,
+          "DayOfMonth": 0.039068919031427875,
+          "Month": 0.03856549981057286,
+          "IsWeekend": -0.013058799310399424
+        },
+        "lag_7": {
+          "Sales": 0.065742937331567,
+          "Quantity": 0.12885447763025248,
+          "lag_1": 0.09031282489144311,
+          "lag_7": 1.0,
+          "lag_14": 0.06886540243955129,
+          "lag_28": 0.04342767264521248,
+          "rolling_mean_7": 0.4359329955159679,
+          "rolling_mean_14": 0.35419606418780797,
+          "rolling_mean_28": 0.29653862527539093,
+          "rolling_std_7": 0.40895968827835005,
+          "rolling_std_28": 0.2845372044831985,
+          "DayOfWeek": -0.0176079405650905,
+          "DayOfMonth": 0.00841532994677821,
+          "Month": -0.022476267806410568,
+          "IsWeekend": -0.02318798999532719
+        },
+        "lag_14": {
+          "Sales": 0.05640914611805396,
+          "Quantity": 0.09881872479282576,
+          "lag_1": 0.1592095195020792,
+          "lag_7": 0.06886540243955129,
+          "lag_14": 1.0,
+          "lag_28": 0.06361447692282698,
+          "rolling_mean_7": 0.14741108028675287,
+          "rolling_mean_14": 0.3624806329870898,
+          "rolling_mean_28": 0.3193903138704985,
+          "rolling_std_7": 0.09808348190402959,
+          "rolling_std_28": 0.2821811377698361,
+          "DayOfWeek": -0.017618368348680302,
+          "DayOfMonth": 0.013701019113598273,
+          "Month": -0.035655292138676,
+          "IsWeekend": -0.023306982037909246
+        },
+        "lag_28": {
+          "Sales": 0.022331293082325097,
+          "Quantity": 0.02629724991153691,
+          "lag_1": 0.04892593508138649,
+          "lag_7": 0.04342767264521248,
+          "lag_14": 0.06361447692282698,
+          "lag_28": 1.0,
+          "rolling_mean_7": 0.09404285679391657,
+          "rolling_mean_14": 0.12151385608411927,
+          "rolling_mean_28": 0.2869624989026636,
+          "rolling_std_7": 0.04922350099549939,
+          "rolling_std_28": 0.23733638450150155,
+          "DayOfWeek": -0.01511041122445934,
+          "DayOfMonth": 0.018115656173458224,
+          "Month": -0.0553846842652612,
+          "IsWeekend": -0.022127767866960555
+        },
+        "rolling_mean_7": {
+          "Sales": 0.13116444623489265,
+          "Quantity": 0.2100002971620389,
+          "lag_1": 0.43525398800285936,
+          "lag_7": 0.4359329955159679,
+          "lag_14": 0.14741108028675287,
+          "lag_28": 0.09404285679391657,
+          "rolling_mean_7": 1.0,
+          "rolling_mean_14": 0.8053067490420488,
+          "rolling_mean_28": 0.6524726966454141,
+          "rolling_std_7": 0.9325174302411091,
+          "rolling_std_28": 0.6347761552465039,
+          "DayOfWeek": -0.0005749234189092186,
+          "DayOfMonth": 0.020256871112210296,
+          "Month": -0.005316720261255829,
+          "IsWeekend": -0.00031413744195823436
+        },
+        "rolling_mean_14": {
+          "Sales": 0.1666307482565188,
+          "Quantity": 0.2652002081130406,
+          "lag_1": 0.3607690450106214,
+          "lag_7": 0.35419606418780797,
+          "lag_14": 0.3624806329870898,
+          "lag_28": 0.12151385608411927,
+          "rolling_mean_7": 0.8053067490420488,
+          "rolling_mean_14": 1.0,
+          "rolling_mean_28": 0.8414201169512849,
+          "rolling_std_7": 0.7032417304415716,
+          "rolling_std_28": 0.7897840167706656,
+          "DayOfWeek": -0.0009902436108212337,
+          "DayOfMonth": 0.0022735343297354523,
+          "Month": -0.06133350176326933,
+          "IsWeekend": -0.0009669626344071445
+        },
+        "rolling_mean_28": {
+          "Sales": 0.1673915045294306,
+          "Quantity": 0.26421139163300617,
+          "lag_1": 0.2827590137524564,
+          "lag_7": 0.29653862527539093,
+          "lag_14": 0.3193903138704985,
+          "lag_28": 0.2869624989026636,
+          "rolling_mean_7": 0.6524726966454141,
+          "rolling_mean_14": 0.8414201169512849,
+          "rolling_mean_28": 1.0,
+          "rolling_std_7": 0.5254239968849677,
+          "rolling_std_28": 0.8908283682910157,
+          "DayOfWeek": -0.00032628213920716663,
+          "DayOfMonth": -0.0075644045992341235,
+          "Month": -0.11736753919489584,
+          "IsWeekend": -0.00048338738202397083
+        },
+        "rolling_std_7": {
+          "Sales": 0.10019532076491912,
+          "Quantity": 0.15004883873480182,
+          "lag_1": 0.4069099216955767,
+          "lag_7": 0.40895968827835005,
+          "lag_14": 0.09808348190402959,
+          "lag_28": 0.04922350099549939,
+          "rolling_mean_7": 0.9325174302411091,
+          "rolling_mean_14": 0.7032417304415716,
+          "rolling_mean_28": 0.5254239968849677,
+          "rolling_std_7": 1.0,
+          "rolling_std_28": 0.5953416509876458,
+          "DayOfWeek": 0.007237218318980999,
+          "DayOfMonth": 0.011105500111699003,
+          "Month": 0.08225681013063692,
+          "IsWeekend": 0.0033378228036913685
+        },
+        "rolling_std_28": {
+          "Sales": 0.14374881851670798,
+          "Quantity": 0.21492898772771235,
+          "lag_1": 0.28057013140810505,
+          "lag_7": 0.2845372044831985,
+          "lag_14": 0.2821811377698361,
+          "lag_28": 0.23733638450150155,
+          "rolling_mean_7": 0.6347761552465039,
+          "rolling_mean_14": 0.7897840167706656,
+          "rolling_mean_28": 0.8908283682910157,
+          "rolling_std_7": 0.5953416509876458,
+          "rolling_std_28": 1.0,
+          "DayOfWeek": -0.002557034286259169,
+          "DayOfMonth": -0.020926051897593827,
+          "Month": -0.0056665145741702635,
+          "IsWeekend": -0.0031727174556187942
+        },
+        "DayOfWeek": {
+          "Sales": -0.024805310586573023,
+          "Quantity": -0.009231100752326395,
+          "lag_1": -0.015102017094981164,
+          "lag_7": -0.0176079405650905,
+          "lag_14": -0.017618368348680302,
+          "lag_28": -0.01511041122445934,
+          "rolling_mean_7": -0.0005749234189092186,
+          "rolling_mean_14": -0.0009902436108212337,
+          "rolling_mean_28": -0.00032628213920716663,
+          "rolling_std_7": 0.007237218318980999,
+          "rolling_std_28": -0.002557034286259169,
+          "DayOfWeek": 1.0,
+          "DayOfMonth": -0.0032018091554518427,
+          "Month": 0.0010184710361670517,
+          "IsWeekend": 0.7905840621482434
+        },
+        "DayOfMonth": {
+          "Sales": 0.01865275871765865,
+          "Quantity": 0.005869802504263353,
+          "lag_1": 0.039068919031427875,
+          "lag_7": 0.00841532994677821,
+          "lag_14": 0.013701019113598273,
+          "lag_28": 0.018115656173458224,
+          "rolling_mean_7": 0.020256871112210296,
+          "rolling_mean_14": 0.0022735343297354523,
+          "rolling_mean_28": -0.0075644045992341235,
+          "rolling_std_7": 0.011105500111699003,
+          "rolling_std_28": -0.020926051897593827,
+          "DayOfWeek": -0.0032018091554518427,
+          "DayOfMonth": 1.0,
+          "Month": -0.0019428858283431986,
+          "IsWeekend": -0.0034781741386438973
+        },
+        "Month": {
+          "Sales": 0.04059273976881896,
+          "Quantity": -0.10451478294862557,
+          "lag_1": 0.03856549981057286,
+          "lag_7": -0.022476267806410568,
+          "lag_14": -0.035655292138676,
+          "lag_28": -0.0553846842652612,
+          "rolling_mean_7": -0.005316720261255829,
+          "rolling_mean_14": -0.06133350176326933,
+          "rolling_mean_28": -0.11736753919489584,
+          "rolling_std_7": 0.08225681013063692,
+          "rolling_std_28": -0.0056665145741702635,
+          "DayOfWeek": 0.0010184710361670517,
+          "DayOfMonth": -0.0019428858283431986,
+          "Month": 1.0,
+          "IsWeekend": 0.0035549889388804094
+        },
+        "IsWeekend": {
+          "Sales": -0.026584172022597535,
+          "Quantity": -0.03180831535561087,
+          "lag_1": -0.013058799310399424,
+          "lag_7": -0.02318798999532719,
+          "lag_14": -0.023306982037909246,
+          "lag_28": -0.022127767866960555,
+          "rolling_mean_7": -0.00031413744195823436,
+          "rolling_mean_14": -0.0009669626344071445,
+          "rolling_mean_28": -0.00048338738202397083,
+          "rolling_std_7": 0.0033378228036913685,
+          "rolling_std_28": -0.0031727174556187942,
+          "DayOfWeek": 0.7905840621482434,
+          "DayOfMonth": -0.0034781741386438973,
+          "Month": 0.0035549889388804094,
+          "IsWeekend": 1.0
+        }
+      },
+      "spearman_matrix": {
+        "Sales": {
+          "Sales": 1.0,
+          "Quantity": 0.9811242003424071,
+          "lag_1": 0.2622733232439234,
+          "lag_7": 0.27063755144583657,
+          "lag_14": 0.2401833495736692,
+          "lag_28": 0.17302580352792676,
+          "rolling_mean_7": 0.31581433103491424,
+          "rolling_mean_14": 0.3377072247874032,
+          "rolling_mean_28": 0.32432579940330347,
+          "rolling_std_7": 0.26510156938516244,
+          "rolling_std_28": 0.24669797441962815,
+          "DayOfWeek": 0.0008846752654038933,
+          "DayOfMonth": -0.03556167707993703,
+          "Month": -0.0814236907160637,
+          "IsWeekend": -0.016879836547589566
+        },
+        "Quantity": {
+          "Sales": 0.9811242003424071,
+          "Quantity": 1.0,
+          "lag_1": 0.2658753496020512,
+          "lag_7": 0.28176631407589675,
+          "lag_14": 0.23905623289283762,
+          "lag_28": 0.17811812292188633,
+          "rolling_mean_7": 0.32286157474148075,
+          "rolling_mean_14": 0.34228169069724124,
+          "rolling_mean_28": 0.3265947702457177,
+          "rolling_std_7": 0.26844400364668497,
+          "rolling_std_28": 0.24243440146607353,
+          "DayOfWeek": 0.004650346620597975,
+          "DayOfMonth": -0.03086269109644879,
+          "Month": -0.11413309035125635,
+          "IsWeekend": -0.01661967340492251
+        },
+        "lag_1": {
+          "Sales": 0.2622733232439234,
+          "Quantity": 0.2658753496020512,
+          "lag_1": 1.0,
+          "lag_7": 0.19788893986945102,
+          "lag_14": 0.1923679734797109,
+          "lag_28": 0.1915046476449493,
+          "rolling_mean_7": 0.4914847240287428,
+          "rolling_mean_14": 0.45204673242118165,
+          "rolling_mean_28": 0.3947231220612236,
+          "rolling_std_7": 0.41761078357099274,
+          "rolling_std_28": 0.30112718695671153,
+          "DayOfWeek": 0.04785044229848488,
+          "DayOfMonth": 0.020378902678497852,
+          "Month": -0.08059186780468713,
+          "IsWeekend": 0.029730371919819962
+        },
+        "lag_7": {
+          "Sales": 0.27063755144583657,
+          "Quantity": 0.28176631407589675,
+          "lag_1": 0.19788893986945102,
+          "lag_7": 1.0,
+          "lag_14": 0.27541747088230834,
+          "lag_28": 0.2005715156514632,
+          "rolling_mean_7": 0.4704569085254201,
+          "rolling_mean_14": 0.4402638373859276,
+          "rolling_mean_28": 0.4090843053551598,
+          "rolling_std_7": 0.39543087303460506,
+          "rolling_std_28": 0.30608349512646377,
+          "DayOfWeek": 0.0017948680895015336,
+          "DayOfMonth": 0.05402371997551973,
+          "Month": -0.1091954368872733,
+          "IsWeekend": -0.017055390656624515
+        },
+        "lag_14": {
+          "Sales": 0.2401833495736692,
+          "Quantity": 0.23905623289283762,
+          "lag_1": 0.1923679734797109,
+          "lag_7": 0.27541747088230834,
+          "lag_14": 1.0,
+          "lag_28": 0.24549475889906833,
+          "rolling_mean_7": 0.27504887507612014,
+          "rolling_mean_14": 0.40740566832942315,
+          "rolling_mean_28": 0.422936887610997,
+          "rolling_std_7": 0.22151115650508452,
+          "rolling_std_28": 0.30803304169454027,
+          "DayOfWeek": 0.0022328143204543333,
+          "DayOfMonth": -0.005328593693653929,
+          "Month": -0.09743340927404362,
+          "IsWeekend": -0.017525336224958492
+        },
+        "lag_28": {
+          "Sales": 0.17302580352792676,
+          "Quantity": 0.17811812292188633,
+          "lag_1": 0.1915046476449493,
+          "lag_7": 0.2005715156514632,
+          "lag_14": 0.24549475889906833,
+          "lag_28": 1.0,
+          "rolling_mean_7": 0.24284680738728115,
+          "rolling_mean_14": 0.2720229989636341,
+          "rolling_mean_28": 0.37726334365751435,
+          "rolling_std_7": 0.20382079636543612,
+          "rolling_std_28": 0.2690231506666687,
+          "DayOfWeek": 0.0009662305735730622,
+          "DayOfMonth": -0.01681657864126731,
+          "Month": -0.11229291894312238,
+          "IsWeekend": -0.02006768715034912
+        },
+        "rolling_mean_7": {
+          "Sales": 0.31581433103491424,
+          "Quantity": 0.32286157474148075,
+          "lag_1": 0.4914847240287428,
+          "lag_7": 0.4704569085254201,
+          "lag_14": 0.27504887507612014,
+          "lag_28": 0.24284680738728115,
+          "rolling_mean_7": 1.0,
+          "rolling_mean_14": 0.8536029882383124,
+          "rolling_mean_28": 0.7047575888001022,
+          "rolling_std_7": 0.9616244202563151,
+          "rolling_std_28": 0.6362376699081096,
+          "DayOfWeek": 0.012280391214577727,
+          "DayOfMonth": 0.02681414758805501,
+          "Month": -0.030306549959856956,
+          "IsWeekend": 0.005310070525171833
+        },
+        "rolling_mean_14": {
+          "Sales": 0.3377072247874032,
+          "Quantity": 0.34228169069724124,
+          "lag_1": 0.45204673242118165,
+          "lag_7": 0.4402638373859276,
+          "lag_14": 0.40740566832942315,
+          "lag_28": 0.2720229989636341,
+          "rolling_mean_7": 0.8536029882383124,
+          "rolling_mean_14": 1.0,
+          "rolling_mean_28": 0.8485980209997632,
+          "rolling_std_7": 0.7928507661660174,
+          "rolling_std_28": 0.7816917027951744,
+          "DayOfWeek": 0.0006795396149670131,
+          "DayOfMonth": 0.007074190125254547,
+          "Month": -0.021416394743389154,
+          "IsWeekend": -0.003039040522071265
+        },
+        "rolling_mean_28": {
+          "Sales": 0.32432579940330347,
+          "Quantity": 0.3265947702457177,
+          "lag_1": 0.3947231220612236,
+          "lag_7": 0.4090843053551598,
+          "lag_14": 0.422936887610997,
+          "lag_28": 0.37726334365751435,
+          "rolling_mean_7": 0.7047575888001022,
+          "rolling_mean_14": 0.8485980209997632,
+          "rolling_mean_28": 1.0,
+          "rolling_std_7": 0.6390420665972923,
+          "rolling_std_28": 0.9093261771655338,
+          "DayOfWeek": -0.002425065015857787,
+          "DayOfMonth": -0.014464489653999142,
+          "Month": -0.038288608702659516,
+          "IsWeekend": -0.003421592384874538
+        },
+        "rolling_std_7": {
+          "Sales": 0.26510156938516244,
+          "Quantity": 0.26844400364668497,
+          "lag_1": 0.41761078357099274,
+          "lag_7": 0.39543087303460506,
+          "lag_14": 0.22151115650508452,
+          "lag_28": 0.20382079636543612,
+          "rolling_mean_7": 0.9616244202563151,
+          "rolling_mean_14": 0.7928507661660174,
+          "rolling_mean_28": 0.6390420665972923,
+          "rolling_std_7": 1.0,
+          "rolling_std_28": 0.6229210391741128,
+          "DayOfWeek": 0.016518600083655133,
+          "DayOfMonth": 0.014878669583722914,
+          "Month": 0.05042487793559206,
+          "IsWeekend": 0.008982209001214993
+        },
+        "rolling_std_28": {
+          "Sales": 0.24669797441962815,
+          "Quantity": 0.24243440146607353,
+          "lag_1": 0.30112718695671153,
+          "lag_7": 0.30608349512646377,
+          "lag_14": 0.30803304169454027,
+          "lag_28": 0.2690231506666687,
+          "rolling_mean_7": 0.6362376699081096,
+          "rolling_mean_14": 0.7816917027951744,
+          "rolling_mean_28": 0.9093261771655338,
+          "rolling_std_7": 0.6229210391741128,
+          "rolling_std_28": 1.0,
+          "DayOfWeek": -0.004119205297220469,
+          "DayOfMonth": -0.01654608506668015,
+          "Month": 0.13599027964060562,
+          "IsWeekend": -0.004393535803226559
+        },
+        "DayOfWeek": {
+          "Sales": 0.0008846752654038933,
+          "Quantity": 0.004650346620597975,
+          "lag_1": 0.04785044229848488,
+          "lag_7": 0.0017948680895015336,
+          "lag_14": 0.0022328143204543333,
+          "lag_28": 0.0009662305735730622,
+          "rolling_mean_7": 0.012280391214577727,
+          "rolling_mean_14": 0.0006795396149670131,
+          "rolling_mean_28": -0.002425065015857787,
+          "rolling_std_7": 0.016518600083655133,
+          "rolling_std_28": -0.004119205297220469,
+          "DayOfWeek": 1.0,
+          "DayOfMonth": -0.003201702817041078,
+          "Month": 0.0007584141151340128,
+          "IsWeekend": 0.7911076100814766
+        },
+        "DayOfMonth": {
+          "Sales": -0.03556167707993703,
+          "Quantity": -0.03086269109644879,
+          "lag_1": 0.020378902678497852,
+          "lag_7": 0.05402371997551973,
+          "lag_14": -0.005328593693653929,
+          "lag_28": -0.01681657864126731,
+          "rolling_mean_7": 0.02681414758805501,
+          "rolling_mean_14": 0.007074190125254547,
+          "rolling_mean_28": -0.014464489653999142,
+          "rolling_std_7": 0.014878669583722914,
+          "rolling_std_28": -0.01654608506668015,
+          "DayOfWeek": -0.003201702817041078,
+          "DayOfMonth": 1.0,
+          "Month": -0.0020545701978266087,
+          "IsWeekend": -0.0034695793189805702
+        },
+        "Month": {
+          "Sales": -0.0814236907160637,
+          "Quantity": -0.11413309035125635,
+          "lag_1": -0.08059186780468713,
+          "lag_7": -0.1091954368872733,
+          "lag_14": -0.09743340927404362,
+          "lag_28": -0.11229291894312238,
+          "rolling_mean_7": -0.030306549959856956,
+          "rolling_mean_14": -0.021416394743389154,
+          "rolling_mean_28": -0.038288608702659516,
+          "rolling_std_7": 0.05042487793559206,
+          "rolling_std_28": 0.13599027964060562,
+          "DayOfWeek": 0.0007584141151340128,
+          "DayOfMonth": -0.0020545701978266087,
+          "Month": 1.0,
+          "IsWeekend": 0.003222252996807137
+        },
+        "IsWeekend": {
+          "Sales": -0.016879836547589566,
+          "Quantity": -0.01661967340492251,
+          "lag_1": 0.029730371919819962,
+          "lag_7": -0.017055390656624515,
+          "lag_14": -0.017525336224958492,
+          "lag_28": -0.02006768715034912,
+          "rolling_mean_7": 0.005310070525171833,
+          "rolling_mean_14": -0.003039040522071265,
+          "rolling_mean_28": -0.003421592384874538,
+          "rolling_std_7": 0.008982209001214993,
+          "rolling_std_28": -0.004393535803226559,
+          "DayOfWeek": 0.7911076100814766,
+          "DayOfMonth": -0.0034695793189805702,
+          "Month": 0.003222252996807137,
+          "IsWeekend": 1.0
+        }
+      },
+      "sales_correlations": {
+        "pearson": {
+          "Sales": 1.0,
+          "Quantity": 0.7184253691948312,
+          "lag_1": 0.09327752978501207,
+          "lag_7": 0.065742937331567,
+          "lag_14": 0.05640914611805396,
+          "lag_28": 0.022331293082325097,
+          "rolling_mean_7": 0.13116444623489265,
+          "rolling_mean_14": 0.1666307482565188,
+          "rolling_mean_28": 0.1673915045294306,
+          "rolling_std_7": 0.10019532076491912,
+          "rolling_std_28": 0.14374881851670798,
+          "DayOfWeek": -0.024805310586573023,
+          "DayOfMonth": 0.01865275871765865,
+          "Month": 0.04059273976881896,
+          "IsWeekend": -0.026584172022597535
+        },
+        "spearman": {
+          "Sales": 1.0,
+          "Quantity": 0.9811242003424071,
+          "lag_1": 0.2622733232439234,
+          "lag_7": 0.27063755144583657,
+          "lag_14": 0.2401833495736692,
+          "lag_28": 0.17302580352792676,
+          "rolling_mean_7": 0.31581433103491424,
+          "rolling_mean_14": 0.3377072247874032,
+          "rolling_mean_28": 0.32432579940330347,
+          "rolling_std_7": 0.26510156938516244,
+          "rolling_std_28": 0.24669797441962815,
+          "DayOfWeek": 0.0008846752654038933,
+          "DayOfMonth": -0.03556167707993703,
+          "Month": -0.0814236907160637,
+          "IsWeekend": -0.016879836547589566
+        }
+      },
+      "quantity_correlations": {
+        "pearson": {
+          "Sales": 0.7184253691948312,
+          "Quantity": 1.0,
+          "lag_1": 0.16483619536468777,
+          "lag_7": 0.12885447763025248,
+          "lag_14": 0.09881872479282576,
+          "lag_28": 0.02629724991153691,
+          "rolling_mean_7": 0.2100002971620389,
+          "rolling_mean_14": 0.2652002081130406,
+          "rolling_mean_28": 0.26421139163300617,
+          "rolling_std_7": 0.15004883873480182,
+          "rolling_std_28": 0.21492898772771235,
+          "DayOfWeek": -0.009231100752326395,
+          "DayOfMonth": 0.005869802504263353,
+          "Month": -0.10451478294862557,
+          "IsWeekend": -0.03180831535561087
+        },
+        "spearman": {
+          "Sales": 0.9811242003424071,
+          "Quantity": 1.0,
+          "lag_1": 0.2658753496020512,
+          "lag_7": 0.28176631407589675,
+          "lag_14": 0.23905623289283762,
+          "lag_28": 0.17811812292188633,
+          "rolling_mean_7": 0.32286157474148075,
+          "rolling_mean_14": 0.34228169069724124,
+          "rolling_mean_28": 0.3265947702457177,
+          "rolling_std_7": 0.26844400364668497,
+          "rolling_std_28": 0.24243440146607353,
+          "DayOfWeek": 0.004650346620597975,
+          "DayOfMonth": -0.03086269109644879,
+          "Month": -0.11413309035125635,
+          "IsWeekend": -0.01661967340492251
+        }
+      }
+    },
+    "collinear_pairs_screened": [
+      {
+        "feature_1": "rolling_mean_7",
+        "feature_2": "rolling_std_7",
+        "correlation": 0.9325,
+        "abs_correlation": 0.9325,
+        "recommendation": "Prune one feature or combine; collinearity |r| = 0.93 >= 0.85"
+      },
+      {
+        "feature_1": "rolling_mean_28",
+        "feature_2": "rolling_std_28",
+        "correlation": 0.8908,
+        "abs_correlation": 0.8908,
+        "recommendation": "Prune one feature or combine; collinearity |r| = 0.89 >= 0.85"
+      }
+    ],
+    "vif_analysis": [
+      {
+        "feature": "rolling_mean_7",
+        "vif": 14.83,
+        "r_squared": 0.9326,
+        "tolerance": 0.0674,
+        "severity": "Severe Multicollinearity (Prune Candidate)",
+        "risk_level": "High"
+      },
+      {
+        "feature": "rolling_std_7",
+        "vif": 11.06,
+        "r_squared": 0.9096,
+        "tolerance": 0.0904,
+        "severity": "Severe Multicollinearity (Prune Candidate)",
+        "risk_level": "High"
+      },
+      {
+        "feature": "rolling_mean_28",
+        "vif": 9.03,
+        "r_squared": 0.8893,
+        "tolerance": 0.1107,
+        "severity": "Moderate Multicollinearity",
+        "risk_level": "Moderate"
+      },
+      {
+        "feature": "rolling_std_28",
+        "vif": 6.54,
+        "r_squared": 0.8471,
+        "tolerance": 0.1529,
+        "severity": "Moderate Multicollinearity",
+        "risk_level": "Moderate"
+      },
+      {
+        "feature": "rolling_mean_14",
+        "vif": 6.51,
+        "r_squared": 0.8464,
+        "tolerance": 0.1536,
+        "severity": "Moderate Multicollinearity",
+        "risk_level": "Moderate"
+      },
+      {
+        "feature": "lag_1",
+        "vif": 1.27,
+        "r_squared": 0.2138,
+        "tolerance": 0.7862,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "lag_7",
+        "vif": 1.26,
+        "r_squared": 0.2036,
+        "tolerance": 0.7964,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "lag_14",
+        "vif": 1.25,
+        "r_squared": 0.2016,
+        "tolerance": 0.7984,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "lag_28",
+        "vif": 1.15,
+        "r_squared": 0.1331,
+        "tolerance": 0.8669,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "Month",
+        "vif": 1.09,
+        "r_squared": 0.0824,
+        "tolerance": 0.9176,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      },
+      {
+        "feature": "DayOfWeek",
+        "vif": 1.0,
+        "r_squared": 0.0021,
+        "tolerance": 0.9979,
+        "severity": "Low Collinearity (Safe)",
+        "risk_level": "Low"
+      }
+    ]
+  },
+  "summary_recommendations": {
+    "multicollinarity_pruning": [
+      "rolling_mean_7",
+      "rolling_std_7"
+    ],
+    "primary_sales_drivers": [
+      {
+        "feature": "rolling_mean_28",
+        "pearson_r": 0.1674
+      },
+      {
+        "feature": "rolling_mean_14",
+        "pearson_r": 0.1666
+      },
+      {
+        "feature": "rolling_std_28",
+        "pearson_r": 0.1437
+      },
+      {
+        "feature": "rolling_mean_7",
+        "pearson_r": 0.1312
+      },
+      {
+        "feature": "rolling_std_7",
+        "pearson_r": 0.1002
+      }
+    ],
+    "primary_quantity_drivers": [
+      {
+        "feature": "rolling_mean_14",
+        "pearson_r": 0.2652
+      },
+      {
+        "feature": "rolling_mean_28",
+        "pearson_r": 0.2642
+      },
+      {
+        "feature": "rolling_std_28",
+        "pearson_r": 0.2149
+      },
+      {
+        "feature": "rolling_mean_7",
+        "pearson_r": 0.21
+      },
+      {
+        "feature": "lag_1",
+        "pearson_r": 0.1648
+      }
+    ]
+  },
+  "figure_artifacts": {
+    "pearson_heatmap": "report_stage\\assets\\step4_correlation_pearson_heatmap.png",
+    "spearman_heatmap": "report_stage\\assets\\step4_correlation_spearman_heatmap.png",
+    "target_relationships": "report_stage\\assets\\step4_correlation_target_relationships.png",
+    "vif_diagnostics": "report_stage\\assets\\step4_correlation_vif_collinearity.png",
+    "timeseries_heatmap": "report_stage\\assets\\step4_correlation_timeseries_heatmap.png"
+  }
+}

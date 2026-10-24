@@ -1,0 +1,141 @@
+{
+  "holdout_split_metadata": {
+    "total_observations": 1320,
+    "train_observations": 1056,
+    "test_observations": 264,
+    "train_ratio": 0.8,
+    "test_ratio": 0.2,
+    "train_start_date": "2011-02-18",
+    "train_end_date": "2014-01-08",
+    "test_start_date": "2014-01-09",
+    "test_end_date": "2014-09-29",
+    "boundary_split_date": "2014-01-09",
+    "calendar_gap_days": 0
+  },
+  "category_split_metadata": {
+    "category_train_rows": 8448,
+    "category_test_rows": 2112,
+    "cutoff_date": "2014-01-09"
+  },
+  "expanding_folds": [
+    {
+      "fold_index": 1,
+      "train_start_idx": 0,
+      "train_end_idx": 779,
+      "train_days_count": 780,
+      "test_start_idx": 780,
+      "test_end_idx": 869,
+      "test_days_count": 90,
+      "train_start_date": "2011-02-18",
+      "train_end_date": "2013-04-07",
+      "test_start_date": "2013-04-08",
+      "test_end_date": "2013-07-06",
+      "horizon_days": 90
+    },
+    {
+      "fold_index": 2,
+      "train_start_idx": 0,
+      "train_end_idx": 869,
+      "train_days_count": 870,
+      "test_start_idx": 870,
+      "test_end_idx": 959,
+      "test_days_count": 90,
+      "train_start_date": "2011-02-18",
+      "train_end_date": "2013-07-06",
+      "test_start_date": "2013-07-07",
+      "test_end_date": "2013-10-04",
+      "horizon_days": 90
+    },
+    {
+      "fold_index": 3,
+      "train_start_idx": 0,
+      "train_end_idx": 959,
+      "train_days_count": 960,
+      "test_start_idx": 960,
+      "test_end_idx": 1049,
+      "test_days_count": 90,
+      "train_start_date": "2011-02-18",
+      "train_end_date": "2013-10-04",
+      "test_start_date": "2013-10-05",
+      "test_end_date": "2014-01-02",
+      "horizon_days": 90
+    },
+    {
+      "fold_index": 4,
+      "train_start_idx": 0,
+      "train_end_idx": 1049,
+      "train_days_count": 1050,
+      "test_start_idx": 1050,
+      "test_end_idx": 1139,
+      "test_days_count": 90,
+      "train_start_date": "2011-02-18",
+      "train_end_date": "2014-01-02",
+      "test_start_date": "2014-01-03",
+      "test_end_date": "2014-04-02",
+      "horizon_days": 90
+    }
+  ],
+  "statistical_parity_audit": {
+    "Sales": {
+      "train": {
+        "count": 1056,
+        "mean": 1206.67,
+        "median": 0.0,
+        "std": 3402.79,
+        "zero_count": 675,
+        "zero_pct": 63.92
+      },
+      "test": {
+        "count": 264,
+        "mean": 1921.1,
+        "median": 555.89,
+        "std": 3676.27,
+        "zero_count": 113,
+        "zero_pct": 42.8
+      },
+      "ks_test": {
+        "statistic": 0.2225,
+        "p_value": 0.0,
+        "distribution_shift_detected": true
+      }
+    },
+    "Quantity": {
+      "train": {
+        "count": 1056,
+        "mean": 33.68,
+        "median": 0.0,
+        "std": 65.97,
+        "zero_count": 675,
+        "zero_pct": 63.92
+      },
+      "test": {
+        "count": 264,
+        "mean": 61.94,
+        "median": 26.0,
+        "std": 94.72,
+        "zero_count": 113,
+        "zero_pct": 42.8
+      },
+      "ks_test": {
+        "statistic": 0.2112,
+        "p_value": 0.0,
+        "distribution_shift_detected": true
+      }
+    }
+  },
+  "figure_artifacts": {
+    "timeline_partition": "report_stage\\assets\\step7_split_timeline_visualization.png",
+    "target_distributions": "report_stage\\assets\\step7_split_target_distribution_comparison.png",
+    "zero_density_comparison": "report_stage\\assets\\step7_split_sparsity_and_zero_density.png"
+  },
+  "saved_datasets": {
+    "train_macro_features_parquet": "data\\processed\\train_macro_features.parquet",
+    "train_macro_features_csv": "data\\processed\\train_macro_features.csv",
+    "test_macro_features_parquet": "data\\processed\\test_macro_features.parquet",
+    "test_macro_features_csv": "data\\processed\\test_macro_features.csv",
+    "train_category_features_parquet": "data\\processed\\train_category_features.parquet",
+    "train_category_features_csv": "data\\processed\\train_category_features.csv",
+    "test_category_features_parquet": "data\\processed\\test_category_features.parquet",
+    "test_category_features_csv": "data\\processed\\test_category_features.csv"
+  }
+}

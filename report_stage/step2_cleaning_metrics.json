@@ -1,0 +1,132 @@
+{
+  "initial_null_counts": {
+    "ReportsTo": 146,
+    "Fax": 785,
+    "Phone": 232,
+    "PostalCode": 518
+  },
+  "exact_duplicates_removed": 0,
+  "invalid_records_removed": 0,
+  "outlier_detection_iqr": {
+    "UnitPrice": {
+      "q25": 10.155000000000001,
+      "q75": 36.9,
+      "iqr": 26.744999999999997,
+      "lower_fence": 0.0,
+      "upper_fence": 77.01749999999998,
+      "outlier_count": 194,
+      "outlier_pct": 8.931860036832411
+    },
+    "Quantity": {
+      "q25": 10.0,
+      "q75": 30.0,
+      "iqr": 20.0,
+      "lower_fence": 0.0,
+      "upper_fence": 60.0,
+      "outlier_count": 89,
+      "outlier_pct": 4.097605893186004
+    },
+    "Sales": {
+      "q25": 154.25625,
+      "q75": 796.4,
+      "iqr": 642.14375,
+      "lower_fence": 0.0,
+      "upper_fence": 1759.615625,
+      "outlier_count": 195,
+      "outlier_pct": 8.977900552486188
+    }
+  },
+  "columns_purged_for_leakage": [
+    "COS",
+    "GP",
+    "Freight",
+    "ShipperID",
+    "EmployeeName",
+    "Extension",
+    "HireDate",
+    "Office",
+    "ReportsTo",
+    "Title",
+    "YearSalary",
+    "ContactName",
+    "Fax",
+    "Phone",
+    "PostalCode",
+    "CountryCode",
+    "Latitude",
+    "Longitude",
+    "CategoryDescription",
+    "OrderDate"
+  ],
+  "final_shape": {
+    "rows": 2172,
+    "columns": 16
+  },
+  "cleaning_operations": [
+    {
+      "operation": "Deduplicate exact matching rows",
+      "affected_rows": 0,
+      "method": "drop_duplicates()",
+      "rationale": "Exact matching order-line records artificially duplicate transactions and distort true product demand."
+    },
+    {
+      "operation": "Standardize OrderDate to UTC timestamp (Order_Date)",
+      "affected_rows": 2172,
+      "method": "pd.to_datetime(utc=True)",
+      "rationale": "Uniform datetime formatting enables chronological sorting, expanding-window validation, and daily aggregation."
+    },
+    {
+      "operation": "Rename Order to OrderID",
+      "affected_rows": 2172,
+      "method": "Column rename",
+      "rationale": "Aligns primary transaction identifier with enterprise relational schema standards."
+    },
+    {
+      "operation": "Derive UnitPrice and DiscountRate from Gross Sales and Quantity",
+      "affected_rows": 2172,
+      "method": "UnitPrice = (Sales + Discount) / Quantity; DiscountRate = Discount / (Sales + Discount)",
+      "rationale": "Discount is dollar concession; back-calculating Gross Sales recovers exact positive catalog UnitPrice and fractional DiscountRate."
+    },
+    {
+      "operation": "Filter non-positive quantities and non-positive sales",
+      "affected_rows": 0,
+      "method": "Filter: Quantity > 0 and Sales > 0",
+      "rationale": "Forward sales demand must be strictly positive; non-positive entries reflect cancellations or corrupted records."
+    },
+    {
+      "operation": "Normalize categorical text casing and strip whitespace",
+      "affected_rows": 2172,
+      "method": "str.strip().str.title()",
+      "rationale": "Inconsistent casing fragments SKU sales across duplicate product name variants."
+    },
+    {
+      "operation": "Perform IQR outlier detection across financial metrics",
+      "affected_rows": 478,
+      "method": "1.5 * IQR Fencing (Audited, not deleted)",
+      "rationale": "Large commercial wholesale orders represent authentic high-demand spikes; auditing flags them for tree models without discarding legitimate sales."
+    },
+    {
+      "operation": "Purge post-transaction accounting leakage (COS, GP) and administrative attributes",
+      "affected_rows": 2172,
+      "method": "Drop columns: ['COS', 'GP', 'Freight', 'ShipperID', 'EmployeeName', 'Extension', 'HireDate', 'Office', 'ReportsTo', 'Title', 'YearSalary', 'ContactName', 'Fax', 'Phone', 'PostalCode', 'CountryCode', 'Latitude', 'Longitude', 'CategoryDescription', 'OrderDate']",
+      "rationale": "COS and GP are computed post-sale (Sales = COS + GP); keeping them causes 100% target leakage. Admin fields contain non-generalizable noise."
+    }
+  ],
+  "cleaned_transactions_parquet": "data\\processed\\cleaned_transactions.parquet",
+  "aggregated_datasets": {
+    "macro_parquet": "data\\processed\\all_products_daily.parquet",
+    "macro_csv": "data\\processed\\all_products_daily.csv",
+    "category_parquet": "data\\processed\\category_daily.parquet",
+    "category_csv": "data\\processed\\category_daily.csv",
+    "sku_parquet": "data\\processed\\sku_daily.parquet",
+    "sku_csv": "data\\processed\\sku_daily.csv"
+  },
+  "macro_summary": {
+    "calendar_days": 1348,
+    "total_revenue": 1783147.7005999999,
+    "total_quantity": 52057,
+    "total_orders": 836,
+    "zero_revenue_days": 815,
+    "zero_revenue_pct": 60.459940652818986
+  }
+}

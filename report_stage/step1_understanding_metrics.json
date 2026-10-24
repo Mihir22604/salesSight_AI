@@ -1,0 +1,196 @@
+{
+  "dimensions": {
+    "rows": 2172,
+    "columns": 33
+  },
+  "column_classification": {
+    "numerical_count": 19,
+    "categorical_count": 14,
+    "numerical_columns": [
+      "Order",
+      "ProductID",
+      "Quantity",
+      "Sales",
+      "Discount",
+      "COS",
+      "GP",
+      "EmployeeID",
+      "CustomerID",
+      "ShipperID",
+      "Freight",
+      "Extension",
+      "Office",
+      "ReportsTo",
+      "YearSalary",
+      "PostalCode",
+      "Latitude",
+      "Longitude",
+      "SupplierID"
+    ],
+    "categorical_columns": [
+      "OrderDate",
+      "EmployeeName",
+      "HireDate",
+      "Title",
+      "Customer",
+      "ContactName",
+      "Fax",
+      "Phone",
+      "CountryCode",
+      "City",
+      "Country",
+      "ProductName",
+      "CategoryName",
+      "CategoryDescription"
+    ],
+    "datetime_columns": [
+      "OrderDate",
+      "HireDate"
+    ]
+  },
+  "chunk_vs_non_chunk": {
+    "chunk_fields": {
+      "order_chunk": [
+        "Order",
+        "OrderDate"
+      ],
+      "customer_chunk": [
+        "CustomerID",
+        "Customer",
+        "ContactName",
+        "Phone",
+        "Fax",
+        "City",
+        "Country",
+        "CountryCode",
+        "PostalCode",
+        "Latitude",
+        "Longitude"
+      ],
+      "fulfillment_and_staff_chunk": [
+        "EmployeeID",
+        "EmployeeName",
+        "Title",
+        "HireDate",
+        "Office",
+        "Extension",
+        "ReportsTo",
+        "YearSalary",
+        "ShipperID",
+        "Freight"
+      ]
+    },
+    "non_chunk_fields": {
+      "merchandise_item": [
+        "ProductID",
+        "ProductName",
+        "CategoryName",
+        "CategoryDescription",
+        "SupplierID"
+      ],
+      "line_economics": [
+        "Quantity",
+        "Sales",
+        "Discount"
+      ],
+      "accounting_outcomes": [
+        "COS",
+        "GP"
+      ]
+    }
+  },
+  "dtypes": {
+    "Order": "int64",
+    "ProductID": "int64",
+    "Quantity": "int64",
+    "Sales": "float64",
+    "Discount": "float64",
+    "COS": "float64",
+    "GP": "float64",
+    "EmployeeID": "int64",
+    "CustomerID": "int64",
+    "OrderDate": "str",
+    "ShipperID": "int64",
+    "Freight": "float64",
+    "EmployeeName": "str",
+    "Extension": "int64",
+    "HireDate": "str",
+    "Office": "int64",
+    "ReportsTo": "float64",
+    "Title": "str",
+    "YearSalary": "int64",
+    "Customer": "str",
+    "ContactName": "str",
+    "Fax": "str",
+    "Phone": "str",
+    "PostalCode": "float64",
+    "CountryCode": "str",
+    "Latitude": "float64",
+    "Longitude": "float64",
+    "City": "str",
+    "Country": "str",
+    "ProductName": "str",
+    "SupplierID": "int64",
+    "CategoryName": "str",
+    "CategoryDescription": "str"
+  },
+  "target_analysis": {
+    "Sales": {
+      "total_sum": 1783147.7005999999,
+      "mean": 820.9703962246776,
+      "median": 355.068,
+      "std": 2002.5283683086968,
+      "min": 2.12,
+      "max": 43755.1201,
+      "skewness": 10.27413040481709,
+      "kurtosis": 155.1699474163519,
+      "zero_count": 0,
+      "iqr": 642.14375,
+      "p25": 154.25625,
+      "p75": 796.4,
+      "p90": 1648.6350000000007,
+      "p95": 2637.3140999999987,
+      "p99": 8322.913499999991
+    },
+    "Quantity": {
+      "total_sum": 52057.0,
+      "mean": 23.96731123388582,
+      "median": 20.0,
+      "std": 19.1893601418091,
+      "min": 1.0,
+      "max": 150.0,
+      "skewness": 1.8701177202236752,
+      "kurtosis": 5.194497389892786,
+      "zero_count": 0,
+      "iqr": 20.0,
+      "p25": 10.0,
+      "p75": 30.0,
+      "p90": 50.0,
+      "p95": 60.0,
+      "p99": 100.0
+    }
+  },
+  "date_profile": {
+    "start_date": "2011-01-21",
+    "end_date": "2014-09-29",
+    "calendar_span_days": 1348,
+    "active_dates_count": 533,
+    "inactive_dates_count": 815,
+    "sparsity_pct": 60.459940652818986
+  },
+  "entity_counts": {
+    "unique_orders": 836,
+    "unique_products": 77,
+    "unique_categories": 8,
+    "unique_customers": 90,
+    "unique_employees": 9,
+    "lines_per_order_avg": 2.598086124401914
+  },
+  "mathematical_identity": {
+    "equation": "Sales = COS + GP",
+    "holds_strictly": true,
+    "max_residual": 9.999999999621423e-05,
+    "mean_residual": 1.8416208637324036e-07,
+    "design_directive": "COS and GP are computed post-sale. They must be purged to prevent 100% target leakage."
+  }
+}

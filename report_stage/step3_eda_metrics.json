@@ -1,0 +1,918 @@
+{
+  "target_distributions": {
+    "transaction_level": {
+      "sales": {
+        "name": "Transaction Sales ($)",
+        "count": 2172,
+        "sum": 1783147.7006,
+        "mean": 820.9703962246778,
+        "std": 2002.5283683086964,
+        "median": 355.068,
+        "min": 2.12,
+        "max": 43755.1201,
+        "p25": 154.25625,
+        "p75": 796.4,
+        "p90": 1648.6350000000007,
+        "p95": 2637.3140999999987,
+        "p99": 8322.913499999991,
+        "iqr": 642.14375,
+        "skewness": 10.26703364930396,
+        "kurtosis": 154.81021120412,
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "nonzero_mean": 820.9703962246778,
+        "nonzero_median": 355.068
+      },
+      "quantity": {
+        "name": "Transaction Quantity (units)",
+        "count": 2172,
+        "sum": 52057.0,
+        "mean": 23.96731123388582,
+        "std": 19.189360141809118,
+        "median": 20.0,
+        "min": 1.0,
+        "max": 150.0,
+        "p25": 10.0,
+        "p75": 30.0,
+        "p90": 50.0,
+        "p95": 60.0,
+        "p99": 100.0,
+        "iqr": 20.0,
+        "skewness": 1.8688259546222792,
+        "kurtosis": 5.179786068401995,
+        "zero_count": 0,
+        "zero_pct": 0.0,
+        "nonzero_mean": 23.96731123388582,
+        "nonzero_median": 20.0
+      }
+    },
+    "macro_daily_level": {
+      "sales": {
+        "name": "Daily Total Sales ($)",
+        "count": 1348,
+        "sum": 1783147.7005999999,
+        "mean": 1322.8098669139465,
+        "std": 3438.553480796381,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 60133.4286,
+        "p25": 0.0,
+        "p75": 1255.241125,
+        "p90": 3841.9319999999993,
+        "p95": 6537.064124999994,
+        "p99": 15991.36288199998,
+        "iqr": 1255.241125,
+        "skewness": 6.8860740121850625,
+        "kurtosis": 80.16980011755099,
+        "zero_count": 815,
+        "zero_pct": 60.459940652818986,
+        "nonzero_mean": 3345.4928716697937,
+        "nonzero_median": 1862.292
+      },
+      "quantity": {
+        "name": "Daily Total Quantity (units)",
+        "count": 1348,
+        "sum": 52057.0,
+        "mean": 38.617952522255194,
+        "std": 72.9612595414478,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 592.0,
+        "p25": 0.0,
+        "p75": 54.0,
+        "p90": 124.0,
+        "p95": 196.9499999999996,
+        "p99": 322.0,
+        "iqr": 54.0,
+        "skewness": 2.911398469517136,
+        "kurtosis": 11.279140326619212,
+        "zero_count": 815,
+        "zero_pct": 60.459940652818986,
+        "nonzero_mean": 97.66791744840525,
+        "nonzero_median": 75.0
+      }
+    }
+  },
+  "category_performance": {
+    "total_categories": 8,
+    "category_rankings": [
+      {
+        "category": "Womens Wear",
+        "total_sales": 680927.5204,
+        "total_quantity": 7837,
+        "transaction_count": 317,
+        "unique_orders": 271,
+        "sales_share_pct": 38.19,
+        "quantity_share_pct": 15.05,
+        "avg_unit_price": 89.31,
+        "median_unit_price": 32.62,
+        "avg_line_sales": 2148.04,
+        "avg_line_quantity": 24.72
+      },
+      {
+        "category": "Sportwear",
+        "total_sales": 292017.7239,
+        "total_quantity": 14155,
+        "transaction_count": 571,
+        "unique_orders": 437,
+        "sales_share_pct": 16.38,
+        "quantity_share_pct": 27.19,
+        "avg_unit_price": 22.16,
+        "median_unit_price": 14.67,
+        "avg_line_sales": 511.41,
+        "avg_line_quantity": 24.79
+      },
+      {
+        "category": "Men\u00b4S Footwear",
+        "total_sales": 251159.0775,
+        "total_quantity": 3849,
+        "transaction_count": 157,
+        "unique_orders": 143,
+        "sales_share_pct": 14.09,
+        "quantity_share_pct": 7.39,
+        "avg_unit_price": 71.98,
+        "median_unit_price": 41.79,
+        "avg_line_sales": 1599.74,
+        "avg_line_quantity": 24.52
+      },
+      {
+        "category": "Ladies\u00b4Footwear",
+        "total_sales": 147568.7725,
+        "total_quantity": 4633,
+        "transaction_count": 199,
+        "unique_orders": 184,
+        "sales_share_pct": 8.28,
+        "quantity_share_pct": 8.9,
+        "avg_unit_price": 35.36,
+        "median_unit_price": 34.02,
+        "avg_line_sales": 741.55,
+        "avg_line_quantity": 23.28
+      },
+      {
+        "category": "Men\u00b4S Clothes",
+        "total_sales": 139150.148,
+        "total_quantity": 7263,
+        "transaction_count": 311,
+        "unique_orders": 280,
+        "sales_share_pct": 7.8,
+        "quantity_share_pct": 13.95,
+        "avg_unit_price": 20.78,
+        "median_unit_price": 21.94,
+        "avg_line_sales": 447.43,
+        "avg_line_quantity": 23.35
+      },
+      {
+        "category": "Babywear",
+        "total_sales": 137651.8298,
+        "total_quantity": 7223,
+        "transaction_count": 318,
+        "unique_orders": 282,
+        "sales_share_pct": 7.72,
+        "quantity_share_pct": 13.88,
+        "avg_unit_price": 19.48,
+        "median_unit_price": 17.06,
+        "avg_line_sales": 432.87,
+        "avg_line_quantity": 22.71
+      },
+      {
+        "category": "Children\u00b4S Wear",
+        "total_sales": 84821.196,
+        "total_quantity": 2267,
+        "transaction_count": 98,
+        "unique_orders": 95,
+        "sales_share_pct": 4.76,
+        "quantity_share_pct": 4.35,
+        "avg_unit_price": 39.63,
+        "median_unit_price": 41.74,
+        "avg_line_sales": 865.52,
+        "avg_line_quantity": 23.13
+      },
+      {
+        "category": "Bath Clothes",
+        "total_sales": 49851.4325,
+        "total_quantity": 4830,
+        "transaction_count": 201,
+        "unique_orders": 184,
+        "sales_share_pct": 2.8,
+        "quantity_share_pct": 9.28,
+        "avg_unit_price": 11.06,
+        "median_unit_price": 10.62,
+        "avg_line_sales": 248.02,
+        "avg_line_quantity": 24.03
+      }
+    ]
+  },
+  "pareto_concentration": {
+    "total_skus": 77,
+    "sales_pareto": {
+      "50_percent_revenue": {
+        "target_pct": 50.0,
+        "skus_required": 9,
+        "sku_percentage": 11.69,
+        "marginal_sku": "Small Crocodile Boots"
+      },
+      "80_percent_revenue": {
+        "target_pct": 80.0,
+        "skus_required": 30,
+        "sku_percentage": 38.96,
+        "marginal_sku": "Tracksuit"
+      }
+    },
+    "quantity_pareto": {
+      "50_percent_volume": {
+        "target_pct": 50.0,
+        "skus_required": 25,
+        "sku_percentage": 32.47,
+        "marginal_sku": "Skirt"
+      },
+      "80_percent_volume": {
+        "target_pct": 80.0,
+        "skus_required": 48,
+        "sku_percentage": 62.34,
+        "marginal_sku": "Rodbye Troje"
+      }
+    },
+    "top_10_by_revenue": [
+      {
+        "ProductID": 76,
+        "ProductName": "Minnki P\u00e4lsii",
+        "CategoryName": "Womens Wear",
+        "total_sales": 408674.5049,
+        "total_quantity": 981,
+        "avg_unit_price": 433.3061538461538
+      },
+      {
+        "ProductID": 29,
+        "ProductName": "Davenport",
+        "CategoryName": "Men\u00b4S Footwear",
+        "total_sales": 102709.997,
+        "total_quantity": 746,
+        "avg_unit_price": 142.7259375
+      },
+      {
+        "ProductID": 51,
+        "ProductName": "Snake Boots",
+        "CategoryName": "Men\u00b4S Footwear",
+        "total_sales": 93455.538,
+        "total_quantity": 889,
+        "avg_unit_price": 109.704
+      },
+      {
+        "ProductID": 38,
+        "ProductName": "Le Baby Dress",
+        "CategoryName": "Womens Wear",
+        "total_sales": 53808.2215,
+        "total_quantity": 623,
+        "avg_unit_price": 88.31291666666668
+      },
+      {
+        "ProductID": 56,
+        "ProductName": "High Heels Shoes",
+        "CategoryName": "Ladies\u00b4Footwear",
+        "total_sales": 52066.353,
+        "total_quantity": 1263,
+        "avg_unit_price": 43.818000000000005
+      },
+      {
+        "ProductID": 39,
+        "ProductName": "Terence Top",
+        "CategoryName": "Womens Wear",
+        "total_sales": 50284.744,
+        "total_quantity": 801,
+        "avg_unit_price": 67.367
+      },
+      {
+        "ProductID": 44,
+        "ProductName": "Okkaba Skin Jackets",
+        "CategoryName": "Womens Wear",
+        "total_sales": 47522.477,
+        "total_quantity": 601,
+        "avg_unit_price": 82.79791666666667
+      },
+      {
+        "ProductID": 53,
+        "ProductName": "Jumpin Jack Flash Dress",
+        "CategoryName": "Womens Wear",
+        "total_sales": 46549.995,
+        "total_quantity": 722,
+        "avg_unit_price": 65.92566666666667
+      },
+      {
+        "ProductID": 52,
+        "ProductName": "Small Crocodile Boots",
+        "CategoryName": "Ladies\u00b4Footwear",
+        "total_sales": 42222.9465,
+        "total_quantity": 506,
+        "avg_unit_price": 86.39793103448275
+      },
+      {
+        "ProductID": 55,
+        "ProductName": "Feiss Fleece Trousers",
+        "CategoryName": "Sportwear",
+        "total_sales": 38854.469,
+        "total_quantity": 906,
+        "avg_unit_price": 45.0469696969697
+      }
+    ],
+    "top_10_by_quantity": [
+      {
+        "ProductID": 60,
+        "ProductName": "Game Over T-Shirt",
+        "CategoryName": "Sportwear",
+        "total_sales": 8584.9244,
+        "total_quantity": 1583,
+        "avg_unit_price": 5.694117647058823
+      },
+      {
+        "ProductID": 59,
+        "ProductName": "Rasta Wct",
+        "CategoryName": "Sportwear",
+        "total_sales": 13523.793,
+        "total_quantity": 1496,
+        "avg_unit_price": 9.273518518518518
+      },
+      {
+        "ProductID": 31,
+        "ProductName": "Rossi Bermuda Shorts",
+        "CategoryName": "Bath Clothes",
+        "total_sales": 12774.63,
+        "total_quantity": 1397,
+        "avg_unit_price": 9.474117647058824
+      },
+      {
+        "ProductID": 75,
+        "ProductName": "Bow Tie",
+        "CategoryName": "Men\u00b4S Clothes",
+        "total_sales": 10698.628,
+        "total_quantity": 1315,
+        "avg_unit_price": 8.536595744680852
+      },
+      {
+        "ProductID": 56,
+        "ProductName": "High Heels Shoes",
+        "CategoryName": "Ladies\u00b4Footwear",
+        "total_sales": 52066.353,
+        "total_quantity": 1263,
+        "avg_unit_price": 43.818000000000005
+      },
+      {
+        "ProductID": 16,
+        "ProductName": "Wimbledon T-Shirt",
+        "CategoryName": "Sportwear",
+        "total_sales": 12069.636,
+        "total_quantity": 1181,
+        "avg_unit_price": 10.693720930232558
+      },
+      {
+        "ProductID": 24,
+        "ProductName": "Samba Socker  Socks",
+        "CategoryName": "Men\u00b4S Clothes",
+        "total_sales": 5537.6395,
+        "total_quantity": 1175,
+        "avg_unit_price": 4.975
+      },
+      {
+        "ProductID": 40,
+        "ProductName": "Duck Trousers",
+        "CategoryName": "Babywear",
+        "total_sales": 21870.486,
+        "total_quantity": 1103,
+        "avg_unit_price": 20.373170731707315
+      },
+      {
+        "ProductID": 62,
+        "ProductName": "Sheat Shoes",
+        "CategoryName": "Sportwear",
+        "total_sales": 33334.478,
+        "total_quantity": 1088,
+        "avg_unit_price": 32.20102040816327
+      },
+      {
+        "ProductID": 2,
+        "ProductName": "Mr X Trousers",
+        "CategoryName": "Men\u00b4S Clothes",
+        "total_sales": 22671.6035,
+        "total_quantity": 1067,
+        "avg_unit_price": 22.75622222222222
+      }
+    ]
+  },
+  "temporal_dynamics": {
+    "day_of_week_seasonality": [
+      {
+        "day_name": "Monday",
+        "day_num": 0,
+        "total_sales": 299611.3126,
+        "total_quantity": 6609,
+        "avg_daily_sales": 1552.39,
+        "avg_daily_quantity": 34.24,
+        "active_days": 67,
+        "total_days": 193,
+        "activity_rate_pct": 34.72
+      },
+      {
+        "day_name": "Tuesday",
+        "day_num": 1,
+        "total_sales": 238308.4559,
+        "total_quantity": 6807,
+        "avg_daily_sales": 1241.19,
+        "avg_daily_quantity": 35.45,
+        "active_days": 73,
+        "total_days": 192,
+        "activity_rate_pct": 38.02
+      },
+      {
+        "day_name": "Wednesday",
+        "day_num": 2,
+        "total_sales": 276166.8685,
+        "total_quantity": 9648,
+        "avg_daily_sales": 1438.37,
+        "avg_daily_quantity": 50.25,
+        "active_days": 89,
+        "total_days": 192,
+        "activity_rate_pct": 46.35
+      },
+      {
+        "day_name": "Thursday",
+        "day_num": 3,
+        "total_sales": 242325.58849999998,
+        "total_quantity": 7815,
+        "avg_daily_sales": 1262.11,
+        "avg_daily_quantity": 40.7,
+        "active_days": 74,
+        "total_days": 192,
+        "activity_rate_pct": 38.54
+      },
+      {
+        "day_name": "Friday",
+        "day_num": 4,
+        "total_sales": 271621.8895,
+        "total_quantity": 7704,
+        "avg_daily_sales": 1407.37,
+        "avg_daily_quantity": 39.92,
+        "active_days": 81,
+        "total_days": 193,
+        "activity_rate_pct": 41.97
+      },
+      {
+        "day_name": "Saturday",
+        "day_num": 5,
+        "total_sales": 206834.537,
+        "total_quantity": 6573,
+        "avg_daily_sales": 1071.68,
+        "avg_daily_quantity": 34.06,
+        "active_days": 82,
+        "total_days": 193,
+        "activity_rate_pct": 42.49
+      },
+      {
+        "day_name": "Sunday",
+        "day_num": 6,
+        "total_sales": 248279.0486,
+        "total_quantity": 6901,
+        "avg_daily_sales": 1286.42,
+        "avg_daily_quantity": 35.76,
+        "active_days": 67,
+        "total_days": 193,
+        "activity_rate_pct": 34.72
+      }
+    ],
+    "monthly_seasonality": [
+      {
+        "month_name": "January",
+        "month_num": 1,
+        "total_sales": 189219.2645,
+        "total_quantity": 7522,
+        "avg_daily_sales": 1819.42,
+        "avg_daily_quantity": 72.33
+      },
+      {
+        "month_name": "February",
+        "month_num": 2,
+        "total_sales": 120882.7795,
+        "total_quantity": 5696,
+        "avg_daily_sales": 1069.76,
+        "avg_daily_quantity": 50.41
+      },
+      {
+        "month_name": "March",
+        "month_num": 3,
+        "total_sales": 119294.28600000001,
+        "total_quantity": 5204,
+        "avg_daily_sales": 962.05,
+        "avg_daily_quantity": 41.97
+      },
+      {
+        "month_name": "April",
+        "month_num": 4,
+        "total_sales": 119622.944,
+        "total_quantity": 4598,
+        "avg_daily_sales": 996.86,
+        "avg_daily_quantity": 38.32
+      },
+      {
+        "month_name": "May",
+        "month_num": 5,
+        "total_sales": 121983.487,
+        "total_quantity": 4156,
+        "avg_daily_sales": 983.74,
+        "avg_daily_quantity": 33.52
+      },
+      {
+        "month_name": "June",
+        "month_num": 6,
+        "total_sales": 123271.978,
+        "total_quantity": 2394,
+        "avg_daily_sales": 1027.27,
+        "avg_daily_quantity": 19.95
+      },
+      {
+        "month_name": "July",
+        "month_num": 7,
+        "total_sales": 163996.3341,
+        "total_quantity": 3915,
+        "avg_daily_sales": 1322.55,
+        "avg_daily_quantity": 31.57
+      },
+      {
+        "month_name": "August",
+        "month_num": 8,
+        "total_sales": 145398.306,
+        "total_quantity": 3392,
+        "avg_daily_sales": 1172.57,
+        "avg_daily_quantity": 27.35
+      },
+      {
+        "month_name": "September",
+        "month_num": 9,
+        "total_sales": 253332.9759,
+        "total_quantity": 5868,
+        "avg_daily_sales": 2128.85,
+        "avg_daily_quantity": 49.31
+      },
+      {
+        "month_name": "October",
+        "month_num": 10,
+        "total_sales": 134652.471,
+        "total_quantity": 3375,
+        "avg_daily_sales": 1447.88,
+        "avg_daily_quantity": 36.29
+      },
+      {
+        "month_name": "November",
+        "month_num": 11,
+        "total_sales": 46676.176999999996,
+        "total_quantity": 1315,
+        "avg_daily_sales": 518.62,
+        "avg_daily_quantity": 14.61
+      },
+      {
+        "month_name": "December",
+        "month_num": 12,
+        "total_sales": 244816.69759999998,
+        "total_quantity": 4622,
+        "avg_daily_sales": 2632.44,
+        "avg_daily_quantity": 49.7
+      }
+    ],
+    "annual_progression": [
+      {
+        "year": 2011,
+        "total_sales": 134382.855,
+        "total_quantity": 4474,
+        "active_days": 60,
+        "calendar_days": 345,
+        "avg_sales_per_calendar_day": 389.52
+      },
+      {
+        "year": 2012,
+        "total_sales": 384327.0321,
+        "total_quantity": 9340,
+        "active_days": 96,
+        "calendar_days": 366,
+        "avg_sales_per_calendar_day": 1050.07
+      },
+      {
+        "year": 2013,
+        "total_sales": 738726.9767,
+        "total_quantity": 21070,
+        "active_days": 220,
+        "calendar_days": 365,
+        "avg_sales_per_calendar_day": 2023.91
+      },
+      {
+        "year": 2014,
+        "total_sales": 525710.8368,
+        "total_quantity": 17173,
+        "active_days": 157,
+        "calendar_days": 272,
+        "avg_sales_per_calendar_day": 1932.76
+      }
+    ],
+    "zero_day_runs": {
+      "total_zero_runs": 229,
+      "mean_zero_run_days": 3.56,
+      "median_zero_run_days": 2.0,
+      "max_consecutive_zero_days": 28
+    }
+  },
+  "price_and_discount_elasticity": {
+    "discount_bands": [
+      {
+        "discount_band": "0% (Full Price)",
+        "line_count": 1325,
+        "share_pct": 61.0,
+        "total_sales": 938566.17,
+        "total_quantity": 28756,
+        "avg_quantity": 21.7,
+        "median_quantity": 18.0,
+        "avg_unit_price": 33.07
+      },
+      {
+        "discount_band": "1-5%",
+        "line_count": 199,
+        "share_pct": 9.16,
+        "total_sales": 168652.9988,
+        "total_quantity": 5583,
+        "avg_quantity": 28.06,
+        "median_quantity": 20.0,
+        "avg_unit_price": 31.29
+      },
+      {
+        "discount_band": "6-10%",
+        "line_count": 176,
+        "share_pct": 8.1,
+        "total_sales": 155661.8339,
+        "total_quantity": 4562,
+        "avg_quantity": 25.92,
+        "median_quantity": 20.0,
+        "avg_unit_price": 35.66
+      },
+      {
+        "discount_band": "11-15%",
+        "line_count": 318,
+        "share_pct": 14.64,
+        "total_sales": 352139.7729,
+        "total_quantity": 8807,
+        "avg_quantity": 27.69,
+        "median_quantity": 21.0,
+        "avg_unit_price": 45.0
+      },
+      {
+        "discount_band": "16-20%",
+        "line_count": 154,
+        "share_pct": 7.09,
+        "total_sales": 168126.925,
+        "total_quantity": 4349,
+        "avg_quantity": 28.24,
+        "median_quantity": 25.0,
+        "avg_unit_price": 48.25
+      },
+      {
+        "discount_band": "21-25%",
+        "line_count": 0,
+        "share_pct": 0.0,
+        "total_sales": 0.0,
+        "total_quantity": 0,
+        "avg_quantity": NaN,
+        "median_quantity": NaN,
+        "avg_unit_price": NaN
+      }
+    ],
+    "price_tiers": [
+      {
+        "price_tier": "Economy (Lower 33%)",
+        "line_count": 723,
+        "total_sales": 142343.3827,
+        "total_quantity": 18222,
+        "min_price": 0.99,
+        "max_price": 12.26
+      },
+      {
+        "price_tier": "Standard (Mid 33%)",
+        "line_count": 723,
+        "total_sales": 328768.758,
+        "total_quantity": 16114,
+        "min_price": 12.31,
+        "max_price": 30.13
+      },
+      {
+        "price_tier": "Premium (Upper 33%)",
+        "line_count": 726,
+        "total_sales": 1312035.5599,
+        "total_quantity": 17721,
+        "min_price": 30.14,
+        "max_price": 586.53
+      }
+    ],
+    "price_quantity_elasticity": {
+      "pearson_r": 0.0079,
+      "pearson_p_value": 0.7137478251846209,
+      "spearman_rho": -0.0275,
+      "spearman_p_value": 0.19990843899461166,
+      "economic_interpretation": "Slight negative rank correlation indicating higher unit price is weakly associated with lower volume per order line, consistent with downward-sloping demand curves."
+    }
+  },
+  "geographic_distribution": {
+    "total_countries": 21,
+    "country_rankings": [
+      {
+        "country": "Germany",
+        "total_sales": 519553.7336,
+        "total_quantity": 14093,
+        "order_count": 491,
+        "unique_orders": 192,
+        "unique_customers": 11,
+        "sales_share_pct": 29.14
+      },
+      {
+        "country": "Usa",
+        "total_sales": 186313.2205,
+        "total_quantity": 6689,
+        "order_count": 267,
+        "unique_orders": 99,
+        "unique_customers": 13,
+        "sales_share_pct": 10.45
+      },
+      {
+        "country": "France",
+        "total_sales": 175565.3015,
+        "total_quantity": 3619,
+        "order_count": 177,
+        "unique_orders": 72,
+        "unique_customers": 10,
+        "sales_share_pct": 9.85
+      },
+      {
+        "country": "Uk",
+        "total_sales": 167101.3462,
+        "total_quantity": 4176,
+        "order_count": 163,
+        "unique_orders": 62,
+        "unique_customers": 7,
+        "sales_share_pct": 9.37
+      },
+      {
+        "country": "Ireland",
+        "total_sales": 131133.1451,
+        "total_quantity": 3871,
+        "order_count": 140,
+        "unique_orders": 48,
+        "unique_customers": 1,
+        "sales_share_pct": 7.35
+      },
+      {
+        "country": "Brazil",
+        "total_sales": 120402.81749999999,
+        "total_quantity": 3430,
+        "order_count": 157,
+        "unique_orders": 64,
+        "unique_customers": 9,
+        "sales_share_pct": 6.75
+      },
+      {
+        "country": "Mexico",
+        "total_sales": 87158.3045,
+        "total_quantity": 2183,
+        "order_count": 113,
+        "unique_orders": 41,
+        "unique_customers": 5,
+        "sales_share_pct": 4.89
+      },
+      {
+        "country": "Venezuela",
+        "total_sales": 68258.6435,
+        "total_quantity": 3051,
+        "order_count": 121,
+        "unique_orders": 47,
+        "unique_customers": 4,
+        "sales_share_pct": 3.83
+      },
+      {
+        "country": "Denmark",
+        "total_sales": 59976.9277,
+        "total_quantity": 1757,
+        "order_count": 92,
+        "unique_orders": 28,
+        "unique_customers": 1,
+        "sales_share_pct": 3.36
+      },
+      {
+        "country": "Sweden",
+        "total_sales": 57162.0125,
+        "total_quantity": 1710,
+        "order_count": 78,
+        "unique_orders": 28,
+        "unique_customers": 3,
+        "sales_share_pct": 3.21
+      },
+      {
+        "country": "Austria",
+        "total_sales": 54468.486,
+        "total_quantity": 1670,
+        "order_count": 63,
+        "unique_orders": 27,
+        "unique_customers": 2,
+        "sales_share_pct": 3.05
+      },
+      {
+        "country": "Canada",
+        "total_sales": 53368.655,
+        "total_quantity": 2267,
+        "order_count": 87,
+        "unique_orders": 31,
+        "unique_customers": 3,
+        "sales_share_pct": 2.99
+      },
+      {
+        "country": "Spain",
+        "total_sales": 28460.233,
+        "total_quantity": 778,
+        "order_count": 56,
+        "unique_orders": 24,
+        "unique_customers": 5,
+        "sales_share_pct": 1.6
+      },
+      {
+        "country": "Portugal",
+        "total_sales": 14230.547,
+        "total_quantity": 397,
+        "order_count": 21,
+        "unique_orders": 10,
+        "unique_customers": 2,
+        "sales_share_pct": 0.8
+      },
+      {
+        "country": "Belgium",
+        "total_sales": 13952.710000000001,
+        "total_quantity": 567,
+        "order_count": 25,
+        "unique_orders": 9,
+        "unique_customers": 2,
+        "sales_share_pct": 0.78
+      },
+      {
+        "country": "Switzerland",
+        "total_sales": 12855.035000000002,
+        "total_quantity": 474,
+        "order_count": 26,
+        "unique_orders": 6,
+        "unique_customers": 2,
+        "sales_share_pct": 0.72
+      },
+      {
+        "country": "Italy",
+        "total_sales": 12205.309,
+        "total_quantity": 560,
+        "order_count": 35,
+        "unique_orders": 19,
+        "unique_customers": 3,
+        "sales_share_pct": 0.68
+      },
+      {
+        "country": "Argentina",
+        "total_sales": 10353.07,
+        "total_quantity": 274,
+        "order_count": 27,
+        "unique_orders": 13,
+        "unique_customers": 3,
+        "sales_share_pct": 0.58
+      },
+      {
+        "country": "Finland",
+        "total_sales": 6457.663,
+        "total_quantity": 278,
+        "order_count": 16,
+        "unique_orders": 8,
+        "unique_customers": 2,
+        "sales_share_pct": 0.36
+      },
+      {
+        "country": "Poland",
+        "total_sales": 3977.18,
+        "total_quantity": 205,
+        "order_count": 16,
+        "unique_orders": 7,
+        "unique_customers": 1,
+        "sales_share_pct": 0.22
+      },
+      {
+        "country": "Norway",
+        "total_sales": 193.36,
+        "total_quantity": 8,
+        "order_count": 1,
+        "unique_orders": 1,
+        "unique_customers": 1,
+        "sales_share_pct": 0.01
+      }
+    ]
+  },
+  "figure_artifacts": {
+    "target_distributions": "report_stage\\assets\\step3_eda_target_distributions.png",
+    "temporal_trajectory": "report_stage\\assets\\step3_eda_temporal_trajectory.png",
+    "seasonality_patterns": "report_stage\\assets\\step3_eda_seasonality_patterns.png",
+    "category_performance": "report_stage\\assets\\step3_eda_category_performance.png",
+    "pareto_concentration": "report_stage\\assets\\step3_eda_pareto_concentration.png",
+    "price_elasticity": "report_stage\\assets\\step3_eda_price_elasticity_scatter.png"
+  }
+}

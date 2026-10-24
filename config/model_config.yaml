@@ -1,0 +1,49 @@
+data_processing:
+  expected_rows: 2172
+  expected_columns: 33
+  chunksize: 10000
+  calendar_start_date: "2011-01-21"
+  calendar_end_date: "2014-09-29"
+  total_calendar_days: 1348
+  date_column: "Order_Date"
+  order_id_column: "OrderID"
+  product_id_column: "ProductID"
+  product_name_column: "ProductName"
+  category_name_column: "CategoryName"
+  revenue_target: "Line_Total"
+  quantity_target: "Quantity"
+  leakage_columns_to_drop:
+    - "COS"
+    - "GP"
+    - "Freight"
+    - "ShipperID"
+    - "ShipperCompany"
+    - "ShipName"
+    - "ShipAddress"
+    - "ShipCity"
+    - "ShipRegion"
+    - "ShipPostalCode"
+    - "ShipCountry"
+    - "CustomerName"
+    - "ContactName"
+    - "EmployeeID"
+    - "RequiredDate"
+    - "ShippedDate"
+
+product_history_thresholds:
+  sufficient_history_days: 25   # Calibrated: empirical max active days is 54
+  sufficient_history_span_days: 180
+  baseline_fallback_records: 10
+  spec_default_days: 60
+
+validation:
+  expanding_window_origins: 4
+  cv_test_sizes: [30, 60, 90]
+  metric_selection_primary: "wape"
+  tie_breaker_threshold: 0.02
+  confidence_interval_level: 0.80
+
+momentum:
+  growth_threshold_pct: 15.0
+  growth_threshold_units: 5.0
+  minimum_history_reference_units: 10.0

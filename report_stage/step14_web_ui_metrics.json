@@ -1,0 +1,47 @@
+{
+  "ui_framework": "Streamlit 1.32.0",
+  "plotting_engine": "Plotly 5.22.0",
+  "application_entrypoint": "app.py",
+  "modular_components": "src/ui/components.py",
+  "api_client": "src/ui/client.py",
+  "health_status": "healthy",
+  "backend_mode": "DIRECT_IN_PROCESS_FALLBACK",
+  "ui_controls_verified": [
+    "Forecast Start Date selector (default 2014-09-30)",
+    "Demonstration Mode toggle (2026 current date shifting)",
+    "Product Scope Selection (All Products, Category, SKU)",
+    "Prediction Horizon radio buttons (30d, 60d, 90d)",
+    "Forecasting Target toggles (Both, Sales Revenue, Order Quantity)",
+    "Model Selection Mode (Automatic WAPE Champion vs Manual Override)",
+    "RFC-4180 CSV Download Button"
+  ],
+  "display_rows_verified": [
+    "Row 1: Executive KPI Metric Cards (Revenue, Quantity, Daily Average, Peak Day, Lowest Day)",
+    "Row 2: Interactive Plotly Timeline Chart with shaded 80% confidence interval bands",
+    "Row 3A: Commercial Demand Intelligence Digest (Top-5, Momentum, Attention List, Disclaimer)",
+    "Row 3B: Daily Prediction Forecast Table with sorting and pagination",
+    "Row 4: Model Governance & Accuracy Audit Panel (WAPE, RMSE, Latency, Rationale)"
+  ],
+  "export_compliance": {
+    "rfc_4180_headers_present": true,
+    "export_columns": [
+      "Date",
+      "Predicted_Revenue_USD",
+      "Revenue_Lower_80",
+      "Revenue_Upper_80",
+      "Predicted_Quantity_Units",
+      "Quantity_Lower_80",
+      "Quantity_Upper_80",
+      "Scope",
+      "Scope_Identifier",
+      "Model_Used",
+      "Date_Mode"
+    ]
+  },
+  "sample_30d_forecast_summary": {
+    "sales_total": 1030.1,
+    "sales_peak_day": "2014-10-06",
+    "quantity_total": 0.0,
+    "quantity_peak_day": "2014-09-30"
+  }
+}

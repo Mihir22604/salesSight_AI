@@ -1,0 +1,109 @@
+{
+  "benchmarks": {
+    "health": {
+      "endpoint": "GET /health",
+      "status_code": 200,
+      "mean_latency_ms": 41.46,
+      "min_latency_ms": 26.18,
+      "max_latency_ms": 150.32,
+      "response_sample": {
+        "status": "healthy",
+        "service_name": "SalesSight AI ML Inference Service",
+        "version": "1.0.0",
+        "uptime_seconds": 0.48,
+        "production_models_loaded": {
+          "Sales": {
+            "model_version": "v1.0.0-ridge-sales",
+            "target_name": "Sales",
+            "hyperparameters": {
+              "alpha": 200.0,
+              "fit_intercept": true,
+              "solver": "auto",
+              "preprocessor": "StandardScaler"
+            },
+            "features_count": 26,
+            "packaged_at": "2026-10-24T10:21:42.698953+00:00"
+          },
+          "Quantity": {
+            "model_version": "v1.0.0-ridge-quantity",
+            "target_name": "Quantity",
+            "hyperparameters": {
+              "alpha": 200.0,
+              "fit_intercept": true,
+              "solver": "auto",
+              "preprocessor": "StandardScaler"
+            },
+            "features_count": 26,
+            "packaged_at": "2026-10-24T10:21:42.738279+00:00"
+          }
+        },
+        "artifacts_verified": true,
+        "last_historical_date": "2014-09-29",
+        "timestamp": "2026-10-24T10:27:33.949531+00:00"
+      }
+    },
+    "forecast_30d_sales": {
+      "endpoint": "POST /forecast (30d Sales)",
+      "status_code": 200,
+      "mean_latency_ms": 40.52,
+      "min_latency_ms": 38.61,
+      "max_latency_ms": 43.99
+    },
+    "forecast_90d_dual": {
+      "endpoint": "POST /forecast (90d Dual Target)",
+      "status_code": 200,
+      "mean_latency_ms": 80.2,
+      "min_latency_ms": 67.86,
+      "max_latency_ms": 99.41,
+      "sample_total_sales": 2926.1,
+      "sample_total_qty": 0.0
+    },
+    "models": {
+      "endpoint": "GET /models",
+      "status_code": 200,
+      "mean_latency_ms": 11.78,
+      "min_latency_ms": 11.04,
+      "max_latency_ms": 14.23,
+      "total_audited_artifacts": 22
+    },
+    "intelligence": {
+      "endpoint": "GET /intelligence",
+      "status_code": 200,
+      "mean_latency_ms": 84.7,
+      "min_latency_ms": 79.12,
+      "max_latency_ms": 98.16,
+      "top_5_count": 5,
+      "attention_items_count": 5,
+      "categories_count": 8
+    }
+  },
+  "date_modes": {
+    "Mode 1 (Default)": {
+      "status_code": 200,
+      "resolved_mode": "DEFAULT"
+    },
+    "Mode 2 (Backtest)": {
+      "status_code": 200,
+      "resolved_mode": "BACKTEST"
+    },
+    "Mode 3 (Bridge)": {
+      "status_code": 200,
+      "resolved_mode": "BRIDGE"
+    },
+    "Mode 4 (Beyond-Limit)": {
+      "status_code": 400,
+      "rejected": true
+    },
+    "Mode 5 (Demonstration)": {
+      "status_code": 200,
+      "resolved_mode": "DEMONSTRATION"
+    }
+  },
+  "compliance_summary": {
+    "fastapi_version": "0.135.3",
+    "pydantic_version": "2.12.3",
+    "sub_500ms_enforced": true,
+    "cors_enabled": true,
+    "error_boundary_active": true
+  }
+}

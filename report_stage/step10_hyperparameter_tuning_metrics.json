@@ -1,0 +1,836 @@
+{
+  "step": 10,
+  "title": "Hyperparameter Tuning, Objective Exploration, and Multi-Seed Model Selection",
+  "timestamp": "2026-10-24T07:59:00Z",
+  "dataset_metadata": {
+    "train_observations": 1056,
+    "test_observations": 264,
+    "feature_count": 26,
+    "random_seeds": [
+      42,
+      123,
+      456,
+      789,
+      999
+    ]
+  },
+  "simple_benchmarks": {
+    "Sales": {
+      "fixed_lag7_baseline": {
+        "wape": 138.56,
+        "mae": 2661.97,
+        "rmse": 5001.02,
+        "description": "True Lag-7 Persistence (Actual value from t-7)"
+      },
+      "always_zero": {
+        "wape": 100.0,
+        "mae": 1921.1,
+        "rmse": 4141.79,
+        "description": "Constant Zero Predictor (y_hat = 0)"
+      },
+      "train_mean": {
+        "wape": 102.38,
+        "mae": 1966.91,
+        "rmse": 3738.21,
+        "description": "Historical In-Sample Mean (y_hat = y_bar_train)"
+      },
+      "legacy_baseline": {
+        "wape": 99.48,
+        "mae": 1911.18,
+        "rmse": 4113.95,
+        "description": "Prior Step 8/9 Baseline (Day-of-Week Median Fallback)"
+      }
+    },
+    "Quantity": {
+      "fixed_lag7_baseline": {
+        "wape": 123.73,
+        "mae": 76.64,
+        "rmse": 127.36,
+        "description": "True Lag-7 Persistence (Actual value from t-7)"
+      },
+      "always_zero": {
+        "wape": 100.0,
+        "mae": 61.94,
+        "rmse": 113.03,
+        "description": "Constant Zero Predictor (y_hat = 0)"
+      },
+      "train_mean": {
+        "wape": 97.47,
+        "mae": 60.38,
+        "rmse": 98.87,
+        "description": "Historical In-Sample Mean (y_hat = y_bar_train)"
+      },
+      "legacy_baseline": {
+        "wape": 98.49,
+        "mae": 61.01,
+        "rmse": 109.77,
+        "description": "Prior Step 8/9 Baseline (Day-of-Week Median Fallback)"
+      }
+    }
+  },
+  "objective_comparison": {
+    "Sales": {
+      "L2_Ridge": {
+        "mean_cv_wape": 123.06,
+        "std_cv_wape": 13.4,
+        "mean_cv_mae": 1707.76,
+        "mean_cv_rmse": 3618.36,
+        "fold_wapes": [
+          136.84,
+          136.05,
+          110.47,
+          108.89
+        ]
+      },
+      "L1_MAE_LGBM": {
+        "mean_cv_wape": 101.36,
+        "std_cv_wape": 3.88,
+        "mean_cv_mae": 1451.36,
+        "mean_cv_rmse": 3724.53,
+        "fold_wapes": [
+          100.0,
+          108.0,
+          99.21,
+          98.22
+        ]
+      },
+      "Huber_LGBM": {
+        "mean_cv_wape": 110.73,
+        "std_cv_wape": 10.02,
+        "mean_cv_mae": 1548.6,
+        "mean_cv_rmse": 3574.77,
+        "fold_wapes": [
+          113.53,
+          125.19,
+          106.31,
+          97.88
+        ]
+      },
+      "Tweedie_LGBM": {
+        "mean_cv_wape": 111.59,
+        "std_cv_wape": 7.66,
+        "mean_cv_mae": 1571.26,
+        "mean_cv_rmse": 3645.08,
+        "fold_wapes": [
+          111.88,
+          120.21,
+          114.92,
+          99.37
+        ]
+      },
+      "Log1p_Ridge": {
+        "mean_cv_wape": 143.75,
+        "std_cv_wape": 45.27,
+        "mean_cv_mae": 2149.91,
+        "mean_cv_rmse": 9128.76,
+        "fold_wapes": [
+          101.46,
+          206.18,
+          99.72,
+          167.64
+        ]
+      },
+      "Hurdle_TwoStage": {
+        "mean_cv_wape": 126.21,
+        "std_cv_wape": 11.75,
+        "mean_cv_mae": 1769.16,
+        "mean_cv_rmse": 3681.09,
+        "fold_wapes": [
+          139.32,
+          136.28,
+          112.37,
+          116.86
+        ]
+      }
+    },
+    "Quantity": {
+      "L2_Ridge": {
+        "mean_cv_wape": 122.44,
+        "std_cv_wape": 25.77,
+        "mean_cv_mae": 45.57,
+        "mean_cv_rmse": 73.04,
+        "fold_wapes": [
+          124.03,
+          163.97,
+          100.78,
+          100.99
+        ]
+      },
+      "L1_MAE_LGBM": {
+        "mean_cv_wape": 103.13,
+        "std_cv_wape": 9.43,
+        "mean_cv_mae": 40.09,
+        "mean_cv_rmse": 76.07,
+        "fold_wapes": [
+          100.0,
+          119.2,
+          98.02,
+          95.29
+        ]
+      },
+      "Huber_LGBM": {
+        "mean_cv_wape": 110.52,
+        "std_cv_wape": 16.12,
+        "mean_cv_mae": 42.07,
+        "mean_cv_rmse": 72.44,
+        "fold_wapes": [
+          109.4,
+          136.86,
+          101.53,
+          94.3
+        ]
+      },
+      "Tweedie_LGBM": {
+        "mean_cv_wape": 109.25,
+        "std_cv_wape": 13.82,
+        "mean_cv_mae": 41.93,
+        "mean_cv_rmse": 74.31,
+        "fold_wapes": [
+          106.51,
+          131.36,
+          105.9,
+          93.22
+        ]
+      },
+      "Log1p_Ridge": {
+        "mean_cv_wape": 119.97,
+        "std_cv_wape": 24.79,
+        "mean_cv_mae": 45.77,
+        "mean_cv_rmse": 95.86,
+        "fold_wapes": [
+          104.99,
+          161.85,
+          98.81,
+          114.22
+        ]
+      },
+      "Hurdle_TwoStage": {
+        "mean_cv_wape": 122.68,
+        "std_cv_wape": 23.86,
+        "mean_cv_mae": 45.91,
+        "mean_cv_rmse": 74.27,
+        "fold_wapes": [
+          125.09,
+          160.74,
+          101.14,
+          103.76
+        ]
+      }
+    }
+  },
+  "tuning_scorecard": {
+    "Sales": {
+      "ridge_regression": {
+        "best_hyperparameters": {
+          "alpha": 200.0,
+          "fit_intercept": false,
+          "solver": "auto",
+          "scaler": "standard"
+        },
+        "best_inner_cv_wape": 108.28,
+        "pre_tuning_wape": 110.23,
+        "pre_tuning_rmse": 3668.88,
+        "post_tuning_wape_mean": 92.78,
+        "post_tuning_wape_std": 0.0,
+        "post_tuning_mae_mean": 1782.48,
+        "post_tuning_rmse_mean": 3902.15,
+        "delta_wape": 17.45,
+        "seed_noise_threshold": 0.0,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            92.78,
+            92.78,
+            92.78,
+            92.78,
+            92.78
+          ],
+          "maes": [
+            1782.48,
+            1782.48,
+            1782.48,
+            1782.48,
+            1782.48
+          ],
+          "rmses": [
+            3902.15,
+            3902.15,
+            3902.15,
+            3902.15,
+            3902.15
+          ]
+        }
+      },
+      "random_forest": {
+        "best_hyperparameters": {
+          "n_estimators": 50,
+          "max_depth": 4,
+          "min_samples_leaf": 12,
+          "min_samples_split": 20,
+          "max_features": "sqrt"
+        },
+        "best_inner_cv_wape": 118.85,
+        "pre_tuning_wape": 130.51,
+        "pre_tuning_rmse": 3969.48,
+        "post_tuning_wape_mean": 110.92,
+        "post_tuning_wape_std": 1.71,
+        "post_tuning_mae_mean": 2130.82,
+        "post_tuning_rmse_mean": 3723.03,
+        "delta_wape": 19.59,
+        "seed_noise_threshold": 1.71,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            111.48,
+            108.3,
+            113.35,
+            111.59,
+            109.86
+          ],
+          "maes": [
+            2141.68,
+            2080.47,
+            2177.64,
+            2143.7,
+            2110.62
+          ],
+          "rmses": [
+            3712.37,
+            3701.89,
+            3749.86,
+            3733.18,
+            3717.85
+          ]
+        }
+      },
+      "xgboost": {
+        "best_hyperparameters": {
+          "n_estimators": 100,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "subsample": 0.8,
+          "colsample_bytree": 0.6,
+          "reg_lambda": 5.0,
+          "reg_alpha": 1.0
+        },
+        "best_inner_cv_wape": 116.35,
+        "pre_tuning_wape": 126.58,
+        "pre_tuning_rmse": 3924.84,
+        "post_tuning_wape_mean": 106.1,
+        "post_tuning_wape_std": 0.54,
+        "post_tuning_mae_mean": 2038.31,
+        "post_tuning_rmse_mean": 3735.88,
+        "delta_wape": 20.48,
+        "seed_noise_threshold": 0.54,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            106.4,
+            105.41,
+            106.14,
+            106.93,
+            105.64
+          ],
+          "maes": [
+            2043.96,
+            2024.99,
+            2039.03,
+            2054.17,
+            2029.39
+          ],
+          "rmses": [
+            3734.25,
+            3728.04,
+            3735.43,
+            3746.19,
+            3735.48
+          ]
+        }
+      },
+      "lightgbm": {
+        "best_hyperparameters": {
+          "objective": "mae",
+          "n_estimators": 100,
+          "learning_rate": 0.05,
+          "num_leaves": 8,
+          "max_depth": 4,
+          "min_child_samples": 10,
+          "subsample": 0.7,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 20.0
+        },
+        "best_inner_cv_wape": 99.31,
+        "pre_tuning_wape": 122.65,
+        "pre_tuning_rmse": 3929.24,
+        "post_tuning_wape_mean": 94.37,
+        "post_tuning_wape_std": 0.29,
+        "post_tuning_mae_mean": 1812.92,
+        "post_tuning_rmse_mean": 3965.32,
+        "delta_wape": 28.28,
+        "seed_noise_threshold": 0.29,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            93.85,
+            94.69,
+            94.52,
+            94.28,
+            94.51
+          ],
+          "maes": [
+            1802.89,
+            1819.12,
+            1815.78,
+            1811.13,
+            1815.67
+          ],
+          "rmses": [
+            3933.55,
+            3974.01,
+            3976.66,
+            3961.26,
+            3981.14
+          ]
+        }
+      },
+      "sarima": {
+        "best_hyperparameters": {
+          "order": [
+            0,
+            0,
+            0
+          ],
+          "seasonal_order": [
+            1,
+            0,
+            0,
+            7
+          ]
+        },
+        "best_inner_cv_wape": 100.02,
+        "pre_tuning_wape": 183.63,
+        "pre_tuning_rmse": 4285.51,
+        "post_tuning_wape_mean": 99.23,
+        "post_tuning_wape_std": 0.0,
+        "post_tuning_mae_mean": 1906.27,
+        "post_tuning_rmse_mean": 4128.79,
+        "delta_wape": 84.4,
+        "seed_noise_threshold": 0.0,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            99.23,
+            99.23,
+            99.23,
+            99.23,
+            99.23
+          ],
+          "maes": [
+            1906.27,
+            1906.27,
+            1906.27,
+            1906.27,
+            1906.27
+          ],
+          "rmses": [
+            4128.79,
+            4128.79,
+            4128.79,
+            4128.79,
+            4128.79
+          ]
+        }
+      }
+    },
+    "Quantity": {
+      "ridge_regression": {
+        "best_hyperparameters": {
+          "alpha": 200.0,
+          "fit_intercept": false,
+          "solver": "auto",
+          "scaler": "standard"
+        },
+        "best_inner_cv_wape": 106.47,
+        "pre_tuning_wape": 95.15,
+        "pre_tuning_rmse": 91.02,
+        "post_tuning_wape_mean": 88.43,
+        "post_tuning_wape_std": 0.0,
+        "post_tuning_mae_mean": 54.78,
+        "post_tuning_rmse_mean": 99.44,
+        "delta_wape": 6.72,
+        "seed_noise_threshold": 0.0,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            88.43,
+            88.43,
+            88.43,
+            88.43,
+            88.43
+          ],
+          "maes": [
+            54.78,
+            54.78,
+            54.78,
+            54.78,
+            54.78
+          ],
+          "rmses": [
+            99.44,
+            99.44,
+            99.44,
+            99.44,
+            99.44
+          ]
+        }
+      },
+      "random_forest": {
+        "best_hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 8,
+          "min_samples_leaf": 12,
+          "min_samples_split": 5,
+          "max_features": "log2"
+        },
+        "best_inner_cv_wape": 119.16,
+        "pre_tuning_wape": 103.76,
+        "pre_tuning_rmse": 94.32,
+        "post_tuning_wape_mean": 94.95,
+        "post_tuning_wape_std": 0.21,
+        "post_tuning_mae_mean": 58.82,
+        "post_tuning_rmse_mean": 92.82,
+        "delta_wape": 8.81,
+        "seed_noise_threshold": 0.21,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            94.98,
+            95.19,
+            94.82,
+            94.62,
+            95.15
+          ],
+          "maes": [
+            58.83,
+            58.96,
+            58.74,
+            58.61,
+            58.94
+          ],
+          "rmses": [
+            92.83,
+            92.78,
+            92.93,
+            92.82,
+            92.73
+          ]
+        }
+      },
+      "xgboost": {
+        "best_hyperparameters": {
+          "n_estimators": 50,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "subsample": 0.7,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 1.0,
+          "reg_alpha": 0.0
+        },
+        "best_inner_cv_wape": 116.21,
+        "pre_tuning_wape": 100.98,
+        "pre_tuning_rmse": 95.23,
+        "post_tuning_wape_mean": 95.63,
+        "post_tuning_wape_std": 0.33,
+        "post_tuning_mae_mean": 59.24,
+        "post_tuning_rmse_mean": 95.79,
+        "delta_wape": 5.35,
+        "seed_noise_threshold": 0.33,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            96.26,
+            95.31,
+            95.43,
+            95.63,
+            95.51
+          ],
+          "maes": [
+            59.63,
+            59.04,
+            59.12,
+            59.24,
+            59.16
+          ],
+          "rmses": [
+            95.93,
+            95.65,
+            95.74,
+            95.75,
+            95.89
+          ]
+        }
+      },
+      "lightgbm": {
+        "best_hyperparameters": {
+          "objective": "mae",
+          "n_estimators": 100,
+          "learning_rate": 0.05,
+          "num_leaves": 8,
+          "max_depth": 4,
+          "min_child_samples": 10,
+          "subsample": 0.7,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 20.0
+        },
+        "best_inner_cv_wape": 98.79,
+        "pre_tuning_wape": 97.72,
+        "pre_tuning_rmse": 93.36,
+        "post_tuning_wape_mean": 92.36,
+        "post_tuning_wape_std": 0.63,
+        "post_tuning_mae_mean": 57.21,
+        "post_tuning_rmse_mean": 103.47,
+        "delta_wape": 5.36,
+        "seed_noise_threshold": 0.63,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            91.47,
+            93.35,
+            92.69,
+            92.26,
+            92.03
+          ],
+          "maes": [
+            56.66,
+            57.82,
+            57.41,
+            57.15,
+            57.0
+          ],
+          "rmses": [
+            102.85,
+            104.14,
+            104.15,
+            102.95,
+            103.27
+          ]
+        }
+      },
+      "sarima": {
+        "best_hyperparameters": {
+          "order": [
+            0,
+            0,
+            0
+          ],
+          "seasonal_order": [
+            1,
+            0,
+            0,
+            7
+          ]
+        },
+        "best_inner_cv_wape": 99.83,
+        "pre_tuning_wape": 119.43,
+        "pre_tuning_rmse": 97.58,
+        "post_tuning_wape_mean": 97.63,
+        "post_tuning_wape_std": 0.0,
+        "post_tuning_mae_mean": 60.47,
+        "post_tuning_rmse_mean": 110.73,
+        "delta_wape": 21.8,
+        "seed_noise_threshold": 0.0,
+        "improvement_exceeds_seed_noise": true,
+        "seed_metrics": {
+          "seeds": [
+            42,
+            123,
+            456,
+            789,
+            999
+          ],
+          "wapes": [
+            97.63,
+            97.63,
+            97.63,
+            97.63,
+            97.63
+          ],
+          "maes": [
+            60.47,
+            60.47,
+            60.47,
+            60.47,
+            60.47
+          ],
+          "rmses": [
+            110.73,
+            110.73,
+            110.73,
+            110.73,
+            110.73
+          ]
+        }
+      }
+    }
+  },
+  "temporal_granularity_comparison": {
+    "Sales": {
+      "granularity": "Weekly (W-MON aggregation)",
+      "train_weeks": 151,
+      "test_weeks": 38,
+      "weekly_benchmarks": {
+        "weekly_lag1_baseline": {
+          "wape": 84.65,
+          "mae": 11401.7,
+          "rmse": 14117.32
+        },
+        "weekly_always_zero": {
+          "wape": 100.0,
+          "mae": 13468.51,
+          "rmse": 16951.99
+        },
+        "weekly_train_mean": {
+          "wape": 63.76,
+          "mae": 8587.05,
+          "rmse": 11470.75
+        }
+      },
+      "weekly_ml_model": {
+        "name": "Weekly Tuned Ridge Pipeline",
+        "wape": 61.55,
+        "mae": 8290.4,
+        "rmse": 10902.32
+      },
+      "mathematical_note": "Weekly aggregation aggregates 7 daily time steps, significantly dampening intermittent zero-inflation. Consequently, weekly WAPE cannot be directly compared against daily WAPE as the underlying variance scale and support differ."
+    },
+    "Quantity": {
+      "granularity": "Weekly (W-MON aggregation)",
+      "train_weeks": 151,
+      "test_weeks": 38,
+      "weekly_benchmarks": {
+        "weekly_lag1_baseline": {
+          "wape": 62.55,
+          "mae": 273.34,
+          "rmse": 343.22
+        },
+        "weekly_always_zero": {
+          "wape": 100.0,
+          "mae": 437.03,
+          "rmse": 546.8
+        },
+        "weekly_train_mean": {
+          "wape": 66.12,
+          "mae": 288.97,
+          "rmse": 386.82
+        }
+      },
+      "weekly_ml_model": {
+        "name": "Weekly Tuned Ridge Pipeline",
+        "wape": 52.62,
+        "mae": 229.94,
+        "rmse": 299.38
+      },
+      "mathematical_note": "Weekly aggregation aggregates 7 daily time steps, significantly dampening intermittent zero-inflation. Consequently, weekly WAPE cannot be directly compared against daily WAPE as the underlying variance scale and support differ."
+    }
+  },
+  "winner_decisions": {
+    "Sales": {
+      "target": "Sales",
+      "decision": "TUNED_MODEL_WINS",
+      "winner_name": "lightgbm",
+      "selection_basis": "Validation Inner CV WAPE (Anti-Leakage Protocol)",
+      "selected_model_cv_wape": 99.31,
+      "best_benchmark_name": "legacy_baseline",
+      "best_benchmark_wape": 99.48,
+      "best_ml_candidate_name": "lightgbm",
+      "best_ml_wape_mean": 94.37,
+      "best_ml_seed_std": 0.29,
+      "margin": 5.11,
+      "winner_rationale": "Model candidate 'lightgbm' was selected strictly on VALIDATION inner-fold cross-validation (CV WAPE: 99.31%), preserving test set independence. On the held-out test partition, 'lightgbm' achieved WAPE of 94.37% (std: 0.29%), beating the best simple benchmark 'legacy_baseline' (99.48%) by 5.11 percentage points, which exceeds the empirical seed stability noise threshold (0.29%)."
+    },
+    "Quantity": {
+      "target": "Quantity",
+      "decision": "TUNED_MODEL_WINS",
+      "winner_name": "lightgbm",
+      "selection_basis": "Validation Inner CV WAPE (Anti-Leakage Protocol)",
+      "selected_model_cv_wape": 98.79,
+      "best_benchmark_name": "train_mean",
+      "best_benchmark_wape": 97.47,
+      "best_ml_candidate_name": "lightgbm",
+      "best_ml_wape_mean": 92.36,
+      "best_ml_seed_std": 0.63,
+      "margin": 5.11,
+      "winner_rationale": "Model candidate 'lightgbm' was selected strictly on VALIDATION inner-fold cross-validation (CV WAPE: 98.79%), preserving test set independence. On the held-out test partition, 'lightgbm' achieved WAPE of 92.36% (std: 0.63%), beating the best simple benchmark 'train_mean' (97.47%) by 5.11 percentage points, which exceeds the empirical seed stability noise threshold (0.63%)."
+    }
+  },
+  "figure_artifacts": {
+    "objective_comparison": "report_stage\\assets\\step10_tuning_objective_comparison.png",
+    "before_vs_after_wape": "report_stage\\assets\\step10_tuning_before_vs_after_wape.png",
+    "daily_vs_weekly": "report_stage\\assets\\step10_tuning_daily_vs_weekly.png",
+    "seed_stability": "report_stage\\assets\\step10_tuning_seed_stability.png"
+  },
+  "model_manifest_path": "models\\artifacts\\model_manifest.json"
+}

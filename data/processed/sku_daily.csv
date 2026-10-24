@@ -1,0 +1,2122 @@
+Date,ProductID,ProductName,CategoryName,Sales,Quantity
+2011-01-21,23,Dsw,Ladies´Footwear,360.0,40
+2011-01-21,26,Bike Helmet,Sportwear,805.2,24
+2011-01-21,36,Mehmet-Tröja,Babywear,159.8,20
+2011-01-21,37,Mehmet-Skor,Babywear,109.2,28
+2011-01-21,72,Rossi Shorts,Bath Clothes,300.75,25
+2011-02-19,5,O-Man Underwear,Men´S Clothes,80.352,12
+2011-02-19,7,Conserve Shoes,Children´S Wear,574.5,15
+2011-02-19,56,High Heels Shoes,Ladies´Footwear,69.1,2
+2011-03-02,31,Rossi Bermuda Shorts,Bath Clothes,273.3,30
+2011-03-02,58,Ga-Ga Dress,Babywear,773.55,15
+2011-03-16,10,Sapporoo Gloves,Babywear,234.36,30
+2011-03-16,26,Bike Helmet,Sportwear,471.04,16
+2011-03-16,60,Game Over T-Shirt,Sportwear,46.656,8
+2011-03-18,35,La. Shorts,Bath Clothes,606.0,100
+2011-03-18,62,Sheat Shoes,Sportwear,1211.2,40
+2011-03-19,16,Wimbledon T-Shirt,Sportwear,408.48,40
+2011-03-19,34,Baywatch Bikkini,Bath Clothes,153.4,20
+2011-03-19,46,Rodbye Troje,Babywear,210.9675,15
+2011-04-04,11,Desperado Jeans,Men´S Clothes,319.44,12
+2011-04-04,16,Wimbledon T-Shirt,Sportwear,280.8,30
+2011-04-04,69,Racing Truck  Socks,Sportwear,28.35,15
+2011-04-27,29,Davenport,Men´S Footwear,1173.0,10
+2011-04-27,72,Rossi Shorts,Bath Clothes,50.56,4
+2011-05-09,44,Okkaba Skin Jackets,Womens Wear,1292.48,16
+2011-05-09,59,Rasta Wct,Sportwear,128.55,15
+2011-05-09,63,Serve-Shirt,Womens Wear,168.16,8
+2011-05-09,73,Mehmet-Napp,Babywear,26.75,25
+2011-05-24,13,Aino Shoes,Babywear,506.66,20
+2011-05-24,44,Okkaba Skin Jackets,Womens Wear,2182.752,24
+2011-05-24,51,Snake Boots,Men´S Footwear,234.432,2
+2011-06-02,2,Mr X Trousers,Men´S Clothes,701.6,40
+2011-06-02,36,Mehmet-Tröja,Babywear,367.0,40
+2011-06-02,59,Rasta Wct,Sportwear,343.125,30
+2011-06-02,62,Sheat Shoes,Sportwear,420.0,15
+2011-06-06,66,Langoste Shirt,Womens Wear,596.7,30
+2011-06-06,68,Cap,Sportwear,225.4,20
+2011-07-05,10,Sapporoo Gloves,Babywear,103.8,15
+2011-07-05,13,Aino Shoes,Babywear,274.5,10
+2011-07-22,17,Tiebreak Tennis Shoes,Men´S Footwear,524.8,20
+2011-07-22,30,Baby Dark Lounge Suit,Babywear,381.0,15
+2011-07-25,4,Oyaki Kimono,Womens Wear,213.2,10
+2011-07-25,17,Tiebreak Tennis Shoes,Men´S Footwear,1797.81,70
+2011-07-25,62,Sheat Shoes,Sportwear,857.08,28
+2011-07-29,4,Oyaki Kimono,Womens Wear,727.3,35
+2011-07-29,8,Tuxedo,Womens Wear,1697.5,70
+2011-08-03,25,Basket Vest,Sportwear,132.1,10
+2011-08-03,39,Terence Top,Womens Wear,3376.4,50
+2011-08-03,40,Duck Trousers,Babywear,68.0,4
+2011-08-03,75,Bow Tie,Men´S Clothes,53.475,6
+2011-08-08,38,Le Baby Dress,Womens Wear,1575.84,20
+2011-08-08,41,Duck Shirt,Babywear,135.46,13
+2011-08-08,44,Okkaba Skin Jackets,Womens Wear,5961.879,77
+2011-08-08,65,Stretch Oui-Pants,Womens Wear,105.84,10
+2011-08-22,25,Basket Vest,Sportwear,752.0,50
+2011-08-22,51,Snake Boots,Men´S Footwear,2195.8,20
+2011-08-22,54,Patamonia Fleece Jacket,Sportwear,889.68,24
+2011-08-23,69,Racing Truck  Socks,Sportwear,61.5,30
+2011-08-23,71,Atles Lussekofta,Men´S Clothes,148.65,5
+2011-08-24,11,Desperado Jeans,Men´S Clothes,707.52,24
+2011-08-25,65,Stretch Oui-Pants,Womens Wear,45.6,5
+2011-08-25,77,Skirt,Womens Wear,63.55,5
+2011-08-26,21,Basket Shoes,Sportwear,57.915,5
+2011-08-26,28,Rdl Suit,Children´S Wear,678.821,13
+2011-08-26,57,Burned Rubber Shoes,Ladies´Footwear,451.25,25
+2011-08-26,64,Wfs Shoes,Ladies´Footwear,1245.09,35
+2011-08-28,29,Davenport,Men´S Footwear,2355.6,20
+2011-08-28,36,Mehmet-Tröja,Babywear,55.944,6
+2011-08-28,56,High Heels Shoes,Ladies´Footwear,886.95,18
+2011-09-03,14,Kool Sunglasses,Children´S Wear,323.85,15
+2011-09-03,54,Patamonia Fleece Jacket,Sportwear,329.5,10
+2011-09-04,15,Sumi Underwear,Womens Wear,30.6,5
+2011-09-04,25,Basket Vest,Sportwear,57.36,4
+2011-09-04,39,Terence Top,Womens Wear,244.84,4
+2011-09-06,28,Rdl Suit,Children´S Wear,947.14,20
+2011-09-06,39,Terence Top,Womens Wear,1374.94,20
+2011-09-08,2,Mr X Trousers,Men´S Clothes,576.6,25
+2011-09-08,11,Desperado Jeans,Men´S Clothes,1746.0,50
+2011-09-08,30,Baby Dark Lounge Suit,Babywear,1008.84,35
+2011-09-08,50,Finnish Swimsuit,Sportwear,272.085,15
+2011-09-08,58,Ga-Ga Dress,Babywear,1582.92,30
+2011-09-08,69,Racing Truck  Socks,Sportwear,36.234,18
+2011-09-09,33,Car Boots,Sportwear,577.44,24
+2011-09-11,24,Samba Socker  Socks,Men´S Clothes,51.0,12
+2011-09-11,55,Feiss Fleece Trousers,Sportwear,849.4,20
+2011-09-11,75,Bow Tie,Men´S Clothes,216.3,30
+2011-09-12,19,Squash Shorts,Sportwear,89.25,10
+2011-09-12,30,Baby Dark Lounge Suit,Babywear,206.724,8
+2011-09-12,38,Le Baby Dress,Womens Wear,1624.56,20
+2011-09-12,41,Duck Shirt,Babywear,82.104,8
+2011-09-12,56,High Heels Shoes,Ladies´Footwear,505.638,12
+2011-09-12,63,Serve-Shirt,Womens Wear,358.16,16
+2011-09-12,65,Stretch Oui-Pants,Womens Wear,220.0,20
+2011-09-19,74,Nikee Running Shoes,Children´S Wear,428.26,14
+2011-09-20,5,O-Man Underwear,Men´S Clothes,179.84,32
+2011-09-20,18,Deuce Shirt,Babywear,241.02,9
+2011-09-20,29,Davenport,Men´S Footwear,1811.32,14
+2011-09-20,33,Car Boots,Sportwear,1649.4,60
+2011-09-20,74,Nikee Running Shoes,Children´S Wear,1360.5,50
+2011-09-27,20,Tennis Suit,Sportwear,2422.28,28
+2011-09-27,60,Game Over T-Shirt,Sportwear,79.8,15
+2011-10-03,3,Chantell Shirt,Womens Wear,924.0,50
+2011-10-04,11,Desperado Jeans,Men´S Clothes,765.6,30
+2011-10-04,69,Racing Truck  Socks,Sportwear,31.65,15
+2011-10-04,71,Atles Lussekofta,Men´S Clothes,484.95,15
+2011-10-07,17,Tiebreak Tennis Shoes,Men´S Footwear,422.352,16
+2011-10-07,31,Rossi Bermuda Shorts,Bath Clothes,48.51,6
+2011-10-07,33,Car Boots,Sportwear,1272.04,49
+2011-10-07,55,Feiss Fleece Trousers,Sportwear,930.5625,25
+2011-10-07,59,Rasta Wct,Sportwear,149.12,16
+2011-10-11,19,Squash Shorts,Sportwear,166.32,18
+2011-10-11,33,Car Boots,Sportwear,1290.5,50
+2011-10-12,17,Tiebreak Tennis Shoes,Men´S Footwear,45.34,2
+2011-10-12,33,Car Boots,Sportwear,516.8,20
+2011-10-19,26,Bike Helmet,Sportwear,56.66,2
+2011-10-28,10,Sapporoo Gloves,Babywear,14.98,2
+2011-10-28,26,Bike Helmet,Sportwear,300.4,10
+2011-10-28,30,Baby Dark Lounge Suit,Babywear,272.5,10
+2011-10-28,43,Summer Shorts,Bath Clothes,780.0,60
+2011-10-28,54,Patamonia Fleece Jacket,Sportwear,1878.25,55
+2011-10-28,64,Wfs Shoes,Ladies´Footwear,1697.5,50
+2011-10-28,68,Cap,Sportwear,48.51,4
+2011-10-28,76,Minnki Pälsii,Womens Wear,5862.3,15
+2011-11-02,41,Duck Shirt,Babywear,109.872,12
+2011-11-02,55,Feiss Fleece Trousers,Sportwear,736.344,18
+2011-11-15,10,Sapporoo Gloves,Babywear,97.86,14
+2011-11-15,52,Small Crocodile Boots,Ladies´Footwear,1759.6,20
+2011-11-15,62,Sheat Shoes,Sportwear,1044.4,35
+2011-11-27,17,Tiebreak Tennis Shoes,Men´S Footwear,1585.625,50
+2011-11-27,40,Duck Trousers,Babywear,1118.75,50
+2011-11-27,47,Lundenhagen Boots,Men´S Footwear,1012.125,30
+2011-12-01,2,Mr X Trousers,Men´S Clothes,200.5,10
+2011-12-01,22,Ravellis Träskor,Ladies´Footwear,45.0,12
+2011-12-01,72,Rossi Shorts,Bath Clothes,126.0,10
+2011-12-03,11,Desperado Jeans,Men´S Clothes,257.3,10
+2011-12-03,24,Samba Socker  Socks,Men´S Clothes,128.8,28
+2011-12-03,25,Basket Vest,Sportwear,161.52,12
+2011-12-03,46,Rodbye Troje,Babywear,59.25,5
+2011-12-07,2,Mr X Trousers,Men´S Clothes,1854.145,85
+2011-12-07,16,Wimbledon T-Shirt,Sportwear,905.4639999999999,84
+2011-12-07,27,Tracksuit,Sportwear,2212.5,50
+2011-12-07,29,Davenport,Men´S Footwear,3564.54,24
+2011-12-07,44,Okkaba Skin Jackets,Womens Wear,156.814,2
+2011-12-07,61,Adihash Running Shoe,Sportwear,2685.825,90
+2011-12-08,7,Conserve Shoes,Children´S Wear,1192.2,30
+2011-12-08,11,Desperado Jeans,Men´S Clothes,919.2,30
+2011-12-08,18,Deuce Shirt,Babywear,755.7,30
+2011-12-08,23,Dsw,Ladies´Footwear,133.65,15
+2011-12-08,54,Patamonia Fleece Jacket,Sportwear,2913.6,80
+2011-12-08,56,High Heels Shoes,Ladies´Footwear,796.4,20
+2011-12-08,64,Wfs Shoes,Ladies´Footwear,291.12,8
+2011-12-08,66,Langoste Shirt,Womens Wear,1168.8,60
+2011-12-09,11,Desperado Jeans,Men´S Clothes,192.312,6
+2011-12-09,24,Samba Socker  Socks,Men´S Clothes,351.96,80
+2011-12-09,28,Rdl Suit,Children´S Wear,522.24,12
+2011-12-09,51,Snake Boots,Men´S Footwear,1632.42,18
+2011-12-10,33,Car Boots,Sportwear,319.08,12
+2011-12-10,71,Atles Lussekofta,Men´S Clothes,391.44,12
+2011-12-11,19,Squash Shorts,Sportwear,122.232,12
+2011-12-11,24,Samba Socker  Socks,Men´S Clothes,92.62,20
+2011-12-11,31,Rossi Bermuda Shorts,Bath Clothes,27.291,3
+2011-12-11,52,Small Crocodile Boots,Ladies´Footwear,1266.54,15
+2011-12-14,26,Bike Helmet,Sportwear,195.18,6
+2011-12-14,40,Duck Trousers,Babywear,373.0,20
+2011-12-14,55,Feiss Fleece Trousers,Sportwear,79.044,2
+2011-12-14,70,Us-Master Jeans,Men´S Clothes,313.68,12
+2011-12-16,38,Le Baby Dress,Womens Wear,2492.1,30
+2011-12-16,53,Jumpin Jack Flash Dress,Womens Wear,1833.16,28
+2011-12-16,59,Rasta Wct,Sportwear,493.2,60
+2011-12-16,64,Wfs Shoes,Ladies´Footwear,1044.9,30
+2011-12-17,47,Lundenhagen Boots,Men´S Footwear,780.3,30
+2011-12-17,59,Rasta Wct,Sportwear,97.68,12
+2011-12-18,19,Squash Shorts,Sportwear,42.044,4
+2011-12-18,26,Bike Helmet,Sportwear,955.8,30
+2011-12-18,40,Duck Trousers,Babywear,175.9,10
+2011-12-18,53,Jumpin Jack Flash Dress,Womens Wear,964.275,15
+2011-12-18,77,Skirt,Womens Wear,138.345,10
+2011-12-23,19,Squash Shorts,Sportwear,48.45,5
+2011-12-23,26,Bike Helmet,Sportwear,1002.0,30
+2011-12-23,54,Patamonia Fleece Jacket,Sportwear,1008.3,24
+2011-12-24,59,Rasta Wct,Sportwear,264.0,30
+2011-12-24,73,Mehmet-Napp,Babywear,29.04,20
+2011-12-28,44,Okkaba Skin Jackets,Womens Wear,1420.365,15
+2011-12-28,77,Skirt,Womens Wear,114.31,7
+2011-12-29,25,Basket Vest,Sportwear,868.14,60
+2011-12-29,42,Balett Shoes,Ladies´Footwear,290.22,20
+2011-12-30,56,High Heels Shoes,Ladies´Footwear,2133.7799999999997,58
+2011-12-30,65,Stretch Oui-Pants,Womens Wear,156.585,15
+2011-12-30,66,Langoste Shirt,Womens Wear,219.23,10
+2011-12-30,69,Racing Truck  Socks,Sportwear,20.57,10
+2012-01-06,14,Kool Sunglasses,Children´S Wear,294.96,12
+2012-01-06,21,Basket Shoes,Sportwear,131.52,12
+2012-01-07,17,Tiebreak Tennis Shoes,Men´S Footwear,1026.0,40
+2012-01-07,28,Rdl Suit,Children´S Wear,1198.68,28
+2012-01-07,43,Summer Shorts,Bath Clothes,129.84,12
+2012-01-09,17,Tiebreak Tennis Shoes,Men´S Footwear,270.0,10
+2012-01-09,26,Bike Helmet,Sportwear,464.55,15
+2012-01-09,35,La. Shorts,Bath Clothes,45.6,8
+2012-01-09,41,Duck Shirt,Babywear,275.7,30
+2012-01-16,3,Chantell Shirt,Womens Wear,1146.0,60
+2012-01-16,26,Bike Helmet,Sportwear,1368.4,40
+2012-01-16,38,Le Baby Dress,Womens Wear,2527.2,30
+2012-01-16,68,Cap,Sportwear,456.4,35
+2012-01-17,16,Wimbledon T-Shirt,Sportwear,85.3,10
+2012-01-17,28,Rdl Suit,Children´S Wear,736.35,15
+2012-01-17,44,Okkaba Skin Jackets,Womens Wear,8495.55,100
+2012-01-17,62,Sheat Shoes,Sportwear,160.95,5
+2012-01-18,12,Tiny Winy Hot Bikini,Bath Clothes,358.8,30
+2012-01-18,16,Wimbledon T-Shirt,Sportwear,213.12,20
+2012-01-18,23,Dsw,Ladies´Footwear,772.8,70
+2012-01-18,33,Car Boots,Sportwear,668.88,20
+2012-01-18,46,Rodbye Troje,Babywear,143.64,10
+2012-01-18,48,Root Boot,Men´S Footwear,592.35,15
+2012-01-18,70,Us-Master Jeans,Men´S Clothes,836.825,25
+2012-01-20,7,Conserve Shoes,Children´S Wear,434.6,10
+2012-01-20,35,La. Shorts,Bath Clothes,181.8,30
+2012-01-20,62,Sheat Shoes,Sportwear,1180.4,40
+2012-01-21,26,Bike Helmet,Sportwear,1068.795,30
+2012-01-21,39,Terence Top,Womens Wear,1297.8,20
+2012-01-21,42,Balett Shoes,Ladies´Footwear,561.54,40
+2012-01-21,49,Finnish Sport Blades,Sportwear,624.33,30
+2012-01-21,53,Jumpin Jack Flash Dress,Womens Wear,3115.5,50
+2012-01-21,61,Adihash Running Shoe,Sportwear,668.75,25
+2012-01-21,71,Atles Lussekofta,Men´S Clothes,835.5,30
+2012-01-22,21,Basket Shoes,Sportwear,422.74,40
+2012-01-22,49,Finnish Sport Blades,Sportwear,484.932,21
+2012-01-22,59,Rasta Wct,Sportwear,282.6,36
+2012-01-25,16,Wimbledon T-Shirt,Sportwear,391.46,40
+2012-01-25,35,La. Shorts,Bath Clothes,130.18,20
+2012-01-25,44,Okkaba Skin Jackets,Womens Wear,2739.6,40
+2012-01-25,68,Cap,Sportwear,310.5375,21
+2012-01-25,75,Bow Tie,Men´S Clothes,39.6,4
+2012-01-26,50,Finnish Swimsuit,Sportwear,686.0,40
+2012-01-26,63,Serve-Shirt,Womens Wear,951.5625,35
+2012-01-27,1,Lenin Jeansshorts,Men´S Clothes,362.4,20
+2012-01-27,11,Desperado Jeans,Men´S Clothes,454.35,15
+2012-01-27,16,Wimbledon T-Shirt,Sportwear,127.82,14
+2012-01-27,22,Ravellis Träskor,Ladies´Footwear,78.72,24
+2012-01-27,31,Rossi Bermuda Shorts,Bath Clothes,248.1,30
+2012-01-27,35,La. Shorts,Bath Clothes,37.5,6
+2012-01-28,13,Aino Shoes,Babywear,27.09,1
+2012-01-28,23,Dsw,Ladies´Footwear,178.5,21
+2012-01-28,33,Car Boots,Sportwear,1726.2,60
+2012-01-28,72,Rossi Shorts,Bath Clothes,255.57,20
+2012-01-30,1,Lenin Jeansshorts,Men´S Clothes,371.91,15
+2012-01-30,23,Dsw,Ladies´Footwear,544.2,60
+2012-01-30,63,Serve-Shirt,Womens Wear,1231.1,65
+2012-01-30,64,Wfs Shoes,Ladies´Footwear,1020.6,30
+2012-01-30,74,Nikee Running Shoes,Children´S Wear,750.72,20
+2012-02-03,11,Desperado Jeans,Men´S Clothes,88.11,3
+2012-02-03,33,Car Boots,Sportwear,261.408,8
+2012-02-03,72,Rossi Shorts,Bath Clothes,95.94,9
+2012-02-04,12,Tiny Winy Hot Bikini,Bath Clothes,153.3,15
+2012-02-04,16,Wimbledon T-Shirt,Sportwear,159.68,16
+2012-02-04,24,Samba Socker  Socks,Men´S Clothes,68.6,14
+2012-02-04,40,Duck Trousers,Babywear,90.0,5
+2012-02-04,42,Balett Shoes,Ladies´Footwear,453.0,30
+2012-02-04,64,Wfs Shoes,Ladies´Footwear,210.12,6
+2012-02-04,74,Nikee Running Shoes,Children´S Wear,985.5,30
+2012-02-06,6,Shagall Socks,Womens Wear,22.26,6
+2012-02-06,13,Aino Shoes,Babywear,277.08,12
+2012-02-06,14,Kool Sunglasses,Children´S Wear,190.26,9
+2012-02-06,31,Rossi Bermuda Shorts,Bath Clothes,31.2,4
+2012-02-06,72,Rossi Shorts,Bath Clothes,438.4,40
+2012-02-11,31,Rossi Bermuda Shorts,Bath Clothes,240.0,30
+2012-02-11,51,Snake Boots,Men´S Footwear,552.84,6
+2012-02-11,58,Ga-Ga Dress,Babywear,1043.4,20
+2012-02-11,72,Rossi Shorts,Bath Clothes,233.52,21
+2012-02-11,73,Mehmet-Napp,Babywear,9.36,9
+2012-02-20,9,Fuji Boots,Men´S Footwear,773.72,16
+2012-02-20,16,Wimbledon T-Shirt,Sportwear,434.0,50
+2012-02-20,27,Tracksuit,Sportwear,5004.0,120
+2012-02-20,33,Car Boots,Sportwear,515.384,16
+2012-02-20,60,Game Over T-Shirt,Sportwear,516.81,84
+2012-02-26,35,La. Shorts,Bath Clothes,18.72,3
+2012-02-26,41,Duck Shirt,Babywear,96.3,10
+2012-02-26,68,Cap,Sportwear,76.68,6
+2012-02-27,1,Lenin Jeansshorts,Men´S Clothes,1038.24,40
+2012-02-27,8,Tuxedo,Womens Wear,502.32,24
+2012-02-27,30,Baby Dark Lounge Suit,Babywear,621.12,20
+2012-02-27,40,Duck Trousers,Babywear,547.5,25
+2012-02-29,14,Kool Sunglasses,Children´S Wear,772.56,30
+2012-02-29,19,Squash Shorts,Sportwear,357.0,35
+2012-02-29,20,Tennis Suit,Sportwear,529.5,6
+2012-02-29,24,Samba Socker  Socks,Men´S Clothes,88.56,18
+2012-02-29,29,Davenport,Men´S Footwear,2554.65,21
+2012-02-29,31,Rossi Bermuda Shorts,Bath Clothes,936.64,100
+2012-02-29,35,La. Shorts,Bath Clothes,203.0,35
+2012-02-29,49,Finnish Sport Blades,Sportwear,646.5,30
+2012-02-29,51,Snake Boots,Men´S Footwear,2765.1,23
+2012-02-29,56,High Heels Shoes,Ladies´Footwear,1915.2,40
+2012-02-29,59,Rasta Wct,Sportwear,386.88,40
+2012-02-29,72,Rossi Shorts,Bath Clothes,563.52,48
+2012-03-02,24,Samba Socker  Socks,Men´S Clothes,110.25,25
+2012-03-02,29,Davenport,Men´S Footwear,2646.864,18
+2012-03-02,40,Duck Trousers,Babywear,387.0,20
+2012-03-02,45,Danske Treshoe,Men´S Footwear,339.57,30
+2012-03-02,50,Finnish Swimsuit,Sportwear,378.25,25
+2012-03-05,28,Rdl Suit,Children´S Wear,872.8,20
+2012-03-05,49,Finnish Sport Blades,Sportwear,476.5,25
+2012-03-07,45,Danske Treshoe,Men´S Footwear,210.0,21
+2012-03-07,53,Jumpin Jack Flash Dress,Womens Wear,400.98,6
+2012-03-07,67,X-Dress,Womens Wear,1899.6,30
+2012-03-08,2,Mr X Trousers,Men´S Clothes,246.0,12
+2012-03-08,14,Kool Sunglasses,Children´S Wear,1743.7,70
+2012-03-08,21,Basket Shoes,Sportwear,129.0,12
+2012-03-08,53,Jumpin Jack Flash Dress,Womens Wear,623.2,10
+2012-03-08,61,Adihash Running Shoe,Sportwear,650.5,25
+2012-03-08,65,Stretch Oui-Pants,Womens Wear,197.4,20
+2012-03-10,14,Kool Sunglasses,Children´S Wear,560.78,20
+2012-03-11,62,Sheat Shoes,Sportwear,94.08,3
+2012-03-12,25,Basket Vest,Sportwear,292.446,18
+2012-03-12,70,Us-Master Jeans,Men´S Clothes,473.55,14
+2012-03-13,13,Aino Shoes,Babywear,240.9,10
+2012-03-13,39,Terence Top,Womens Wear,640.2,10
+2012-03-20,31,Rossi Bermuda Shorts,Bath Clothes,703.64,74
+2012-03-20,35,La. Shorts,Bath Clothes,288.64,40
+2012-03-20,46,Rodbye Troje,Babywear,487.35,45
+2012-03-20,59,Rasta Wct,Sportwear,178.4,20
+2012-03-20,72,Rossi Shorts,Bath Clothes,288.816,24
+2012-03-24,14,Kool Sunglasses,Children´S Wear,851.55,35
+2012-04-04,30,Baby Dark Lounge Suit,Babywear,188.4,8
+2012-04-04,43,Summer Shorts,Bath Clothes,173.85,15
+2012-04-15,4,Oyaki Kimono,Womens Wear,1371.95,50
+2012-04-15,7,Conserve Shoes,Children´S Wear,2442.6,50
+2012-04-15,8,Tuxedo,Womens Wear,252.655,10
+2012-04-15,21,Basket Shoes,Sportwear,101.4,10
+2012-04-15,37,Mehmet-Skor,Babywear,4.37,1
+2012-04-17,49,Finnish Sport Blades,Sportwear,454.8,24
+2012-04-17,60,Game Over T-Shirt,Sportwear,204.8,40
+2012-04-19,20,Tennis Suit,Sportwear,3433.17,39
+2012-04-19,28,Rdl Suit,Children´S Wear,1618.05,35
+2012-04-19,56,High Heels Shoes,Ladies´Footwear,2674.7,70
+2012-04-19,65,Stretch Oui-Pants,Womens Wear,429.0,39
+2012-04-19,75,Bow Tie,Men´S Clothes,368.5,50
+2012-04-21,18,Deuce Shirt,Babywear,749.375,25
+2012-04-21,41,Duck Shirt,Babywear,924.0,80
+2012-04-21,42,Balett Shoes,Ladies´Footwear,291.4,20
+2012-04-22,2,Mr X Trousers,Men´S Clothes,599.0625,25
+2012-04-22,14,Kool Sunglasses,Children´S Wear,1146.075,42
+2012-04-22,24,Samba Socker  Socks,Men´S Clothes,21.65,5
+2012-04-22,25,Basket Vest,Sportwear,126.175,7
+2012-04-22,26,Bike Helmet,Sportwear,2749.25,70
+2012-04-22,31,Rossi Bermuda Shorts,Bath Clothes,257.6,32
+2012-04-22,38,Le Baby Dress,Womens Wear,1150.35,15
+2012-04-22,44,Okkaba Skin Jackets,Womens Wear,691.29,9
+2012-05-02,1,Lenin Jeansshorts,Men´S Clothes,179.676,8
+2012-05-02,13,Aino Shoes,Babywear,262.4,10
+2012-05-02,56,High Heels Shoes,Ladies´Footwear,1438.305,30
+2012-05-09,4,Oyaki Kimono,Womens Wear,1061.025,50
+2012-05-09,72,Rossi Shorts,Bath Clothes,264.72,24
+2012-05-09,73,Mehmet-Napp,Babywear,25.704,24
+2012-05-13,13,Aino Shoes,Babywear,199.12,8
+2012-05-13,21,Basket Shoes,Sportwear,163.65,15
+2012-05-13,33,Car Boots,Sportwear,414.6,15
+2012-05-13,49,Finnish Sport Blades,Sportwear,125.4,6
+2012-05-16,45,Danske Treshoe,Men´S Footwear,156.6,15
+2012-05-16,52,Small Crocodile Boots,Ladies´Footwear,1983.6,20
+2012-05-16,53,Jumpin Jack Flash Dress,Womens Wear,2511.6,40
+2012-05-17,1,Lenin Jeansshorts,Men´S Clothes,1064.88,45
+2012-05-17,40,Duck Trousers,Babywear,826.56,40
+2012-05-17,53,Jumpin Jack Flash Dress,Womens Wear,2633.472,36
+2012-05-29,36,Mehmet-Tröja,Babywear,219.3,30
+2012-05-29,40,Duck Trousers,Babywear,304.59,15
+2012-06-14,62,Sheat Shoes,Sportwear,272.7,10
+2012-06-14,68,Cap,Sportwear,38.46,3
+2012-06-16,24,Samba Socker  Socks,Men´S Clothes,162.47,35
+2012-06-16,38,Le Baby Dress,Womens Wear,340.824,4
+2012-06-16,65,Stretch Oui-Pants,Womens Wear,366.3,36
+2012-06-16,71,Atles Lussekofta,Men´S Clothes,274.329,9
+2012-06-17,11,Desperado Jeans,Men´S Clothes,444.3075,15
+2012-06-17,54,Patamonia Fleece Jacket,Sportwear,822.024,24
+2012-06-18,28,Rdl Suit,Children´S Wear,304.15,7
+2012-06-18,67,X-Dress,Womens Wear,453.6,7
+2012-06-19,11,Desperado Jeans,Men´S Clothes,263.7,10
+2012-06-24,41,Duck Shirt,Babywear,89.6,10
+2012-06-24,62,Sheat Shoes,Sportwear,2053.1,70
+2012-06-30,16,Wimbledon T-Shirt,Sportwear,245.1225,21
+2012-06-30,48,Root Boot,Men´S Footwear,2562.315,70
+2012-07-01,47,Lundenhagen Boots,Men´S Footwear,619.0,25
+2012-07-01,51,Snake Boots,Men´S Footwear,1828.6,20
+2012-07-01,52,Small Crocodile Boots,Ladies´Footwear,2554.2,30
+2012-07-01,53,Jumpin Jack Flash Dress,Womens Wear,1013.94,18
+2012-07-01,73,Mehmet-Napp,Babywear,2.97,3
+2012-07-03,30,Baby Dark Lounge Suit,Babywear,512.4,20
+2012-07-03,62,Sheat Shoes,Sportwear,585.0,15
+2012-07-11,19,Squash Shorts,Sportwear,341.2,40
+2012-07-11,65,Stretch Oui-Pants,Womens Wear,366.8,35
+2012-07-11,71,Atles Lussekofta,Men´S Clothes,57.08,2
+2012-07-19,10,Sapporoo Gloves,Babywear,183.36,20
+2012-07-19,54,Patamonia Fleece Jacket,Sportwear,253.584,6
+2012-07-21,52,Small Crocodile Boots,Ladies´Footwear,512.94,6
+2012-07-21,59,Rasta Wct,Sportwear,33.2,4
+2012-07-21,70,Us-Master Jeans,Men´S Clothes,186.54,6
+2012-07-26,69,Racing Truck  Socks,Sportwear,34.56,18
+2012-07-26,75,Bow Tie,Men´S Clothes,214.8,30
+2012-07-27,35,La. Shorts,Bath Clothes,163.5,30
+2012-07-27,55,Feiss Fleece Trousers,Sportwear,4935.48,120
+2012-07-30,11,Desperado Jeans,Men´S Clothes,156.78,6
+2012-07-30,76,Minnki Pälsii,Womens Wear,8931.843,18
+2012-08-06,33,Car Boots,Sportwear,579.04,20
+2012-08-06,62,Sheat Shoes,Sportwear,320.32,10
+2012-08-07,36,Mehmet-Tröja,Babywear,202.0,25
+2012-08-07,52,Small Crocodile Boots,Ladies´Footwear,5688.9,70
+2012-08-08,24,Samba Socker  Socks,Men´S Clothes,121.825,25
+2012-08-08,64,Wfs Shoes,Ladies´Footwear,697.752,18
+2012-08-09,11,Desperado Jeans,Men´S Clothes,1054.55,35
+2012-08-09,18,Deuce Shirt,Babywear,545.652,18
+2012-08-09,76,Minnki Pälsii,Womens Wear,3986.3,10
+2012-08-10,10,Sapporoo Gloves,Babywear,32.45,5
+2012-08-10,11,Desperado Jeans,Men´S Clothes,1556.5,50
+2012-08-10,40,Duck Trousers,Babywear,213.4,10
+2012-08-10,57,Burned Rubber Shoes,Ladies´Footwear,112.09,5
+2012-08-10,59,Rasta Wct,Sportwear,126.39,15
+2012-08-15,10,Sapporoo Gloves,Babywear,138.6,20
+2012-08-21,55,Feiss Fleece Trousers,Sportwear,450.5,10
+2012-08-21,76,Minnki Pälsii,Womens Wear,9035.75,20
+2012-08-22,2,Mr X Trousers,Men´S Clothes,383.68,20
+2012-08-22,3,Chantell Shirt,Womens Wear,476.96,20
+2012-08-22,55,Feiss Fleece Trousers,Sportwear,1161.93,30
+2012-08-22,70,Us-Master Jeans,Men´S Clothes,1768.8,60
+2012-08-25,21,Basket Shoes,Sportwear,493.0,40
+2012-08-25,30,Baby Dark Lounge Suit,Babywear,955.15,28
+2012-08-25,55,Feiss Fleece Trousers,Sportwear,2643.0,60
+2012-09-03,11,Desperado Jeans,Men´S Clothes,141.9,5
+2012-09-03,44,Okkaba Skin Jackets,Womens Wear,688.9,10
+2012-09-03,51,Snake Boots,Men´S Footwear,7463.75,75
+2012-09-03,74,Nikee Running Shoes,Children´S Wear,439.84,16
+2012-09-05,17,Tiebreak Tennis Shoes,Men´S Footwear,968.0,40
+2012-09-05,37,Mehmet-Skor,Babywear,39.2,10
+2012-09-05,43,Summer Shorts,Bath Clothes,272.75,25
+2012-09-05,54,Patamonia Fleece Jacket,Sportwear,204.54,6
+2012-09-05,61,Adihash Running Shoe,Sportwear,554.2,20
+2012-09-05,62,Sheat Shoes,Sportwear,1088.85,35
+2012-09-05,76,Minnki Pälsii,Womens Wear,19557.5,50
+2012-09-09,30,Baby Dark Lounge Suit,Babywear,732.36,28
+2012-09-09,40,Duck Trousers,Babywear,221.76,10
+2012-09-09,54,Patamonia Fleece Jacket,Sportwear,443.4,10
+2012-09-09,56,High Heels Shoes,Ladies´Footwear,2804.2,70
+2012-09-09,65,Stretch Oui-Pants,Womens Wear,181.2,20
+2012-09-09,71,Atles Lussekofta,Men´S Clothes,1823.4,60
+2012-09-11,1,Lenin Jeansshorts,Men´S Clothes,504.24,24
+2012-09-11,31,Rossi Bermuda Shorts,Bath Clothes,374.7275,35
+2012-09-11,62,Sheat Shoes,Sportwear,1214.8,40
+2012-09-11,66,Langoste Shirt,Womens Wear,1189.56,60
+2012-09-11,76,Minnki Pälsii,Womens Wear,25851.5251,56
+2012-09-13,19,Squash Shorts,Sportwear,187.6,20
+2012-09-13,53,Jumpin Jack Flash Dress,Womens Wear,553.2,10
+2012-09-13,57,Burned Rubber Shoes,Ladies´Footwear,374.8,20
+2012-09-15,10,Sapporoo Gloves,Babywear,126.84,16
+2012-09-15,23,Dsw,Ladies´Footwear,83.3,10
+2012-09-15,41,Duck Shirt,Babywear,204.4,20
+2012-09-15,56,High Heels Shoes,Ladies´Footwear,1629.2,40
+2012-09-15,60,Game Over T-Shirt,Sportwear,53.655,10
+2012-09-15,77,Skirt,Womens Wear,65.6,5
+2012-09-16,55,Feiss Fleece Trousers,Sportwear,5283.96,120
+2012-09-16,64,Wfs Shoes,Ladies´Footwear,1383.69,35
+2012-09-16,65,Stretch Oui-Pants,Womens Wear,328.328,28
+2012-09-16,77,Skirt,Womens Wear,756.855,55
+2012-09-20,13,Aino Shoes,Babywear,416.16,18
+2012-09-21,69,Racing Truck  Socks,Sportwear,104.5,50
+2012-09-22,13,Aino Shoes,Babywear,270.4,10
+2012-09-22,62,Sheat Shoes,Sportwear,266.7,10
+2012-09-23,46,Rodbye Troje,Babywear,357.896,28
+2012-09-23,53,Jumpin Jack Flash Dress,Womens Wear,5109.72,70
+2012-09-23,69,Racing Truck  Socks,Sportwear,14.96,8
+2012-10-08,24,Samba Socker  Socks,Men´S Clothes,284.61,50
+2012-10-08,55,Feiss Fleece Trousers,Sportwear,984.354,21
+2012-10-08,57,Burned Rubber Shoes,Ladies´Footwear,363.6,20
+2012-10-08,65,Stretch Oui-Pants,Womens Wear,136.512,12
+2012-10-08,74,Nikee Running Shoes,Children´S Wear,617.4,21
+2012-10-10,39,Terence Top,Womens Wear,351.42,6
+2012-10-10,54,Patamonia Fleece Jacket,Sportwear,529.8,15
+2012-10-13,31,Rossi Bermuda Shorts,Bath Clothes,358.26,35
+2012-10-13,76,Minnki Pälsii,Womens Wear,11229.9,30
+2012-10-14,2,Mr X Trousers,Men´S Clothes,1164.6,60
+2012-10-14,47,Lundenhagen Boots,Men´S Footwear,1410.75,55
+2012-10-14,61,Adihash Running Shoe,Sportwear,388.8,16
+2012-10-14,74,Nikee Running Shoes,Children´S Wear,463.65,15
+2012-10-15,31,Rossi Bermuda Shorts,Bath Clothes,276.6,30
+2012-10-15,55,Feiss Fleece Trousers,Sportwear,487.8,12
+2012-10-15,69,Racing Truck  Socks,Sportwear,41.0,20
+2012-10-17,10,Sapporoo Gloves,Babywear,101.28,16
+2012-10-17,55,Feiss Fleece Trousers,Sportwear,562.35,15
+2012-10-17,60,Game Over T-Shirt,Sportwear,289.17,60
+2012-10-17,62,Sheat Shoes,Sportwear,633.6,20
+2012-10-17,69,Racing Truck  Socks,Sportwear,39.27,20
+2012-10-17,70,Us-Master Jeans,Men´S Clothes,838.8,30
+2012-10-20,12,Tiny Winy Hot Bikini,Bath Clothes,960.0,100
+2012-10-20,33,Car Boots,Sportwear,756.0,30
+2012-10-20,41,Duck Shirt,Babywear,1215.6,120
+2012-10-20,54,Patamonia Fleece Jacket,Sportwear,1074.3,30
+2012-10-25,26,Bike Helmet,Sportwear,577.4,20
+2012-10-25,52,Small Crocodile Boots,Ladies´Footwear,4579.2,60
+2012-10-25,70,Us-Master Jeans,Men´S Clothes,1230.0,40
+2012-10-29,17,Tiebreak Tennis Shoes,Men´S Footwear,209.84,8
+2012-10-29,28,Rdl Suit,Children´S Wear,682.78,14
+2012-10-29,76,Minnki Pälsii,Womens Wear,12119.1,30
+2012-11-04,14,Kool Sunglasses,Children´S Wear,348.32,16
+2012-11-04,28,Rdl Suit,Children´S Wear,998.8,20
+2012-11-04,52,Small Crocodile Boots,Ladies´Footwear,2147.5,25
+2012-12-01,24,Samba Socker  Socks,Men´S Clothes,22.05,5
+2012-12-01,46,Rodbye Troje,Babywear,64.25,5
+2012-12-01,52,Small Crocodile Boots,Ladies´Footwear,415.4,5
+2012-12-01,53,Jumpin Jack Flash Dress,Womens Wear,872.55,15
+2012-12-01,56,High Heels Shoes,Ladies´Footwear,1661.44,40
+2012-12-01,64,Wfs Shoes,Ladies´Footwear,1199.22,30
+2012-12-01,75,Bow Tie,Men´S Clothes,189.552,24
+2012-12-11,31,Rossi Bermuda Shorts,Bath Clothes,71.896,8
+2012-12-11,55,Feiss Fleece Trousers,Sportwear,181.28,4
+2012-12-11,64,Wfs Shoes,Ladies´Footwear,596.805,15
+2012-12-15,4,Oyaki Kimono,Womens Wear,432.8,20
+2012-12-15,6,Shagall Socks,Womens Wear,110.7,30
+2012-12-15,42,Balett Shoes,Ladies´Footwear,27.24,2
+2012-12-15,43,Summer Shorts,Bath Clothes,237.4,20
+2012-12-15,71,Atles Lussekofta,Men´S Clothes,89.28,3
+2012-12-24,10,Sapporoo Gloves,Babywear,497.0,70
+2012-12-24,36,Mehmet-Tröja,Babywear,400.95,55
+2012-12-24,49,Finnish Sport Blades,Sportwear,324.0,18
+2012-12-24,60,Game Over T-Shirt,Sportwear,182.8,40
+2012-12-24,76,Minnki Pälsii,Womens Wear,32075.2,80
+2012-12-26,17,Tiebreak Tennis Shoes,Men´S Footwear,1217.16,45
+2012-12-26,21,Basket Shoes,Sportwear,513.0,50
+2012-12-26,56,High Heels Shoes,Ladies´Footwear,1087.5,30
+2012-12-26,59,Rasta Wct,Sportwear,719.04,70
+2012-12-27,68,Cap,Sportwear,794.4,60
+2012-12-27,71,Atles Lussekofta,Men´S Clothes,829.8,30
+2012-12-27,76,Minnki Pälsii,Womens Wear,13366.85,35
+2012-12-27,77,Skirt,Womens Wear,168.14,14
+2012-12-29,4,Oyaki Kimono,Womens Wear,296.604,12
+2012-12-29,39,Terence Top,Womens Wear,1397.88,20
+2012-12-29,54,Patamonia Fleece Jacket,Sportwear,212.85,6
+2013-01-03,1,Lenin Jeansshorts,Men´S Clothes,197.6,10
+2013-01-03,21,Basket Shoes,Sportwear,346.83,30
+2013-01-03,28,Rdl Suit,Children´S Wear,2187.108,42
+2013-01-03,36,Mehmet-Tröja,Babywear,43.34,5
+2013-01-03,40,Duck Trousers,Babywear,41.646,2
+2013-01-04,22,Ravellis Träskor,Ladies´Footwear,13.68,4
+2013-01-04,31,Rossi Bermuda Shorts,Bath Clothes,423.0,50
+2013-01-04,60,Game Over T-Shirt,Sportwear,68.85,15
+2013-01-04,71,Atles Lussekofta,Men´S Clothes,381.12,12
+2013-01-08,49,Finnish Sport Blades,Sportwear,593.7,30
+2013-01-08,59,Rasta Wct,Sportwear,79.1,10
+2013-01-08,71,Atles Lussekofta,Men´S Clothes,59.52,2
+2013-01-10,3,Chantell Shirt,Womens Wear,394.0,20
+2013-01-10,60,Game Over T-Shirt,Sportwear,267.5,50
+2013-01-10,72,Rossi Shorts,Bath Clothes,393.75,35
+2013-01-11,12,Tiny Winy Hot Bikini,Bath Clothes,403.236,36
+2013-01-11,13,Aino Shoes,Babywear,361.192,13
+2013-01-11,26,Bike Helmet,Sportwear,1284.3775,35
+2013-01-11,62,Sheat Shoes,Sportwear,2668.0,80
+2013-01-17,14,Kool Sunglasses,Children´S Wear,125.1775,5
+2013-01-17,45,Danske Treshoe,Men´S Footwear,405.72,40
+2013-01-17,59,Rasta Wct,Sportwear,260.1875,25
+2013-01-18,2,Mr X Trousers,Men´S Clothes,163.884,7
+2013-01-18,31,Rossi Bermuda Shorts,Bath Clothes,254.4,25
+2013-01-18,32,Rossi Bikkini,Bath Clothes,134.208,6
+2013-01-18,51,Snake Boots,Men´S Footwear,6007.104,48
+2013-01-19,28,Rdl Suit,Children´S Wear,196.68,4
+2013-01-19,43,Summer Shorts,Bath Clothes,314.64,24
+2013-01-19,53,Jumpin Jack Flash Dress,Womens Wear,1264.6,20
+2013-01-19,75,Bow Tie,Men´S Clothes,76.3,10
+2013-01-20,21,Basket Shoes,Sportwear,48.7,5
+2013-01-20,34,Baywatch Bikkini,Bath Clothes,294.0,35
+2013-01-20,51,Snake Boots,Men´S Footwear,730.52,7
+2013-01-20,61,Adihash Running Shoe,Sportwear,255.7,10
+2013-01-20,77,Skirt,Womens Wear,443.205,30
+2013-01-21,32,Rossi Bikkini,Bath Clothes,874.72,40
+2013-01-21,58,Ga-Ga Dress,Babywear,1451.01,30
+2013-01-21,62,Sheat Shoes,Sportwear,864.325,25
+2013-01-23,7,Conserve Shoes,Children´S Wear,655.872,16
+2013-01-23,12,Tiny Winy Hot Bikini,Bath Clothes,363.96,36
+2013-01-23,16,Wimbledon T-Shirt,Sportwear,181.4,20
+2013-01-23,18,Deuce Shirt,Babywear,643.608,21
+2013-01-23,34,Baywatch Bikkini,Bath Clothes,232.5,30
+2013-01-23,36,Mehmet-Tröja,Babywear,491.84000000000003,60
+2013-01-23,46,Rodbye Troje,Babywear,251.58,20
+2013-01-23,59,Rasta Wct,Sportwear,54.74,7
+2013-01-23,62,Sheat Shoes,Sportwear,1442.0,50
+2013-01-23,64,Wfs Shoes,Ladies´Footwear,848.4,24
+2013-01-23,68,Cap,Sportwear,83.52,6
+2013-01-23,69,Racing Truck  Socks,Sportwear,51.6,20
+2013-01-23,72,Rossi Shorts,Bath Clothes,512.4,40
+2013-01-24,11,Desperado Jeans,Men´S Clothes,529.5,15
+2013-01-24,16,Wimbledon T-Shirt,Sportwear,159.84,18
+2013-01-27,1,Lenin Jeansshorts,Men´S Clothes,804.125,35
+2013-01-27,10,Sapporoo Gloves,Babywear,140.184,18
+2013-01-27,28,Rdl Suit,Children´S Wear,2856.48,60
+2013-01-27,34,Baywatch Bikkini,Bath Clothes,111.86,14
+2013-01-29,21,Basket Shoes,Sportwear,423.6,40
+2013-01-29,22,Ravellis Träskor,Ladies´Footwear,21.96,6
+2013-01-29,24,Samba Socker  Socks,Men´S Clothes,87.4,20
+2013-01-29,63,Serve-Shirt,Womens Wear,385.0,20
+2013-01-30,1,Lenin Jeansshorts,Men´S Clothes,1026.0,50
+2013-01-30,21,Basket Shoes,Sportwear,284.7,30
+2013-01-30,31,Rossi Bermuda Shorts,Bath Clothes,171.57,20
+2013-01-30,50,Finnish Swimsuit,Sportwear,660.4,40
+2013-01-30,56,High Heels Shoes,Ladies´Footwear,579.46,14
+2013-01-30,72,Rossi Shorts,Bath Clothes,278.0,25
+2013-01-30,77,Skirt,Womens Wear,303.0,25
+2013-02-01,31,Rossi Bermuda Shorts,Bath Clothes,173.04,20
+2013-02-01,40,Duck Trousers,Babywear,490.14,24
+2013-02-01,70,Us-Master Jeans,Men´S Clothes,1098.72,40
+2013-02-04,16,Wimbledon T-Shirt,Sportwear,211.7955,21
+2013-02-04,35,La. Shorts,Bath Clothes,452.41,70
+2013-02-04,46,Rodbye Troje,Babywear,364.5,30
+2013-02-04,59,Rasta Wct,Sportwear,382.26,40
+2013-02-04,63,Serve-Shirt,Womens Wear,1894.28,80
+2013-02-06,1,Lenin Jeansshorts,Men´S Clothes,121.86,5
+2013-02-06,34,Baywatch Bikkini,Bath Clothes,125.856,12
+2013-02-06,68,Cap,Sportwear,649.44,40
+2013-02-06,71,Atles Lussekofta,Men´S Clothes,2067.84,60
+2013-02-07,17,Tiebreak Tennis Shoes,Men´S Footwear,856.02,33
+2013-02-07,31,Rossi Bermuda Shorts,Bath Clothes,781.58,72
+2013-02-07,66,Langoste Shirt,Womens Wear,923.0,50
+2013-02-07,75,Bow Tie,Men´S Clothes,61.824,7
+2013-02-08,1,Lenin Jeansshorts,Men´S Clothes,455.75,25
+2013-02-09,14,Kool Sunglasses,Children´S Wear,295.8,12
+2013-02-09,28,Rdl Suit,Children´S Wear,789.66,18
+2013-02-09,40,Duck Trousers,Babywear,374.22,21
+2013-02-09,75,Bow Tie,Men´S Clothes,76.3,10
+2013-02-11,31,Rossi Bermuda Shorts,Bath Clothes,183.0,20
+2013-02-11,32,Rossi Bikkini,Bath Clothes,78.72,4
+2013-02-12,16,Wimbledon T-Shirt,Sportwear,371.2,40
+2013-02-12,43,Summer Shorts,Bath Clothes,281.76,24
+2013-02-12,59,Rasta Wct,Sportwear,68.24,8
+2013-02-12,62,Sheat Shoes,Sportwear,604.6,20
+2013-02-14,16,Wimbledon T-Shirt,Sportwear,29.01,3
+2013-02-14,42,Balett Shoes,Ladies´Footwear,81.18,6
+2013-02-14,43,Summer Shorts,Bath Clothes,74.34,6
+2013-02-15,14,Kool Sunglasses,Children´S Wear,653.7,30
+2013-02-15,31,Rossi Bermuda Shorts,Bath Clothes,65.92,8
+2013-02-15,41,Duck Shirt,Babywear,316.75,35
+2013-02-15,53,Jumpin Jack Flash Dress,Womens Wear,661.8,10
+2013-02-15,58,Ga-Ga Dress,Babywear,1337.7,30
+2013-02-15,63,Serve-Shirt,Womens Wear,184.5,9
+2013-02-15,69,Racing Truck  Socks,Sportwear,63.9,30
+2013-02-17,16,Wimbledon T-Shirt,Sportwear,602.112,56
+2013-02-17,31,Rossi Bermuda Shorts,Bath Clothes,639.45,70
+2013-02-17,60,Game Over T-Shirt,Sportwear,458.64,80
+2013-02-20,1,Lenin Jeansshorts,Men´S Clothes,144.16,8
+2013-02-20,69,Racing Truck  Socks,Sportwear,6.57,3
+2013-02-21,19,Squash Shorts,Sportwear,319.77,30
+2013-02-21,21,Basket Shoes,Sportwear,122.364,12
+2013-02-21,64,Wfs Shoes,Ladies´Footwear,899.36,28
+2013-02-22,34,Baywatch Bikkini,Bath Clothes,117.32,14
+2013-02-22,70,Us-Master Jeans,Men´S Clothes,873.9,30
+2013-02-24,22,Ravellis Träskor,Ladies´Footwear,52.65,15
+2013-02-24,24,Samba Socker  Socks,Men´S Clothes,83.6625,15
+2013-02-24,35,La. Shorts,Bath Clothes,138.18,21
+2013-02-24,71,Atles Lussekofta,Men´S Clothes,238.24,8
+2013-02-25,2,Mr X Trousers,Men´S Clothes,58.41,3
+2013-02-25,18,Deuce Shirt,Babywear,510.3,20
+2013-02-25,31,Rossi Bermuda Shorts,Bath Clothes,392.5,50
+2013-02-25,41,Duck Shirt,Babywear,115.038,12
+2013-02-25,43,Summer Shorts,Bath Clothes,501.06,40
+2013-02-25,68,Cap,Sportwear,527.85,45
+2013-02-25,75,Bow Tie,Men´S Clothes,309.12,42
+2013-02-27,17,Tiebreak Tennis Shoes,Men´S Footwear,672.375,25
+2013-02-27,20,Tennis Suit,Sportwear,1385.01,15
+2013-02-27,37,Mehmet-Skor,Babywear,79.794,18
+2013-02-27,41,Duck Shirt,Babywear,68.64,6
+2013-02-28,16,Wimbledon T-Shirt,Sportwear,329.01,30
+2013-02-28,60,Game Over T-Shirt,Sportwear,108.9,20
+2013-03-01,16,Wimbledon T-Shirt,Sportwear,137.8125,15
+2013-03-01,31,Rossi Bermuda Shorts,Bath Clothes,27.468,3
+2013-03-01,65,Stretch Oui-Pants,Womens Wear,95.13,10
+2013-03-02,21,Basket Shoes,Sportwear,412.02,40
+2013-03-02,51,Snake Boots,Men´S Footwear,2959.74,30
+2013-03-03,8,Tuxedo,Womens Wear,182.0,10
+2013-03-03,12,Tiny Winy Hot Bikini,Bath Clothes,39.28,4
+2013-03-03,24,Samba Socker  Socks,Men´S Clothes,98.4,20
+2013-03-04,19,Squash Shorts,Sportwear,73.675,7
+2013-03-04,35,La. Shorts,Bath Clothes,67.6125,9
+2013-03-04,58,Ga-Ga Dress,Babywear,1641.75,30
+2013-03-04,70,Us-Master Jeans,Men´S Clothes,1040.625,30
+2013-03-05,15,Sumi Underwear,Womens Wear,81.018,12
+2013-03-05,28,Rdl Suit,Children´S Wear,394.128,8
+2013-03-08,16,Wimbledon T-Shirt,Sportwear,25.98,3
+2013-03-09,28,Rdl Suit,Children´S Wear,252.66,5
+2013-03-09,35,La. Shorts,Bath Clothes,252.0,35
+2013-03-09,45,Danske Treshoe,Men´S Footwear,447.84,40
+2013-03-09,56,High Heels Shoes,Ladies´Footwear,665.952,14
+2013-03-10,59,Rasta Wct,Sportwear,75.51,9
+2013-03-10,65,Stretch Oui-Pants,Womens Wear,414.4,40
+2013-03-10,68,Cap,Sportwear,121.3,10
+2013-03-13,11,Desperado Jeans,Men´S Clothes,484.785,15
+2013-03-13,14,Kool Sunglasses,Children´S Wear,278.1735,11
+2013-03-13,16,Wimbledon T-Shirt,Sportwear,101.0,10
+2013-03-13,28,Rdl Suit,Children´S Wear,149.76,3
+2013-03-13,31,Rossi Bermuda Shorts,Bath Clothes,8.19,1
+2013-03-13,42,Balett Shoes,Ladies´Footwear,435.988,28
+2013-03-13,56,High Heels Shoes,Ladies´Footwear,2530.71,60
+2013-03-13,62,Sheat Shoes,Sportwear,273.5,10
+2013-03-13,65,Stretch Oui-Pants,Womens Wear,121.92,12
+2013-03-14,4,Oyaki Kimono,Womens Wear,263.01,10
+2013-03-14,5,O-Man Underwear,Men´S Clothes,95.535,15
+2013-03-14,16,Wimbledon T-Shirt,Sportwear,131.736,12
+2013-03-14,18,Deuce Shirt,Babywear,659.04,24
+2013-03-14,22,Ravellis Träskor,Ladies´Footwear,129.2,40
+2013-03-14,31,Rossi Bermuda Shorts,Bath Clothes,81.6,10
+2013-03-14,32,Rossi Bikkini,Bath Clothes,223.96,10
+2013-03-14,38,Le Baby Dress,Womens Wear,372.25,5
+2013-03-14,40,Duck Trousers,Babywear,971.5,50
+2013-03-14,44,Okkaba Skin Jackets,Womens Wear,1146.08,16
+2013-03-14,59,Rasta Wct,Sportwear,391.05,45
+2013-03-14,72,Rossi Shorts,Bath Clothes,85.12,7
+2013-03-14,75,Bow Tie,Men´S Clothes,137.28,15
+2013-03-15,17,Tiebreak Tennis Shoes,Men´S Footwear,438.66,18
+2013-03-15,34,Baywatch Bikkini,Bath Clothes,295.2,40
+2013-03-15,53,Jumpin Jack Flash Dress,Womens Wear,1640.25,25
+2013-03-18,7,Conserve Shoes,Children´S Wear,1629.45,45
+2013-03-18,17,Tiebreak Tennis Shoes,Men´S Footwear,2436.0,100
+2013-03-18,18,Deuce Shirt,Babywear,696.0,30
+2013-03-18,33,Car Boots,Sportwear,340.2,14
+2013-03-18,35,La. Shorts,Bath Clothes,87.9,15
+2013-03-18,40,Duck Trousers,Babywear,700.14,42
+2013-03-18,63,Serve-Shirt,Womens Wear,572.1,30
+2013-03-18,68,Cap,Sportwear,224.82,18
+2013-03-18,72,Rossi Shorts,Bath Clothes,150.6,12
+2013-03-19,1,Lenin Jeansshorts,Men´S Clothes,219.4,10
+2013-03-19,31,Rossi Bermuda Shorts,Bath Clothes,165.0,20
+2013-03-19,32,Rossi Bikkini,Bath Clothes,492.384,24
+2013-03-19,35,La. Shorts,Bath Clothes,399.6,60
+2013-03-19,36,Mehmet-Tröja,Babywear,514.8,60
+2013-03-19,38,Le Baby Dress,Womens Wear,5068.56,49
+2013-03-19,39,Terence Top,Womens Wear,627.2,10
+2013-03-19,44,Okkaba Skin Jackets,Womens Wear,1611.96,21
+2013-03-19,68,Cap,Sportwear,450.72,30
+2013-03-19,75,Bow Tie,Men´S Clothes,167.2,20
+2013-03-19,77,Skirt,Womens Wear,215.1,18
+2013-03-20,1,Lenin Jeansshorts,Men´S Clothes,55.5,3
+2013-03-20,10,Sapporoo Gloves,Babywear,65.7,10
+2013-03-20,16,Wimbledon T-Shirt,Sportwear,1201.325,115
+2013-03-20,17,Tiebreak Tennis Shoes,Men´S Footwear,1029.875,35
+2013-03-20,21,Basket Shoes,Sportwear,64.14,6
+2013-03-20,26,Bike Helmet,Sportwear,402.204,12
+2013-03-20,30,Baby Dark Lounge Suit,Babywear,708.3,30
+2013-03-20,31,Rossi Bermuda Shorts,Bath Clothes,195.25,20
+2013-03-20,42,Balett Shoes,Ladies´Footwear,693.5,40
+2013-03-20,50,Finnish Swimsuit,Sportwear,330.44,20
+2013-03-20,73,Mehmet-Napp,Babywear,15.6,15
+2013-03-21,15,Sumi Underwear,Womens Wear,70.9,10
+2013-03-21,75,Bow Tie,Men´S Clothes,165.27,21
+2013-03-22,14,Kool Sunglasses,Children´S Wear,363.3525,15
+2013-03-22,41,Duck Shirt,Babywear,92.043,9
+2013-03-22,65,Stretch Oui-Pants,Womens Wear,292.32,30
+2013-03-22,75,Bow Tie,Men´S Clothes,467.4,50
+2013-03-26,29,Davenport,Men´S Footwear,1157.6,10
+2013-03-26,31,Rossi Bermuda Shorts,Bath Clothes,480.375,50
+2013-03-26,60,Game Over T-Shirt,Sportwear,141.312,24
+2013-03-26,69,Racing Truck  Socks,Sportwear,22.195,10
+2013-03-27,25,Basket Vest,Sportwear,192.0,12
+2013-03-27,27,Tracksuit,Sportwear,1592.0,40
+2013-03-27,43,Summer Shorts,Bath Clothes,464.25,30
+2013-03-28,26,Bike Helmet,Sportwear,199.74,6
+2013-03-28,35,La. Shorts,Bath Clothes,128.4,20
+2013-03-28,77,Skirt,Womens Wear,246.4,20
+2013-03-29,1,Lenin Jeansshorts,Men´S Clothes,639.0,30
+2013-03-29,18,Deuce Shirt,Babywear,1262.4,40
+2013-03-29,29,Davenport,Men´S Footwear,4824.8,40
+2013-03-29,42,Balett Shoes,Ladies´Footwear,1669.2,100
+2013-03-29,43,Summer Shorts,Bath Clothes,457.6,40
+2013-03-29,44,Okkaba Skin Jackets,Womens Wear,1781.04,24
+2013-03-29,62,Sheat Shoes,Sportwear,1326.24,48
+2013-03-30,4,Oyaki Kimono,Womens Wear,429.888,16
+2013-03-30,35,La. Shorts,Bath Clothes,24.32,4
+2013-03-30,43,Summer Shorts,Bath Clothes,33.54,3
+2013-03-30,56,High Heels Shoes,Ladies´Footwear,1417.32,30
+2013-03-30,60,Game Over T-Shirt,Sportwear,103.6,20
+2013-04-01,2,Mr X Trousers,Men´S Clothes,788.0,40
+2013-04-01,7,Conserve Shoes,Children´S Wear,1318.8,35
+2013-04-01,14,Kool Sunglasses,Children´S Wear,205.2,9
+2013-04-01,51,Snake Boots,Men´S Footwear,4048.0,40
+2013-04-01,68,Cap,Sportwear,464.4,40
+2013-04-03,1,Lenin Jeansshorts,Men´S Clothes,403.6,20
+2013-04-03,14,Kool Sunglasses,Children´S Wear,508.41,21
+2013-04-03,19,Squash Shorts,Sportwear,154.275,15
+2013-04-03,21,Basket Shoes,Sportwear,276.375,25
+2013-04-03,24,Samba Socker  Socks,Men´S Clothes,13.11,3
+2013-04-03,35,La. Shorts,Bath Clothes,202.29,30
+2013-04-03,77,Skirt,Womens Wear,885.78,60
+2013-04-05,31,Rossi Bermuda Shorts,Bath Clothes,341.334,42
+2013-04-06,35,La. Shorts,Bath Clothes,219.75,30
+2013-04-06,61,Adihash Running Shoe,Sportwear,3897.0,120
+2013-04-06,69,Racing Truck  Socks,Sportwear,146.25,65
+2013-04-07,56,High Heels Shoes,Ladies´Footwear,215.46,5
+2013-04-07,63,Serve-Shirt,Womens Wear,543.168,24
+2013-04-07,75,Bow Tie,Men´S Clothes,268.92,30
+2013-04-10,27,Tracksuit,Sportwear,2074.5,50
+2013-04-10,71,Atles Lussekofta,Men´S Clothes,255.96,9
+2013-04-11,53,Jumpin Jack Flash Dress,Womens Wear,907.95,15
+2013-04-11,62,Sheat Shoes,Sportwear,305.1,10
+2013-04-11,77,Skirt,Womens Wear,162.0,12
+2013-04-12,13,Aino Shoes,Babywear,1422.0,60
+2013-04-12,27,Tracksuit,Sportwear,1077.25,25
+2013-04-12,39,Terence Top,Womens Wear,329.04,6
+2013-04-12,59,Rasta Wct,Sportwear,303.1,35
+2013-04-12,77,Skirt,Womens Wear,192.6,15
+2013-04-13,77,Skirt,Womens Wear,81.8125,5
+2013-04-14,22,Ravellis Träskor,Ladies´Footwear,159.84,48
+2013-04-14,29,Davenport,Men´S Footwear,4764.24,36
+2013-04-14,36,Mehmet-Tröja,Babywear,238.2,30
+2013-04-14,39,Terence Top,Womens Wear,141.036,2
+2013-04-14,49,Finnish Sport Blades,Sportwear,507.4125,25
+2013-04-14,72,Rossi Shorts,Bath Clothes,387.435,30
+2013-04-14,75,Bow Tie,Men´S Clothes,312.444,36
+2013-04-17,16,Wimbledon T-Shirt,Sportwear,297.99,30
+2013-04-17,52,Small Crocodile Boots,Ladies´Footwear,582.08,8
+2013-04-17,59,Rasta Wct,Sportwear,166.95,20
+2013-04-17,60,Game Over T-Shirt,Sportwear,399.84,70
+2013-04-17,68,Cap,Sportwear,127.4,10
+2013-04-17,71,Atles Lussekofta,Men´S Clothes,508.5675,15
+2013-04-19,2,Mr X Trousers,Men´S Clothes,191.7,10
+2013-04-19,54,Patamonia Fleece Jacket,Sportwear,113.7,3
+2013-04-19,56,High Heels Shoes,Ladies´Footwear,1155.28,28
+2013-04-19,68,Cap,Sportwear,189.9,15
+2013-04-20,2,Mr X Trousers,Men´S Clothes,719.25,35
+2013-04-20,41,Duck Shirt,Babywear,274.5625,25
+2013-04-21,1,Lenin Jeansshorts,Men´S Clothes,118.5,6
+2013-04-21,2,Mr X Trousers,Men´S Clothes,205.5,10
+2013-04-21,17,Tiebreak Tennis Shoes,Men´S Footwear,717.0,30
+2013-04-21,36,Mehmet-Tröja,Babywear,198.975,21
+2013-04-21,60,Game Over T-Shirt,Sportwear,79.2,15
+2013-04-21,70,Us-Master Jeans,Men´S Clothes,556.2,20
+2013-04-25,11,Desperado Jeans,Men´S Clothes,365.54,14
+2013-04-25,13,Aino Shoes,Babywear,241.12,8
+2013-04-25,21,Basket Shoes,Sportwear,87.36,8
+2013-04-25,39,Terence Top,Womens Wear,298.05,5
+2013-04-25,75,Bow Tie,Men´S Clothes,340.8,40
+2013-04-27,38,Le Baby Dress,Womens Wear,1191.8025,15
+2013-04-27,56,High Heels Shoes,Ladies´Footwear,561.54,14
+2013-04-27,59,Rasta Wct,Sportwear,301.875,30
+2013-04-27,70,Us-Master Jeans,Men´S Clothes,416.43,15
+2013-04-27,71,Atles Lussekofta,Men´S Clothes,477.0675,15
+2013-04-30,21,Basket Shoes,Sportwear,383.88,42
+2013-04-30,22,Ravellis Träskor,Ladies´Footwear,130.8,40
+2013-05-01,19,Squash Shorts,Sportwear,49.45,5
+2013-05-01,23,Dsw,Ladies´Footwear,96.4,10
+2013-05-01,70,Us-Master Jeans,Men´S Clothes,546.8,20
+2013-05-01,71,Atles Lussekofta,Men´S Clothes,487.05,15
+2013-05-02,2,Mr X Trousers,Men´S Clothes,355.2,20
+2013-05-02,68,Cap,Sportwear,279.288,18
+2013-05-03,24,Samba Socker  Socks,Men´S Clothes,51.912,12
+2013-05-03,59,Rasta Wct,Sportwear,56.196,6
+2013-05-07,53,Jumpin Jack Flash Dress,Womens Wear,761.28,12
+2013-05-07,60,Game Over T-Shirt,Sportwear,99.0,20
+2013-05-07,62,Sheat Shoes,Sportwear,460.8,15
+2013-05-07,71,Atles Lussekofta,Men´S Clothes,663.2,20
+2013-05-07,73,Mehmet-Napp,Babywear,47.495,35
+2013-05-08,29,Davenport,Men´S Footwear,2389.8,20
+2013-05-08,64,Wfs Shoes,Ladies´Footwear,274.05,9
+2013-05-09,17,Tiebreak Tennis Shoes,Men´S Footwear,506.625,15
+2013-05-10,2,Mr X Trousers,Men´S Clothes,607.005,30
+2013-05-10,19,Squash Shorts,Sportwear,9.9,1
+2013-05-10,24,Samba Socker  Socks,Men´S Clothes,25.08,6
+2013-05-10,33,Car Boots,Sportwear,522.48,20
+2013-05-10,35,La. Shorts,Bath Clothes,25.48,4
+2013-05-10,75,Bow Tie,Men´S Clothes,61.864,8
+2013-05-11,7,Conserve Shoes,Children´S Wear,1290.45,35
+2013-05-11,18,Deuce Shirt,Babywear,1381.5,50
+2013-05-11,30,Baby Dark Lounge Suit,Babywear,158.28,6
+2013-05-11,51,Snake Boots,Men´S Footwear,1514.85,15
+2013-05-11,57,Burned Rubber Shoes,Ladies´Footwear,42.04,2
+2013-05-11,75,Bow Tie,Men´S Clothes,15.08,2
+2013-05-15,4,Oyaki Kimono,Womens Wear,515.75,25
+2013-05-15,11,Desperado Jeans,Men´S Clothes,267.7,10
+2013-05-15,27,Tracksuit,Sportwear,806.8125,15
+2013-05-15,44,Okkaba Skin Jackets,Womens Wear,1435.77,21
+2013-05-15,50,Finnish Swimsuit,Sportwear,416.0625,25
+2013-05-15,56,High Heels Shoes,Ladies´Footwear,2314.62,60
+2013-05-15,58,Ga-Ga Dress,Babywear,285.78,6
+2013-05-15,60,Game Over T-Shirt,Sportwear,118.25,20
+2013-05-15,67,X-Dress,Womens Wear,400.4375,5
+2013-05-16,18,Deuce Shirt,Babywear,193.36,8
+2013-05-16,45,Danske Treshoe,Men´S Footwear,177.2,20
+2013-05-16,65,Stretch Oui-Pants,Womens Wear,212.94,21
+2013-05-16,72,Rossi Shorts,Bath Clothes,646.2,60
+2013-05-17,69,Racing Truck  Socks,Sportwear,46.0,20
+2013-05-17,70,Us-Master Jeans,Men´S Clothes,516.0,15
+2013-05-18,2,Mr X Trousers,Men´S Clothes,929.0,50
+2013-05-18,21,Basket Shoes,Sportwear,381.24,30
+2013-05-18,40,Duck Trousers,Babywear,1187.4,60
+2013-05-18,61,Adihash Running Shoe,Sportwear,643.92,20
+2013-05-19,54,Patamonia Fleece Jacket,Sportwear,369.82,10
+2013-05-19,68,Cap,Sportwear,38.808,3
+2013-05-21,18,Deuce Shirt,Babywear,114.224,4
+2013-05-21,43,Summer Shorts,Bath Clothes,262.0,20
+2013-05-21,46,Rodbye Troje,Babywear,300.3,21
+2013-05-22,3,Chantell Shirt,Womens Wear,616.2,30
+2013-05-22,18,Deuce Shirt,Babywear,525.2,20
+2013-05-22,36,Mehmet-Tröja,Babywear,118.95,15
+2013-05-22,64,Wfs Shoes,Ladies´Footwear,320.4,9
+2013-05-23,19,Squash Shorts,Sportwear,271.2,30
+2013-05-23,39,Terence Top,Womens Wear,1264.0,20
+2013-05-24,20,Tennis Suit,Sportwear,1681.4,20
+2013-05-24,28,Rdl Suit,Children´S Wear,948.6,20
+2013-05-24,72,Rossi Shorts,Bath Clothes,182.85,15
+2013-05-25,24,Samba Socker  Socks,Men´S Clothes,37.44,8
+2013-05-25,53,Jumpin Jack Flash Dress,Womens Wear,284.5,5
+2013-05-28,6,Shagall Socks,Womens Wear,270.9,70
+2013-05-28,15,Sumi Underwear,Womens Wear,313.5,50
+2013-05-28,19,Squash Shorts,Sportwear,137.25,12
+2013-05-28,22,Ravellis Träskor,Ladies´Footwear,88.75,20
+2013-05-28,41,Duck Shirt,Babywear,496.32,44
+2013-05-28,46,Rodbye Troje,Babywear,584.1,45
+2013-05-28,47,Lundenhagen Boots,Men´S Footwear,253.2,10
+2013-05-28,56,High Heels Shoes,Ladies´Footwear,2641.45,65
+2013-05-28,60,Game Over T-Shirt,Sportwear,144.6,30
+2013-05-28,68,Cap,Sportwear,184.95,15
+2013-06-02,19,Squash Shorts,Sportwear,137.55,15
+2013-06-02,70,Us-Master Jeans,Men´S Clothes,581.6,20
+2013-06-04,20,Tennis Suit,Sportwear,1817.55,21
+2013-06-05,39,Terence Top,Womens Wear,236.268,3
+2013-06-05,40,Duck Trousers,Babywear,183.3,10
+2013-06-05,56,High Heels Shoes,Ladies´Footwear,783.4,20
+2013-06-05,58,Ga-Ga Dress,Babywear,3075.24,49
+2013-06-05,68,Cap,Sportwear,129.1,10
+2013-06-07,51,Snake Boots,Men´S Footwear,1880.6,20
+2013-06-07,59,Rasta Wct,Sportwear,8.03,1
+2013-06-07,76,Minnki Pälsii,Womens Wear,3610.5,10
+2013-06-08,29,Davenport,Men´S Footwear,4708.8,36
+2013-06-08,65,Stretch Oui-Pants,Womens Wear,110.4,10
+2013-06-08,69,Racing Truck  Socks,Sportwear,116.64,45
+2013-06-08,71,Atles Lussekofta,Men´S Clothes,522.648,14
+2013-06-09,55,Feiss Fleece Trousers,Sportwear,444.528,12
+2013-06-09,76,Minnki Pälsii,Womens Wear,14078.05,35
+2013-06-11,36,Mehmet-Tröja,Babywear,241.8,30
+2013-06-12,23,Dsw,Ladies´Footwear,274.88,32
+2013-06-12,46,Rodbye Troje,Babywear,745.8,60
+2013-06-12,67,X-Dress,Womens Wear,1468.25,25
+2013-06-12,73,Mehmet-Napp,Babywear,56.5,50
+2013-06-12,75,Bow Tie,Men´S Clothes,184.5,25
+2013-06-13,38,Le Baby Dress,Womens Wear,1367.85,15
+2013-06-13,71,Atles Lussekofta,Men´S Clothes,389.64,12
+2013-06-14,23,Dsw,Ladies´Footwear,48.55,5
+2013-06-14,69,Racing Truck  Socks,Sportwear,2.12,1
+2013-06-14,70,Us-Master Jeans,Men´S Clothes,147.75,5
+2013-06-18,26,Bike Helmet,Sportwear,1158.51,30
+2013-06-18,33,Car Boots,Sportwear,243.892,8
+2013-06-19,59,Rasta Wct,Sportwear,102.12,12
+2013-06-20,36,Mehmet-Tröja,Babywear,101.64,12
+2013-06-21,33,Car Boots,Sportwear,764.1,30
+2013-06-21,66,Langoste Shirt,Womens Wear,74.16,4
+2013-06-21,75,Bow Tie,Men´S Clothes,247.5,30
+2013-06-22,40,Duck Trousers,Babywear,364.8,20
+2013-06-22,47,Lundenhagen Boots,Men´S Footwear,1051.6,40
+2013-06-22,52,Small Crocodile Boots,Ladies´Footwear,688.41,9
+2013-06-22,60,Game Over T-Shirt,Sportwear,164.7,30
+2013-06-23,57,Burned Rubber Shoes,Ladies´Footwear,70.64,4
+2013-06-23,76,Minnki Pälsii,Womens Wear,5523.28,14
+2013-06-25,30,Baby Dark Lounge Suit,Babywear,825.3,30
+2013-06-25,53,Jumpin Jack Flash Dress,Womens Wear,1635.375,25
+2013-06-25,54,Patamonia Fleece Jacket,Sportwear,1060.5,30
+2013-06-26,9,Fuji Boots,Men´S Footwear,2573.125,50
+2013-06-26,17,Tiebreak Tennis Shoes,Men´S Footwear,813.6,30
+2013-06-26,26,Bike Helmet,Sportwear,443.25,15
+2013-06-26,29,Davenport,Men´S Footwear,1321.2,10
+2013-06-26,36,Mehmet-Tröja,Babywear,58.05,6
+2013-06-28,56,High Heels Shoes,Ladies´Footwear,1026.25,20
+2013-06-28,77,Skirt,Womens Wear,502.5,30
+2013-06-29,71,Atles Lussekofta,Men´S Clothes,942.6,30
+2013-07-01,10,Sapporoo Gloves,Babywear,173.376,24
+2013-07-01,31,Rossi Bermuda Shorts,Bath Clothes,140.9625,15
+2013-07-01,33,Car Boots,Sportwear,509.0,20
+2013-07-01,40,Duck Trousers,Babywear,1219.05,60
+2013-07-01,76,Minnki Pälsii,Womens Wear,14281.344,33
+2013-07-02,7,Conserve Shoes,Children´S Wear,3359.7,90
+2013-07-02,9,Fuji Boots,Men´S Footwear,211.8,6
+2013-07-02,19,Squash Shorts,Sportwear,171.36,15
+2013-07-02,34,Baywatch Bikkini,Bath Clothes,179.52,20
+2013-07-02,54,Patamonia Fleece Jacket,Sportwear,2555.76,60
+2013-07-02,57,Burned Rubber Shoes,Ladies´Footwear,365.4,15
+2013-07-02,59,Rasta Wct,Sportwear,202.5,25
+2013-07-02,69,Racing Truck  Socks,Sportwear,74.865,30
+2013-07-02,70,Us-Master Jeans,Men´S Clothes,1350.5,50
+2013-07-02,73,Mehmet-Napp,Babywear,20.355,15
+2013-07-03,3,Chantell Shirt,Womens Wear,272.72,14
+2013-07-03,7,Conserve Shoes,Children´S Wear,385.6,10
+2013-07-03,54,Patamonia Fleece Jacket,Sportwear,1851.0,50
+2013-07-04,17,Tiebreak Tennis Shoes,Men´S Footwear,509.6,20
+2013-07-04,46,Rodbye Troje,Babywear,216.36,18
+2013-07-05,11,Desperado Jeans,Men´S Clothes,392.55,15
+2013-07-05,17,Tiebreak Tennis Shoes,Men´S Footwear,201.348,8
+2013-07-05,29,Davenport,Men´S Footwear,1570.842,12
+2013-07-05,47,Lundenhagen Boots,Men´S Footwear,286.56,12
+2013-07-05,65,Stretch Oui-Pants,Womens Wear,687.96,65
+2013-07-05,70,Us-Master Jeans,Men´S Clothes,250.908,8
+2013-07-06,4,Oyaki Kimono,Womens Wear,476.16,24
+2013-07-06,10,Sapporoo Gloves,Babywear,189.06,24
+2013-07-06,56,High Heels Shoes,Ladies´Footwear,573.528,12
+2013-07-06,57,Burned Rubber Shoes,Ladies´Footwear,287.04,16
+2013-07-06,65,Stretch Oui-Pants,Womens Wear,171.6375,15
+2013-07-06,75,Bow Tie,Men´S Clothes,406.0,50
+2013-07-09,59,Rasta Wct,Sportwear,420.693,42
+2013-07-09,71,Atles Lussekofta,Men´S Clothes,739.68,20
+2013-07-09,76,Minnki Pälsii,Womens Wear,14456.1901,35
+2013-07-10,2,Mr X Trousers,Men´S Clothes,92.8,5
+2013-07-10,4,Oyaki Kimono,Womens Wear,144.84,6
+2013-07-10,24,Samba Socker  Socks,Men´S Clothes,160.3,35
+2013-07-10,48,Root Boot,Men´S Footwear,712.08,24
+2013-07-10,59,Rasta Wct,Sportwear,310.8,35
+2013-07-10,73,Mehmet-Napp,Babywear,38.15,35
+2013-07-12,54,Patamonia Fleece Jacket,Sportwear,569.55,15
+2013-07-12,55,Feiss Fleece Trousers,Sportwear,878.01,21
+2013-07-12,57,Burned Rubber Shoes,Ladies´Footwear,764.4,40
+2013-07-12,70,Us-Master Jeans,Men´S Clothes,953.764,28
+2013-07-13,8,Tuxedo,Womens Wear,813.2,40
+2013-07-13,51,Snake Boots,Men´S Footwear,2561.44,28
+2013-07-13,60,Game Over T-Shirt,Sportwear,49.1,10
+2013-07-16,19,Squash Shorts,Sportwear,42.25,5
+2013-07-16,47,Lundenhagen Boots,Men´S Footwear,131.55,5
+2013-07-16,59,Rasta Wct,Sportwear,112.08,12
+2013-07-16,63,Serve-Shirt,Womens Wear,118.26,6
+2013-07-16,72,Rossi Shorts,Bath Clothes,335.1,30
+2013-07-16,76,Minnki Pälsii,Womens Wear,4060.8,10
+2013-07-17,19,Squash Shorts,Sportwear,105.24,12
+2013-07-17,41,Duck Shirt,Babywear,393.96,42
+2013-07-17,53,Jumpin Jack Flash Dress,Womens Wear,7733.535,123
+2013-07-17,56,High Heels Shoes,Ladies´Footwear,1068.6,30
+2013-07-18,2,Mr X Trousers,Men´S Clothes,653.25,30
+2013-07-18,10,Sapporoo Gloves,Babywear,116.28,18
+2013-07-18,17,Tiebreak Tennis Shoes,Men´S Footwear,816.4125,27
+2013-07-18,26,Bike Helmet,Sportwear,941.7,30
+2013-07-18,45,Danske Treshoe,Men´S Footwear,1129.7,110
+2013-07-18,46,Rodbye Troje,Babywear,273.84,24
+2013-07-18,47,Lundenhagen Boots,Men´S Footwear,1746.875,50
+2013-07-18,56,High Heels Shoes,Ladies´Footwear,775.8,18
+2013-07-18,58,Ga-Ga Dress,Babywear,651.9,12
+2013-07-19,4,Oyaki Kimono,Womens Wear,459.954,18
+2013-07-19,10,Sapporoo Gloves,Babywear,137.76,21
+2013-07-19,71,Atles Lussekofta,Men´S Clothes,953.7,30
+2013-07-20,35,La. Shorts,Bath Clothes,129.4,20
+2013-07-20,57,Burned Rubber Shoes,Ladies´Footwear,117.78,6
+2013-07-23,1,Lenin Jeansshorts,Men´S Clothes,364.6875,15
+2013-07-23,10,Sapporoo Gloves,Babywear,142.875,18
+2013-07-23,18,Deuce Shirt,Babywear,408.45,12
+2013-07-23,30,Baby Dark Lounge Suit,Babywear,100.65,3
+2013-07-23,54,Patamonia Fleece Jacket,Sportwear,1712.5,40
+2013-07-23,71,Atles Lussekofta,Men´S Clothes,1125.0,30
+2013-07-23,77,Skirt,Womens Wear,576.1875,35
+2013-07-24,17,Tiebreak Tennis Shoes,Men´S Footwear,225.632,8
+2013-07-24,19,Squash Shorts,Sportwear,95.2,10
+2013-07-24,21,Basket Shoes,Sportwear,62.7,6
+2013-07-24,61,Adihash Running Shoe,Sportwear,282.15,10
+2013-07-25,44,Okkaba Skin Jackets,Womens Wear,3967.425,50
+2013-07-26,10,Sapporoo Gloves,Babywear,123.04,16
+2013-07-26,26,Bike Helmet,Sportwear,480.75,15
+2013-07-26,61,Adihash Running Shoe,Sportwear,134.1,5
+2013-07-27,41,Duck Shirt,Babywear,123.36,12
+2013-07-27,52,Small Crocodile Boots,Ladies´Footwear,290.84,4
+2013-07-27,55,Feiss Fleece Trousers,Sportwear,249.6,6
+2013-07-30,4,Oyaki Kimono,Womens Wear,565.5,25
+2013-07-30,11,Desperado Jeans,Men´S Clothes,146.95,5
+2013-07-30,17,Tiebreak Tennis Shoes,Men´S Footwear,577.08,20
+2013-07-30,30,Baby Dark Lounge Suit,Babywear,356.25,15
+2013-07-30,40,Duck Trousers,Babywear,106.92,6
+2013-07-30,55,Feiss Fleece Trousers,Sportwear,450.84,12
+2013-07-30,56,High Heels Shoes,Ladies´Footwear,435.435,10
+2013-07-30,59,Rasta Wct,Sportwear,86.625,10
+2013-07-30,60,Game Over T-Shirt,Sportwear,79.95,15
+2013-08-01,17,Tiebreak Tennis Shoes,Men´S Footwear,978.516,36
+2013-08-01,56,High Heels Shoes,Ladies´Footwear,810.2,20
+2013-08-02,76,Minnki Pälsii,Womens Wear,8250.0,20
+2013-08-03,6,Shagall Socks,Womens Wear,120.9,30
+2013-08-03,30,Baby Dark Lounge Suit,Babywear,351.3,15
+2013-08-03,76,Minnki Pälsii,Womens Wear,8252.4,20
+2013-08-04,54,Patamonia Fleece Jacket,Sportwear,820.32,24
+2013-08-06,61,Adihash Running Shoe,Sportwear,570.46,20
+2013-08-06,77,Skirt,Womens Wear,27.61,2
+2013-08-07,13,Aino Shoes,Babywear,102.24,4
+2013-08-07,41,Duck Shirt,Babywear,121.44,12
+2013-08-07,65,Stretch Oui-Pants,Womens Wear,374.0,40
+2013-08-07,75,Bow Tie,Men´S Clothes,151.0,20
+2013-08-08,36,Mehmet-Tröja,Babywear,44.76,6
+2013-08-08,52,Small Crocodile Boots,Ladies´Footwear,1431.72,18
+2013-08-10,2,Mr X Trousers,Men´S Clothes,324.54,15
+2013-08-13,5,O-Man Underwear,Men´S Clothes,21.64,4
+2013-08-13,36,Mehmet-Tröja,Babywear,41.9,5
+2013-08-13,40,Duck Trousers,Babywear,1187.4,50
+2013-08-13,46,Rodbye Troje,Babywear,383.082,28
+2013-08-14,48,Root Boot,Men´S Footwear,220.506,6
+2013-08-14,76,Minnki Pälsii,Womens Wear,4068.24,10
+2013-08-15,13,Aino Shoes,Babywear,144.48,6
+2013-08-15,42,Balett Shoes,Ladies´Footwear,416.36,28
+2013-08-15,62,Sheat Shoes,Sportwear,256.32,9
+2013-08-15,69,Racing Truck  Socks,Sportwear,82.8,40
+2013-08-16,9,Fuji Boots,Men´S Footwear,194.5,5
+2013-08-16,21,Basket Shoes,Sportwear,149.25,15
+2013-08-16,22,Ravellis Träskor,Ladies´Footwear,52.5,15
+2013-08-16,23,Dsw,Ladies´Footwear,419.76,44
+2013-08-16,24,Samba Socker  Socks,Men´S Clothes,236.25,50
+2013-08-16,33,Car Boots,Sportwear,76.5,3
+2013-08-16,37,Mehmet-Skor,Babywear,31.5,7
+2013-08-16,40,Duck Trousers,Babywear,720.4,40
+2013-08-16,42,Balett Shoes,Ladies´Footwear,156.5,10
+2013-08-16,47,Lundenhagen Boots,Men´S Footwear,127.5,5
+2013-08-16,51,Snake Boots,Men´S Footwear,308.691,3
+2013-08-16,56,High Heels Shoes,Ladies´Footwear,1647.0300000000002,43
+2013-08-16,59,Rasta Wct,Sportwear,52.8,6
+2013-08-16,62,Sheat Shoes,Sportwear,124.8,5
+2013-08-16,76,Minnki Pälsii,Womens Wear,4192.3,10
+2013-08-18,10,Sapporoo Gloves,Babywear,12.96,2
+2013-08-18,19,Squash Shorts,Sportwear,67.55,7
+2013-08-18,44,Okkaba Skin Jackets,Womens Wear,1565.76,21
+2013-08-20,14,Kool Sunglasses,Children´S Wear,432.0,15
+2013-08-20,21,Basket Shoes,Sportwear,339.696,32
+2013-08-20,54,Patamonia Fleece Jacket,Sportwear,763.05,21
+2013-08-20,69,Racing Truck  Socks,Sportwear,50.1375,25
+2013-08-21,28,Rdl Suit,Children´S Wear,873.0,15
+2013-08-21,39,Terence Top,Womens Wear,1478.4,21
+2013-08-21,40,Duck Trousers,Babywear,51.63,3
+2013-08-21,45,Danske Treshoe,Men´S Footwear,35.88,4
+2013-08-21,46,Rodbye Troje,Babywear,27.875,2
+2013-08-21,74,Nikee Running Shoes,Children´S Wear,163.8,5
+2013-08-22,47,Lundenhagen Boots,Men´S Footwear,1044.75,30
+2013-08-22,56,High Heels Shoes,Ladies´Footwear,1558.5,30
+2013-08-22,57,Burned Rubber Shoes,Ladies´Footwear,359.1,14
+2013-08-22,69,Racing Truck  Socks,Sportwear,62.1875,25
+2013-08-24,32,Rossi Bikkini,Bath Clothes,198.5,10
+2013-08-25,10,Sapporoo Gloves,Babywear,150.6,20
+2013-08-25,41,Duck Shirt,Babywear,36.84,4
+2013-08-25,47,Lundenhagen Boots,Men´S Footwear,375.3,15
+2013-08-26,55,Feiss Fleece Trousers,Sportwear,209.25,5
+2013-08-27,47,Lundenhagen Boots,Men´S Footwear,375.6,15
+2013-08-28,3,Chantell Shirt,Womens Wear,440.0,20
+2013-08-28,14,Kool Sunglasses,Children´S Wear,82.929,3
+2013-08-28,25,Basket Vest,Sportwear,622.5625,35
+2013-08-28,39,Terence Top,Womens Wear,8672.99,146
+2013-08-28,44,Okkaba Skin Jackets,Womens Wear,2095.016,28
+2013-08-28,47,Lundenhagen Boots,Men´S Footwear,860.1179999999999,36
+2013-08-28,51,Snake Boots,Men´S Footwear,2742.6,28
+2013-08-28,52,Small Crocodile Boots,Ladies´Footwear,375.406,4
+2013-08-28,56,High Heels Shoes,Ladies´Footwear,2187.6,60
+2013-08-28,65,Stretch Oui-Pants,Womens Wear,842.16,80
+2013-08-28,75,Bow Tie,Men´S Clothes,136.98,18
+2013-09-01,21,Basket Shoes,Sportwear,582.0,60
+2013-09-01,40,Duck Trousers,Babywear,1462.65,70
+2013-09-01,42,Balett Shoes,Ladies´Footwear,26.7,2
+2013-09-01,60,Game Over T-Shirt,Sportwear,265.65,55
+2013-09-01,77,Skirt,Womens Wear,937.86,70
+2013-09-03,28,Rdl Suit,Children´S Wear,448.6,10
+2013-09-03,29,Davenport,Men´S Footwear,725.7,6
+2013-09-03,44,Okkaba Skin Jackets,Womens Wear,825.4,10
+2013-09-04,14,Kool Sunglasses,Children´S Wear,72.75,3
+2013-09-04,15,Sumi Underwear,Womens Wear,155.4,25
+2013-09-04,22,Ravellis Träskor,Ladies´Footwear,21.357,6
+2013-09-04,26,Bike Helmet,Sportwear,151.515,5
+2013-09-04,41,Duck Shirt,Babywear,283.185,30
+2013-09-04,42,Balett Shoes,Ladies´Footwear,74.6,5
+2013-09-04,52,Small Crocodile Boots,Ladies´Footwear,1284.4125,15
+2013-09-04,57,Burned Rubber Shoes,Ladies´Footwear,332.64,15
+2013-09-04,60,Game Over T-Shirt,Sportwear,48.7,10
+2013-09-04,61,Adihash Running Shoe,Sportwear,542.2,20
+2013-09-04,62,Sheat Shoes,Sportwear,462.45,15
+2013-09-04,65,Stretch Oui-Pants,Womens Wear,185.2,20
+2013-09-05,11,Desperado Jeans,Men´S Clothes,476.25,15
+2013-09-05,20,Tennis Suit,Sportwear,2096.388,21
+2013-09-05,52,Small Crocodile Boots,Ladies´Footwear,1964.16,24
+2013-09-05,54,Patamonia Fleece Jacket,Sportwear,755.8,20
+2013-09-05,58,Ga-Ga Dress,Babywear,1368.9,30
+2013-09-05,69,Racing Truck  Socks,Sportwear,47.04,20
+2013-09-05,76,Minnki Pälsii,Womens Wear,2010.96,4
+2013-09-06,29,Davenport,Men´S Footwear,2206.44,18
+2013-09-06,40,Duck Trousers,Babywear,609.21,30
+2013-09-06,42,Balett Shoes,Ladies´Footwear,464.94,30
+2013-09-06,51,Snake Boots,Men´S Footwear,2033.43,20
+2013-09-06,59,Rasta Wct,Sportwear,208.5,25
+2013-09-06,71,Atles Lussekofta,Men´S Clothes,656.02,22
+2013-09-08,10,Sapporoo Gloves,Babywear,38.82,6
+2013-09-08,67,X-Dress,Womens Wear,171.03,3
+2013-09-09,3,Chantell Shirt,Womens Wear,120.96,6
+2013-09-09,76,Minnki Pälsii,Womens Wear,6430.35,15
+2013-09-11,31,Rossi Bermuda Shorts,Bath Clothes,133.56,16
+2013-09-11,42,Balett Shoes,Ladies´Footwear,547.692,32
+2013-09-11,45,Danske Treshoe,Men´S Footwear,258.2685,27
+2013-09-11,51,Snake Boots,Men´S Footwear,11665.08,120
+2013-09-12,26,Bike Helmet,Sportwear,1882.55,50
+2013-09-12,41,Duck Shirt,Babywear,90.6,10
+2013-09-12,54,Patamonia Fleece Jacket,Sportwear,141.44,4
+2013-09-12,70,Us-Master Jeans,Men´S Clothes,1005.9,35
+2013-09-12,72,Rossi Shorts,Bath Clothes,311.65,25
+2013-09-12,73,Mehmet-Napp,Babywear,35.1,30
+2013-09-12,77,Skirt,Womens Wear,186.45,15
+2013-09-13,54,Patamonia Fleece Jacket,Sportwear,136.188,3
+2013-09-13,56,High Heels Shoes,Ladies´Footwear,977.04,20
+2013-09-13,74,Nikee Running Shoes,Children´S Wear,1043.7,35
+2013-09-14,10,Sapporoo Gloves,Babywear,64.2,10
+2013-09-14,75,Bow Tie,Men´S Clothes,80.4,10
+2013-09-15,2,Mr X Trousers,Men´S Clothes,301.2975,15
+2013-09-15,8,Tuxedo,Womens Wear,662.4,30
+2013-09-15,29,Davenport,Men´S Footwear,2642.01,20
+2013-09-15,30,Baby Dark Lounge Suit,Babywear,503.46,15
+2013-09-15,33,Car Boots,Sportwear,387.1,14
+2013-09-15,40,Duck Trousers,Babywear,38.58,2
+2013-09-15,41,Duck Shirt,Babywear,200.4,16
+2013-09-15,57,Burned Rubber Shoes,Ladies´Footwear,929.0,50
+2013-09-15,62,Sheat Shoes,Sportwear,840.675,25
+2013-09-15,64,Wfs Shoes,Ladies´Footwear,212.88,6
+2013-09-15,70,Us-Master Jeans,Men´S Clothes,770.9625,21
+2013-09-15,75,Bow Tie,Men´S Clothes,352.8,42
+2013-09-17,24,Samba Socker  Socks,Men´S Clothes,52.9,10
+2013-09-17,46,Rodbye Troje,Babywear,129.8925,9
+2013-09-17,47,Lundenhagen Boots,Men´S Footwear,183.885,6
+2013-09-17,60,Game Over T-Shirt,Sportwear,72.45,12
+2013-09-18,4,Oyaki Kimono,Womens Wear,548.64,20
+2013-09-18,7,Conserve Shoes,Children´S Wear,134.205,3
+2013-09-18,19,Squash Shorts,Sportwear,499.275,50
+2013-09-18,55,Feiss Fleece Trousers,Sportwear,1002.48,20
+2013-09-18,56,High Heels Shoes,Ladies´Footwear,838.12,20
+2013-09-18,62,Sheat Shoes,Sportwear,351.72,10
+2013-09-18,75,Bow Tie,Men´S Clothes,351.54,40
+2013-09-19,29,Davenport,Men´S Footwear,1692.558,14
+2013-09-19,41,Duck Shirt,Babywear,202.23,20
+2013-09-20,41,Duck Shirt,Babywear,125.86,14
+2013-09-20,52,Small Crocodile Boots,Ladies´Footwear,675.92,8
+2013-09-28,30,Baby Dark Lounge Suit,Babywear,65.6,2
+2013-09-28,42,Balett Shoes,Ladies´Footwear,267.6,20
+2013-10-01,33,Car Boots,Sportwear,447.36,16
+2013-10-01,41,Duck Shirt,Babywear,177.6,20
+2013-10-01,43,Summer Shorts,Bath Clothes,283.36,20
+2013-10-01,48,Root Boot,Men´S Footwear,304.52,8
+2013-10-01,61,Adihash Running Shoe,Sportwear,936.675,30
+2013-10-05,11,Desperado Jeans,Men´S Clothes,666.82,20
+2013-10-05,41,Duck Shirt,Babywear,104.4,12
+2013-10-05,57,Burned Rubber Shoes,Ladies´Footwear,312.3,15
+2013-10-05,59,Rasta Wct,Sportwear,392.04,40
+2013-10-05,70,Us-Master Jeans,Men´S Clothes,278.91,9
+2013-10-05,77,Skirt,Womens Wear,216.315,15
+2013-10-09,2,Mr X Trousers,Men´S Clothes,201.1,10
+2013-10-09,8,Tuxedo,Womens Wear,395.4,20
+2013-10-09,13,Aino Shoes,Babywear,264.3,10
+2013-10-09,20,Tennis Suit,Sportwear,409.35,5
+2013-10-09,38,Le Baby Dress,Womens Wear,150.96,2
+2013-10-09,60,Game Over T-Shirt,Sportwear,112.98,21
+2013-10-10,10,Sapporoo Gloves,Babywear,197.064,24
+2013-10-10,13,Aino Shoes,Babywear,92.16,3
+2013-10-10,25,Basket Vest,Sportwear,165.6,10
+2013-10-10,44,Okkaba Skin Jackets,Womens Wear,1308.288,16
+2013-10-10,64,Wfs Shoes,Ladies´Footwear,99.18,3
+2013-10-11,59,Rasta Wct,Sportwear,120.6,15
+2013-10-11,77,Skirt,Womens Wear,29.52,2
+2013-10-12,13,Aino Shoes,Babywear,148.08,6
+2013-10-12,38,Le Baby Dress,Womens Wear,3960.5,50
+2013-10-12,40,Duck Trousers,Babywear,450.25,25
+2013-10-12,46,Rodbye Troje,Babywear,31.55,2
+2013-10-12,47,Lundenhagen Boots,Men´S Footwear,1356.0,40
+2013-10-12,68,Cap,Sportwear,565.2,36
+2013-10-12,76,Minnki Pälsii,Womens Wear,10140.9,21
+2013-10-12,77,Skirt,Womens Wear,465.5,35
+2013-10-14,24,Samba Socker  Socks,Men´S Clothes,72.75,15
+2013-10-14,28,Rdl Suit,Children´S Wear,285.06,6
+2013-10-14,59,Rasta Wct,Sportwear,106.44,12
+2013-10-14,71,Atles Lussekofta,Men´S Clothes,434.85,15
+2013-10-16,10,Sapporoo Gloves,Babywear,101.28,16
+2013-10-16,56,High Heels Shoes,Ladies´Footwear,1245.9,30
+2013-10-16,59,Rasta Wct,Sportwear,431.5,50
+2013-10-16,77,Skirt,Womens Wear,201.0,15
+2013-10-17,9,Fuji Boots,Men´S Footwear,806.96,20
+2013-10-17,13,Aino Shoes,Babywear,59.136,2
+2013-10-17,51,Snake Boots,Men´S Footwear,473.6,4
+2013-10-17,70,Us-Master Jeans,Men´S Clothes,276.056,8
+2013-10-17,73,Mehmet-Napp,Babywear,23.76,20
+2013-10-18,4,Oyaki Kimono,Womens Wear,474.18,21
+2013-10-18,28,Rdl Suit,Children´S Wear,1262.1,30
+2013-10-18,29,Davenport,Men´S Footwear,4751.6,35
+2013-10-18,38,Le Baby Dress,Womens Wear,807.4,10
+2013-10-18,49,Finnish Sport Blades,Sportwear,640.15,35
+2013-10-18,54,Patamonia Fleece Jacket,Sportwear,1028.44,28
+2013-10-18,70,Us-Master Jeans,Men´S Clothes,922.5,30
+2013-10-18,74,Nikee Running Shoes,Children´S Wear,621.8,20
+2013-10-19,3,Chantell Shirt,Womens Wear,967.75,49
+2013-10-19,25,Basket Vest,Sportwear,318.32,20
+2013-10-19,26,Bike Helmet,Sportwear,693.45,18
+2013-10-19,33,Car Boots,Sportwear,121.164,4
+2013-10-19,70,Us-Master Jeans,Men´S Clothes,927.705,30
+2013-10-22,2,Mr X Trousers,Men´S Clothes,293.55,15
+2013-10-22,17,Tiebreak Tennis Shoes,Men´S Footwear,139.44,6
+2013-10-22,62,Sheat Shoes,Sportwear,1572.0,50
+2013-10-23,10,Sapporoo Gloves,Babywear,724.5,100
+2013-10-23,13,Aino Shoes,Babywear,2046.655,65
+2013-10-23,18,Deuce Shirt,Babywear,255.2,10
+2013-10-24,2,Mr X Trousers,Men´S Clothes,390.8,20
+2013-10-24,7,Conserve Shoes,Children´S Wear,1686.0,40
+2013-10-24,42,Balett Shoes,Ladies´Footwear,268.0,20
+2013-10-24,55,Feiss Fleece Trousers,Sportwear,1367.45,35
+2013-10-24,60,Game Over T-Shirt,Sportwear,269.0,50
+2013-10-25,2,Mr X Trousers,Men´S Clothes,198.45,10
+2013-10-25,3,Chantell Shirt,Womens Wear,511.875,25
+2013-10-25,7,Conserve Shoes,Children´S Wear,214.3,5
+2013-10-25,27,Tracksuit,Sportwear,433.5,10
+2013-10-25,40,Duck Trousers,Babywear,935.5,50
+2013-10-25,51,Snake Boots,Men´S Footwear,325.41,3
+2013-10-25,59,Rasta Wct,Sportwear,697.13,70
+2013-10-25,70,Us-Master Jeans,Men´S Clothes,122.24,4
+2013-10-25,76,Minnki Pälsii,Womens Wear,13645.5975,35
+2013-10-26,10,Sapporoo Gloves,Babywear,255.6,36
+2013-10-26,11,Desperado Jeans,Men´S Clothes,683.5,25
+2013-10-26,28,Rdl Suit,Children´S Wear,1090.32,24
+2013-10-26,49,Finnish Sport Blades,Sportwear,86.71,4
+2013-10-26,52,Small Crocodile Boots,Ladies´Footwear,683.52,8
+2013-11-02,10,Sapporoo Gloves,Babywear,66.0,10
+2013-11-02,13,Aino Shoes,Babywear,1419.04,56
+2013-11-02,35,La. Shorts,Bath Clothes,100.05,15
+2013-11-02,42,Balett Shoes,Ladies´Footwear,354.936,24
+2013-11-02,55,Feiss Fleece Trousers,Sportwear,1689.2,40
+2013-11-06,23,Dsw,Ladies´Footwear,299.16,30
+2013-11-06,40,Duck Trousers,Babywear,210.36,12
+2013-11-06,61,Adihash Running Shoe,Sportwear,973.08,30
+2013-11-06,65,Stretch Oui-Pants,Womens Wear,109.0,10
+2013-11-06,70,Us-Master Jeans,Men´S Clothes,1750.2,50
+2013-11-06,76,Minnki Pälsii,Womens Wear,4305.3,10
+2013-11-13,59,Rasta Wct,Sportwear,350.28,40
+2013-11-14,8,Tuxedo,Womens Wear,603.3,30
+2013-11-14,24,Samba Socker  Socks,Men´S Clothes,47.0,10
+2013-11-14,29,Davenport,Men´S Footwear,3030.72,24
+2013-11-14,30,Baby Dark Lounge Suit,Babywear,959.0,35
+2013-11-14,36,Mehmet-Tröja,Babywear,147.8,20
+2013-11-16,13,Aino Shoes,Babywear,116.45,5
+2013-11-16,70,Us-Master Jeans,Men´S Clothes,115.35,3
+2013-11-19,55,Feiss Fleece Trousers,Sportwear,1464.18,30
+2013-11-19,62,Sheat Shoes,Sportwear,193.2,6
+2013-11-20,58,Ga-Ga Dress,Babywear,670.35,15
+2013-11-20,62,Sheat Shoes,Sportwear,934.5,35
+2013-11-21,75,Bow Tie,Men´S Clothes,107.52,14
+2013-11-22,4,Oyaki Kimono,Womens Wear,887.25,30
+2013-11-22,31,Rossi Bermuda Shorts,Bath Clothes,186.0,20
+2013-11-22,33,Car Boots,Sportwear,1163.5,40
+2013-11-22,58,Ga-Ga Dress,Babywear,774.45,15
+2013-11-22,75,Bow Tie,Men´S Clothes,96.72,12
+2013-11-22,76,Minnki Pälsii,Womens Wear,5190.36,12
+2013-11-23,17,Tiebreak Tennis Shoes,Men´S Footwear,274.5,10
+2013-11-23,33,Car Boots,Sportwear,788.1,30
+2013-11-23,54,Patamonia Fleece Jacket,Sportwear,370.8,10
+2013-11-23,56,High Heels Shoes,Ladies´Footwear,181.45,5
+2013-11-23,64,Wfs Shoes,Ladies´Footwear,233.24,7
+2013-11-24,34,Baywatch Bikkini,Bath Clothes,272.16,36
+2013-11-24,46,Rodbye Troje,Babywear,241.4,20
+2013-11-24,54,Patamonia Fleece Jacket,Sportwear,672.66,18
+2013-11-24,65,Stretch Oui-Pants,Womens Wear,141.15,15
+2013-11-24,77,Skirt,Womens Wear,99.61,7
+2013-11-25,24,Samba Socker  Socks,Men´S Clothes,225.5,40
+2013-11-25,54,Patamonia Fleece Jacket,Sportwear,1568.875,35
+2013-11-25,64,Wfs Shoes,Ladies´Footwear,1312.5,30
+2013-11-26,16,Wimbledon T-Shirt,Sportwear,242.16,24
+2013-11-26,25,Basket Vest,Sportwear,305.52,24
+2013-11-26,30,Baby Dark Lounge Suit,Babywear,26.2,1
+2013-11-26,40,Duck Trousers,Babywear,400.0,20
+2013-11-26,60,Game Over T-Shirt,Sportwear,46.9,10
+2013-12-01,10,Sapporoo Gloves,Babywear,151.58,20
+2013-12-01,26,Bike Helmet,Sportwear,666.4,20
+2013-12-01,28,Rdl Suit,Children´S Wear,1544.4,30
+2013-12-01,35,La. Shorts,Bath Clothes,187.2,30
+2013-12-01,36,Mehmet-Tröja,Babywear,228.85,25
+2013-12-01,49,Finnish Sport Blades,Sportwear,899.514,42
+2013-12-01,52,Small Crocodile Boots,Ladies´Footwear,1171.758,12
+2013-12-01,75,Bow Tie,Men´S Clothes,44.64,6
+2013-12-02,47,Lundenhagen Boots,Men´S Footwear,127.5,5
+2013-12-02,76,Minnki Pälsii,Womens Wear,1818.2,5
+2013-12-03,13,Aino Shoes,Babywear,1305.549,42
+2013-12-03,53,Jumpin Jack Flash Dress,Womens Wear,110.38,2
+2013-12-03,57,Burned Rubber Shoes,Ladies´Footwear,577.5,30
+2013-12-03,61,Adihash Running Shoe,Sportwear,764.7,30
+2013-12-06,36,Mehmet-Tröja,Babywear,313.92,30
+2013-12-07,2,Mr X Trousers,Men´S Clothes,206.54,10
+2013-12-07,67,X-Dress,Womens Wear,2723.66,40
+2013-12-08,13,Aino Shoes,Babywear,364.2,15
+2013-12-08,22,Ravellis Träskor,Ladies´Footwear,73.29,21
+2013-12-08,46,Rodbye Troje,Babywear,185.85,15
+2013-12-09,11,Desperado Jeans,Men´S Clothes,161.875,5
+2013-12-09,44,Okkaba Skin Jackets,Womens Wear,1636.425,18
+2013-12-09,56,High Heels Shoes,Ladies´Footwear,727.2,18
+2013-12-10,50,Finnish Swimsuit,Sportwear,144.45,9
+2013-12-10,51,Snake Boots,Men´S Footwear,4030.4,40
+2013-12-10,55,Feiss Fleece Trousers,Sportwear,154.92,4
+2013-12-13,2,Mr X Trousers,Men´S Clothes,409.2,20
+2013-12-13,6,Shagall Socks,Womens Wear,65.016,16
+2013-12-13,20,Tennis Suit,Sportwear,4404.75,50
+2013-12-13,28,Rdl Suit,Children´S Wear,89.1,2
+2013-12-13,31,Rossi Bermuda Shorts,Bath Clothes,414.225,50
+2013-12-13,33,Car Boots,Sportwear,373.59,15
+2013-12-13,41,Duck Shirt,Babywear,60.102,6
+2013-12-13,68,Cap,Sportwear,208.08,18
+2013-12-13,75,Bow Tie,Men´S Clothes,379.575,50
+2013-12-14,75,Bow Tie,Men´S Clothes,113.184,12
+2013-12-15,75,Bow Tie,Men´S Clothes,166.52,20
+2013-12-16,45,Danske Treshoe,Men´S Footwear,140.85,15
+2013-12-16,52,Small Crocodile Boots,Ladies´Footwear,467.271,6
+2013-12-16,56,High Heels Shoes,Ladies´Footwear,578.72,16
+2013-12-16,60,Game Over T-Shirt,Sportwear,10.994,2
+2013-12-16,76,Minnki Pälsii,Womens Wear,23334.6,60
+2013-12-17,37,Mehmet-Skor,Babywear,33.36,8
+2013-12-17,56,High Heels Shoes,Ladies´Footwear,539.856,12
+2013-12-17,62,Sheat Shoes,Sportwear,395.232,12
+2013-12-21,17,Tiebreak Tennis Shoes,Men´S Footwear,151.56,6
+2013-12-21,26,Bike Helmet,Sportwear,154.2,5
+2013-12-21,33,Car Boots,Sportwear,177.31,7
+2013-12-21,41,Duck Shirt,Babywear,52.26,6
+2013-12-21,52,Small Crocodile Boots,Ladies´Footwear,3659.04,40
+2013-12-21,75,Bow Tie,Men´S Clothes,82.1,10
+2013-12-22,28,Rdl Suit,Children´S Wear,846.8,20
+2013-12-22,63,Serve-Shirt,Womens Wear,207.4,10
+2013-12-23,39,Terence Top,Womens Wear,1816.2,30
+2013-12-23,47,Lundenhagen Boots,Men´S Footwear,809.7,30
+2013-12-23,51,Snake Boots,Men´S Footwear,1047.5,10
+2013-12-23,63,Serve-Shirt,Womens Wear,433.6,20
+2013-12-24,7,Conserve Shoes,Children´S Wear,746.4,20
+2013-12-24,43,Summer Shorts,Bath Clothes,102.33,9
+2013-12-26,3,Chantell Shirt,Womens Wear,732.1475,35
+2013-12-27,11,Desperado Jeans,Men´S Clothes,855.6,30
+2013-12-27,20,Tennis Suit,Sportwear,1211.7,15
+2013-12-27,34,Baywatch Bikkini,Bath Clothes,77.0,10
+2013-12-27,38,Le Baby Dress,Womens Wear,848.9,10
+2013-12-27,76,Minnki Pälsii,Womens Wear,3689.3,10
+2013-12-27,77,Skirt,Womens Wear,197.1,15
+2013-12-28,6,Shagall Socks,Womens Wear,159.6,40
+2013-12-28,7,Conserve Shoes,Children´S Wear,2395.8,60
+2013-12-28,11,Desperado Jeans,Men´S Clothes,385.65,15
+2013-12-28,41,Duck Shirt,Babywear,37.36,4
+2013-12-28,59,Rasta Wct,Sportwear,518.4,60
+2013-12-28,62,Sheat Shoes,Sportwear,1307.68,40
+2013-12-28,68,Cap,Sportwear,398.7,30
+2013-12-28,75,Bow Tie,Men´S Clothes,270.0,36
+2013-12-29,2,Mr X Trousers,Men´S Clothes,1084.8,50
+2013-12-29,21,Basket Shoes,Sportwear,675.35,65
+2013-12-29,29,Davenport,Men´S Footwear,7867.5,50
+2013-12-29,34,Baywatch Bikkini,Bath Clothes,516.81,60
+2013-12-29,41,Duck Shirt,Babywear,442.75,35
+2013-12-29,55,Feiss Fleece Trousers,Sportwear,2942.9075,65
+2013-12-29,61,Adihash Running Shoe,Sportwear,2132.031,66
+2013-12-29,70,Us-Master Jeans,Men´S Clothes,716.16,20
+2013-12-29,76,Minnki Pälsii,Womens Wear,43755.1201,90
+2013-12-30,2,Mr X Trousers,Men´S Clothes,463.3125,21
+2013-12-30,24,Samba Socker  Socks,Men´S Clothes,146.385,33
+2013-12-30,30,Baby Dark Lounge Suit,Babywear,1204.5,40
+2013-12-30,34,Baywatch Bikkini,Bath Clothes,84.8,10
+2013-12-30,42,Balett Shoes,Ladies´Footwear,568.4,40
+2013-12-30,51,Snake Boots,Men´S Footwear,1995.8,20
+2013-12-30,60,Game Over T-Shirt,Sportwear,20.84,4
+2013-12-30,61,Adihash Running Shoe,Sportwear,203.77,7
+2013-12-30,74,Nikee Running Shoes,Children´S Wear,633.2,20
+2013-12-30,75,Bow Tie,Men´S Clothes,230.7,30
+2014-01-01,35,La. Shorts,Bath Clothes,19.26,3
+2014-01-01,51,Snake Boots,Men´S Footwear,215.24,2
+2014-01-03,1,Lenin Jeansshorts,Men´S Clothes,76.0,4
+2014-01-03,40,Duck Trousers,Babywear,167.8,10
+2014-01-03,52,Small Crocodile Boots,Ladies´Footwear,801.0,10
+2014-01-05,24,Samba Socker  Socks,Men´S Clothes,50.16,12
+2014-01-05,28,Rdl Suit,Children´S Wear,3123.015,70
+2014-01-05,34,Baywatch Bikkini,Bath Clothes,771.12,90
+2014-01-05,36,Mehmet-Tröja,Babywear,188.55,18
+2014-01-05,60,Game Over T-Shirt,Sportwear,46.8,9
+2014-01-05,71,Atles Lussekofta,Men´S Clothes,617.4,21
+2014-01-06,7,Conserve Shoes,Children´S Wear,878.8,20
+2014-01-06,19,Squash Shorts,Sportwear,473.025,50
+2014-01-06,20,Tennis Suit,Sportwear,3189.06,40
+2014-01-06,23,Dsw,Ladies´Footwear,91.4,10
+2014-01-06,24,Samba Socker  Socks,Men´S Clothes,44.7,10
+2014-01-06,33,Car Boots,Sportwear,620.55,25
+2014-01-06,42,Balett Shoes,Ladies´Footwear,59.16,4
+2014-01-06,45,Danske Treshoe,Men´S Footwear,179.4,20
+2014-01-06,60,Game Over T-Shirt,Sportwear,354.746,76
+2014-01-06,68,Cap,Sportwear,25.02,2
+2014-01-06,71,Atles Lussekofta,Men´S Clothes,1915.2,60
+2014-01-07,30,Baby Dark Lounge Suit,Babywear,425.4,15
+2014-01-07,31,Rossi Bermuda Shorts,Bath Clothes,122.85,15
+2014-01-07,36,Mehmet-Tröja,Babywear,138.56,16
+2014-01-07,41,Duck Shirt,Babywear,313.544,28
+2014-01-07,77,Skirt,Womens Wear,212.4,18
+2014-01-08,40,Duck Trousers,Babywear,775.28,40
+2014-01-08,42,Balett Shoes,Ladies´Footwear,315.75,25
+2014-01-08,49,Finnish Sport Blades,Sportwear,458.85,20
+2014-01-08,54,Patamonia Fleece Jacket,Sportwear,1303.456,32
+2014-01-08,65,Stretch Oui-Pants,Womens Wear,355.74,30
+2014-01-08,68,Cap,Sportwear,210.705,15
+2014-01-09,10,Sapporoo Gloves,Babywear,99.3,15
+2014-01-09,39,Terence Top,Womens Wear,1141.98,21
+2014-01-10,10,Sapporoo Gloves,Babywear,471.8,70
+2014-01-10,31,Rossi Bermuda Shorts,Bath Clothes,317.45,35
+2014-01-10,77,Skirt,Womens Wear,543.2,40
+2014-01-11,2,Mr X Trousers,Men´S Clothes,244.75,11
+2014-01-11,7,Conserve Shoes,Children´S Wear,161.2,4
+2014-01-11,20,Tennis Suit,Sportwear,1114.2,15
+2014-01-11,26,Bike Helmet,Sportwear,1901.34,63
+2014-01-11,43,Summer Shorts,Bath Clothes,357.3,30
+2014-01-11,51,Snake Boots,Men´S Footwear,5569.85,44
+2014-01-11,72,Rossi Shorts,Bath Clothes,441.35,35
+2014-01-12,24,Samba Socker  Socks,Men´S Clothes,116.5,25
+2014-01-12,26,Bike Helmet,Sportwear,401.28,12
+2014-01-12,33,Car Boots,Sportwear,707.4,30
+2014-01-12,57,Burned Rubber Shoes,Ladies´Footwear,442.5,25
+2014-01-12,65,Stretch Oui-Pants,Womens Wear,196.98,21
+2014-01-12,71,Atles Lussekofta,Men´S Clothes,1430.0,50
+2014-01-13,17,Tiebreak Tennis Shoes,Men´S Footwear,347.55,15
+2014-01-13,24,Samba Socker  Socks,Men´S Clothes,179.625,30
+2014-01-13,34,Baywatch Bikkini,Bath Clothes,80.3,10
+2014-01-13,41,Duck Shirt,Babywear,127.68,14
+2014-01-13,62,Sheat Shoes,Sportwear,754.95,21
+2014-01-14,1,Lenin Jeansshorts,Men´S Clothes,965.25,45
+2014-01-14,2,Mr X Trousers,Men´S Clothes,2427.5,100
+2014-01-14,5,O-Man Underwear,Men´S Clothes,424.2,70
+2014-01-14,13,Aino Shoes,Babywear,2183.2,80
+2014-01-14,21,Basket Shoes,Sportwear,120.12,12
+2014-01-14,24,Samba Socker  Socks,Men´S Clothes,94.92,21
+2014-01-14,29,Davenport,Men´S Footwear,10074.75,60
+2014-01-14,47,Lundenhagen Boots,Men´S Footwear,322.56,14
+2014-01-14,51,Snake Boots,Men´S Footwear,785.44,8
+2014-01-14,59,Rasta Wct,Sportwear,980.0,100
+2014-01-14,64,Wfs Shoes,Ladies´Footwear,648.0,20
+2014-01-14,71,Atles Lussekofta,Men´S Clothes,460.32,16
+2014-01-15,13,Aino Shoes,Babywear,267.75,10
+2014-01-15,14,Kool Sunglasses,Children´S Wear,248.7,10
+2014-01-15,21,Basket Shoes,Sportwear,115.5,10
+2014-01-15,24,Samba Socker  Socks,Men´S Clothes,504.9,110
+2014-01-15,39,Terence Top,Womens Wear,2893.5,45
+2014-01-15,40,Duck Trousers,Babywear,1752.66,91
+2014-01-15,57,Burned Rubber Shoes,Ladies´Footwear,285.0,15
+2014-01-15,60,Game Over T-Shirt,Sportwear,502.0,100
+2014-01-15,71,Atles Lussekofta,Men´S Clothes,1364.44,40
+2014-01-17,21,Basket Shoes,Sportwear,178.86,15
+2014-01-17,24,Samba Socker  Socks,Men´S Clothes,44.52,10
+2014-01-17,34,Baywatch Bikkini,Bath Clothes,86.73,10
+2014-01-17,36,Mehmet-Tröja,Babywear,159.81,20
+2014-01-17,44,Okkaba Skin Jackets,Womens Wear,879.48,12
+2014-01-17,61,Adihash Running Shoe,Sportwear,145.56,6
+2014-01-18,22,Ravellis Träskor,Ladies´Footwear,125.65,35
+2014-01-18,28,Rdl Suit,Children´S Wear,958.0,20
+2014-01-18,35,La. Shorts,Bath Clothes,147.84,24
+2014-01-18,40,Duck Trousers,Babywear,106.62,5
+2014-01-18,49,Finnish Sport Blades,Sportwear,1116.0,60
+2014-01-18,52,Small Crocodile Boots,Ladies´Footwear,155.22,2
+2014-01-18,57,Burned Rubber Shoes,Ladies´Footwear,575.68,28
+2014-01-18,70,Us-Master Jeans,Men´S Clothes,116.0,4
+2014-01-18,71,Atles Lussekofta,Men´S Clothes,961.8,30
+2014-01-19,2,Mr X Trousers,Men´S Clothes,724.32,30
+2014-01-19,11,Desperado Jeans,Men´S Clothes,282.8,10
+2014-01-19,44,Okkaba Skin Jackets,Womens Wear,1131.15,15
+2014-01-19,61,Adihash Running Shoe,Sportwear,114.16,4
+2014-01-19,63,Serve-Shirt,Womens Wear,610.5,30
+2014-01-20,12,Tiny Winy Hot Bikini,Bath Clothes,288.9,30
+2014-01-20,24,Samba Socker  Socks,Men´S Clothes,128.1,30
+2014-01-20,33,Car Boots,Sportwear,375.3,15
+2014-01-20,51,Snake Boots,Men´S Footwear,2461.2,24
+2014-01-20,64,Wfs Shoes,Ladies´Footwear,121.36,4
+2014-01-21,21,Basket Shoes,Sportwear,134.12,14
+2014-01-21,40,Duck Trousers,Babywear,184.0,10
+2014-01-21,51,Snake Boots,Men´S Footwear,272.88,3
+2014-01-21,68,Cap,Sportwear,483.84,42
+2014-01-22,13,Aino Shoes,Babywear,523.6,20
+2014-01-22,50,Finnish Swimsuit,Sportwear,231.45,15
+2014-01-22,56,High Heels Shoes,Ladies´Footwear,826.4,20
+2014-01-23,26,Bike Helmet,Sportwear,846.3,30
+2014-01-23,28,Rdl Suit,Children´S Wear,1445.7,30
+2014-01-23,43,Summer Shorts,Bath Clothes,252.8,20
+2014-01-23,56,High Heels Shoes,Ladies´Footwear,604.8,15
+2014-01-23,71,Atles Lussekofta,Men´S Clothes,1502.0,50
+2014-01-24,16,Wimbledon T-Shirt,Sportwear,60.66,6
+2014-01-24,18,Deuce Shirt,Babywear,1068.9,35
+2014-01-24,24,Samba Socker  Socks,Men´S Clothes,49.68,10
+2014-01-24,31,Rossi Bermuda Shorts,Bath Clothes,487.025,55
+2014-01-24,32,Rossi Bikkini,Bath Clothes,534.74,26
+2014-01-24,45,Danske Treshoe,Men´S Footwear,1084.45,100
+2014-01-24,51,Snake Boots,Men´S Footwear,5390.832,48
+2014-01-24,57,Burned Rubber Shoes,Ladies´Footwear,381.6,20
+2014-01-24,64,Wfs Shoes,Ladies´Footwear,1084.2,25
+2014-01-25,24,Samba Socker  Socks,Men´S Clothes,67.35,15
+2014-01-25,25,Basket Vest,Sportwear,189.3,15
+2014-01-25,33,Car Boots,Sportwear,238.4,10
+2014-01-25,51,Snake Boots,Men´S Footwear,1941.6,20
+2014-01-25,57,Burned Rubber Shoes,Ladies´Footwear,387.4,20
+2014-01-25,67,X-Dress,Womens Wear,1090.6,20
+2014-01-26,21,Basket Shoes,Sportwear,30.9,3
+2014-01-26,60,Game Over T-Shirt,Sportwear,115.08,21
+2014-01-26,61,Adihash Running Shoe,Sportwear,107.88,4
+2014-01-26,70,Us-Master Jeans,Men´S Clothes,86.1,3
+2014-01-27,1,Lenin Jeansshorts,Men´S Clothes,389.88,18
+2014-01-27,17,Tiebreak Tennis Shoes,Men´S Footwear,369.3,15
+2014-01-27,34,Baywatch Bikkini,Bath Clothes,241.8,30
+2014-01-27,40,Duck Trousers,Babywear,878.24,40
+2014-01-27,41,Duck Shirt,Babywear,317.46,30
+2014-01-27,43,Summer Shorts,Bath Clothes,193.5,15
+2014-01-27,60,Game Over T-Shirt,Sportwear,194.65,40
+2014-01-27,75,Bow Tie,Men´S Clothes,49.32,6
+2014-01-27,77,Skirt,Womens Wear,131.1,10
+2014-01-28,16,Wimbledon T-Shirt,Sportwear,28.08,3
+2014-01-28,19,Squash Shorts,Sportwear,412.02,42
+2014-01-28,34,Baywatch Bikkini,Bath Clothes,265.65,35
+2014-01-28,35,La. Shorts,Bath Clothes,55.9,10
+2014-01-28,63,Serve-Shirt,Womens Wear,854.4,40
+2014-01-29,72,Rossi Shorts,Bath Clothes,25.6,2
+2014-01-30,31,Rossi Bermuda Shorts,Bath Clothes,155.76,16
+2014-01-30,35,La. Shorts,Bath Clothes,54.3,10
+2014-01-30,72,Rossi Shorts,Bath Clothes,551.32,40
+2014-01-30,77,Skirt,Womens Wear,275.2,20
+2014-02-01,39,Terence Top,Womens Wear,3561.0,60
+2014-02-01,72,Rossi Shorts,Bath Clothes,239.0,20
+2014-02-02,21,Basket Shoes,Sportwear,556.2,60
+2014-02-02,75,Bow Tie,Men´S Clothes,373.87,49
+2014-02-02,77,Skirt,Womens Wear,198.15,15
+2014-02-03,16,Wimbledon T-Shirt,Sportwear,313.17,30
+2014-02-03,41,Duck Shirt,Babywear,84.06,9
+2014-02-03,62,Sheat Shoes,Sportwear,416.416,14
+2014-02-03,72,Rossi Shorts,Bath Clothes,182.88,16
+2014-02-03,75,Bow Tie,Men´S Clothes,172.04,20
+2014-02-04,1,Lenin Jeansshorts,Men´S Clothes,372.8225,17
+2014-02-04,23,Dsw,Ladies´Footwear,230.75,25
+2014-02-04,28,Rdl Suit,Children´S Wear,431.112,8
+2014-02-04,43,Summer Shorts,Bath Clothes,464.094,36
+2014-02-04,59,Rasta Wct,Sportwear,88.5,10
+2014-02-04,77,Skirt,Womens Wear,447.258,28
+2014-02-05,35,La. Shorts,Bath Clothes,117.0,20
+2014-02-05,51,Snake Boots,Men´S Footwear,630.9,6
+2014-02-06,1,Lenin Jeansshorts,Men´S Clothes,444.15,21
+2014-02-06,11,Desperado Jeans,Men´S Clothes,289.3,10
+2014-02-06,18,Deuce Shirt,Babywear,123.45,4
+2014-02-06,23,Dsw,Ladies´Footwear,91.2,8
+2014-02-06,24,Samba Socker  Socks,Men´S Clothes,92.0,20
+2014-02-06,39,Terence Top,Womens Wear,1165.2,20
+2014-02-07,16,Wimbledon T-Shirt,Sportwear,142.884,14
+2014-02-07,28,Rdl Suit,Children´S Wear,397.28,8
+2014-02-07,34,Baywatch Bikkini,Bath Clothes,154.2,20
+2014-02-10,1,Lenin Jeansshorts,Men´S Clothes,854.22,40
+2014-02-10,2,Mr X Trousers,Men´S Clothes,463.91,20
+2014-02-10,6,Shagall Socks,Womens Wear,23.82,6
+2014-02-10,16,Wimbledon T-Shirt,Sportwear,302.22,30
+2014-02-10,31,Rossi Bermuda Shorts,Bath Clothes,169.0,20
+2014-02-10,39,Terence Top,Womens Wear,1522.36,28
+2014-02-10,60,Game Over T-Shirt,Sportwear,159.3,30
+2014-02-10,68,Cap,Sportwear,316.08,24
+2014-02-11,1,Lenin Jeansshorts,Men´S Clothes,259.8,12
+2014-02-11,29,Davenport,Men´S Footwear,521.36,4
+2014-02-12,1,Lenin Jeansshorts,Men´S Clothes,215.05,10
+2014-02-12,7,Conserve Shoes,Children´S Wear,892.76,20
+2014-02-12,13,Aino Shoes,Babywear,558.8,20
+2014-02-12,18,Deuce Shirt,Babywear,214.88,8
+2014-02-12,31,Rossi Bermuda Shorts,Bath Clothes,87.417,9
+2014-02-12,51,Snake Boots,Men´S Footwear,929.8,10
+2014-02-12,53,Jumpin Jack Flash Dress,Womens Wear,600.633,9
+2014-02-13,2,Mr X Trousers,Men´S Clothes,161.6,8
+2014-02-13,41,Duck Shirt,Babywear,416.0,40
+2014-02-13,50,Finnish Swimsuit,Sportwear,347.82,22
+2014-02-13,56,High Heels Shoes,Ladies´Footwear,763.2,20
+2014-02-13,63,Serve-Shirt,Womens Wear,217.68,12
+2014-02-13,64,Wfs Shoes,Ladies´Footwear,4230.2,130
+2014-02-14,1,Lenin Jeansshorts,Men´S Clothes,316.65,15
+2014-02-14,21,Basket Shoes,Sportwear,236.775,21
+2014-02-14,36,Mehmet-Tröja,Babywear,261.8,35
+2014-02-14,38,Le Baby Dress,Womens Wear,2139.0,25
+2014-02-14,39,Terence Top,Womens Wear,1427.5,20
+2014-02-14,53,Jumpin Jack Flash Dress,Womens Wear,4261.95,70
+2014-02-14,59,Rasta Wct,Sportwear,233.4,30
+2014-02-14,69,Racing Truck  Socks,Sportwear,85.14,36
+2014-02-15,30,Baby Dark Lounge Suit,Babywear,838.2,30
+2014-02-15,35,La. Shorts,Bath Clothes,237.6,40
+2014-02-15,64,Wfs Shoes,Ladies´Footwear,279.12,8
+2014-02-16,1,Lenin Jeansshorts,Men´S Clothes,102.6,4
+2014-02-16,18,Deuce Shirt,Babywear,875.0,25
+2014-02-16,36,Mehmet-Tröja,Babywear,476.875,50
+2014-02-16,58,Ga-Ga Dress,Babywear,1593.57,30
+2014-02-16,72,Rossi Shorts,Bath Clothes,203.94,15
+2014-02-17,13,Aino Shoes,Babywear,175.07,7
+2014-02-17,59,Rasta Wct,Sportwear,247.8,30
+2014-02-19,6,Shagall Socks,Womens Wear,95.5,20
+2014-02-19,14,Kool Sunglasses,Children´S Wear,623.25,20
+2014-02-19,19,Squash Shorts,Sportwear,122.25,10
+2014-02-19,21,Basket Shoes,Sportwear,209.2,20
+2014-02-20,62,Sheat Shoes,Sportwear,316.8,12
+2014-02-21,1,Lenin Jeansshorts,Men´S Clothes,411.6,20
+2014-02-23,1,Lenin Jeansshorts,Men´S Clothes,219.3,10
+2014-02-23,7,Conserve Shoes,Children´S Wear,1235.88,30
+2014-02-23,12,Tiny Winy Hot Bikini,Bath Clothes,209.0,20
+2014-02-23,16,Wimbledon T-Shirt,Sportwear,148.2,15
+2014-02-23,17,Tiebreak Tennis Shoes,Men´S Footwear,298.32,12
+2014-02-23,24,Samba Socker  Socks,Men´S Clothes,329.6,80
+2014-02-23,27,Tracksuit,Sportwear,1213.5,30
+2014-02-23,31,Rossi Bermuda Shorts,Bath Clothes,207.6,24
+2014-02-23,41,Duck Shirt,Babywear,50.45,5
+2014-02-23,62,Sheat Shoes,Sportwear,56.52,2
+2014-02-23,63,Serve-Shirt,Womens Wear,697.2,35
+2014-02-23,67,X-Dress,Womens Wear,935.85,15
+2014-02-23,72,Rossi Shorts,Bath Clothes,118.0,10
+2014-02-24,43,Summer Shorts,Bath Clothes,429.12,30
+2014-02-24,61,Adihash Running Shoe,Sportwear,335.04,10
+2014-02-26,13,Aino Shoes,Babywear,812.4,30
+2014-02-26,17,Tiebreak Tennis Shoes,Men´S Footwear,321.6,12
+2014-02-26,60,Game Over T-Shirt,Sportwear,181.65,35
+2014-02-27,14,Kool Sunglasses,Children´S Wear,2415.0,100
+2014-02-27,16,Wimbledon T-Shirt,Sportwear,1233.213,121
+2014-02-27,17,Tiebreak Tennis Shoes,Men´S Footwear,1066.38,42
+2014-02-27,18,Deuce Shirt,Babywear,721.856,28
+2014-02-27,21,Basket Shoes,Sportwear,367.6,40
+2014-02-27,23,Dsw,Ladies´Footwear,197.82,20
+2014-02-27,24,Samba Socker  Socks,Men´S Clothes,92.8,20
+2014-02-27,32,Rossi Bikkini,Bath Clothes,790.405,35
+2014-02-27,33,Car Boots,Sportwear,920.85,35
+2014-02-27,36,Mehmet-Tröja,Babywear,350.0,40
+2014-02-27,53,Jumpin Jack Flash Dress,Womens Wear,738.48,10
+2014-02-27,62,Sheat Shoes,Sportwear,650.8499999999999,23
+2014-02-27,70,Us-Master Jeans,Men´S Clothes,398.592,12
+2014-02-27,77,Skirt,Womens Wear,143.01,10
+2014-02-28,7,Conserve Shoes,Children´S Wear,433.56,10
+2014-02-28,17,Tiebreak Tennis Shoes,Men´S Footwear,2277.583,77
+2014-02-28,41,Duck Shirt,Babywear,122.76,12
+2014-02-28,53,Jumpin Jack Flash Dress,Womens Wear,1683.275,25
+2014-02-28,55,Feiss Fleece Trousers,Sportwear,174.944,4
+2014-02-28,60,Game Over T-Shirt,Sportwear,119.76,20
+2014-02-28,68,Cap,Sportwear,758.5899999999999,63
+2014-03-02,6,Shagall Socks,Womens Wear,197.4,50
+2014-03-02,16,Wimbledon T-Shirt,Sportwear,121.338,12
+2014-03-02,17,Tiebreak Tennis Shoes,Men´S Footwear,404.208,16
+2014-03-03,4,Oyaki Kimono,Womens Wear,637.1875,25
+2014-03-03,19,Squash Shorts,Sportwear,213.75,25
+2014-03-03,21,Basket Shoes,Sportwear,205.4,20
+2014-03-03,24,Samba Socker  Socks,Men´S Clothes,162.75,30
+2014-03-03,28,Rdl Suit,Children´S Wear,134.64,3
+2014-03-03,47,Lundenhagen Boots,Men´S Footwear,564.102,21
+2014-03-03,49,Finnish Sport Blades,Sportwear,324.3,15
+2014-03-03,77,Skirt,Womens Wear,372.6,30
+2014-03-04,1,Lenin Jeansshorts,Men´S Clothes,175.52,8
+2014-03-04,29,Davenport,Men´S Footwear,327.875,2
+2014-03-04,43,Summer Shorts,Bath Clothes,79.59,7
+2014-03-04,75,Bow Tie,Men´S Clothes,145.6,20
+2014-03-08,49,Finnish Sport Blades,Sportwear,551.88,28
+2014-03-09,2,Mr X Trousers,Men´S Clothes,342.4,20
+2014-03-09,16,Wimbledon T-Shirt,Sportwear,320.95,35
+2014-03-09,36,Mehmet-Tröja,Babywear,194.25,25
+2014-03-09,59,Rasta Wct,Sportwear,234.9,30
+2014-03-10,46,Rodbye Troje,Babywear,34.05,3
+2014-03-10,49,Finnish Sport Blades,Sportwear,43.54,2
+2014-03-11,12,Tiny Winy Hot Bikini,Bath Clothes,181.875,15
+2014-03-11,31,Rossi Bermuda Shorts,Bath Clothes,178.2,20
+2014-03-11,33,Car Boots,Sportwear,692.4,30
+2014-03-11,60,Game Over T-Shirt,Sportwear,213.0625,35
+2014-03-14,16,Wimbledon T-Shirt,Sportwear,314.916,28
+2014-03-14,31,Rossi Bermuda Shorts,Bath Clothes,242.075,25
+2014-03-14,45,Danske Treshoe,Men´S Footwear,262.8,30
+2014-03-14,60,Game Over T-Shirt,Sportwear,151.248,24
+2014-03-15,5,O-Man Underwear,Men´S Clothes,123.4,20
+2014-03-15,7,Conserve Shoes,Children´S Wear,229.02,6
+2014-03-15,72,Rossi Shorts,Bath Clothes,58.25,5
+2014-03-16,25,Basket Vest,Sportwear,110.808,6
+2014-03-16,39,Terence Top,Womens Wear,650.52,10
+2014-03-19,1,Lenin Jeansshorts,Men´S Clothes,1746.24,80
+2014-03-19,19,Squash Shorts,Sportwear,140.832,12
+2014-03-19,37,Mehmet-Skor,Babywear,285.12,60
+2014-03-19,45,Danske Treshoe,Men´S Footwear,378.0,36
+2014-03-19,60,Game Over T-Shirt,Sportwear,279.18,45
+2014-03-19,71,Atles Lussekofta,Men´S Clothes,1937.1,55
+2014-03-20,12,Tiny Winy Hot Bikini,Bath Clothes,195.72,20
+2014-03-20,32,Rossi Bikkini,Bath Clothes,328.3875,15
+2014-03-20,35,La. Shorts,Bath Clothes,119.259,18
+2014-03-22,26,Bike Helmet,Sportwear,710.388,21
+2014-03-22,44,Okkaba Skin Jackets,Womens Wear,713.9,10
+2014-03-22,64,Wfs Shoes,Ladies´Footwear,1524.18,35
+2014-03-22,69,Racing Truck  Socks,Sportwear,60.768,24
+2014-03-23,13,Aino Shoes,Babywear,532.91,20
+2014-03-23,24,Samba Socker  Socks,Men´S Clothes,105.11,20
+2014-03-23,34,Baywatch Bikkini,Bath Clothes,109.125,10
+2014-03-23,41,Duck Shirt,Babywear,146.72,14
+2014-03-23,59,Rasta Wct,Sportwear,227.25,25
+2014-03-24,16,Wimbledon T-Shirt,Sportwear,459.0,50
+2014-03-24,31,Rossi Bermuda Shorts,Bath Clothes,119.28,14
+2014-03-24,56,High Heels Shoes,Ladies´Footwear,910.8,24
+2014-03-24,65,Stretch Oui-Pants,Womens Wear,164.22,15
+2014-03-26,18,Deuce Shirt,Babywear,328.56,12
+2014-03-26,24,Samba Socker  Socks,Men´S Clothes,41.1,10
+2014-03-26,63,Serve-Shirt,Womens Wear,105.3,5
+2014-03-26,75,Bow Tie,Men´S Clothes,45.6,6
+2014-03-28,7,Conserve Shoes,Children´S Wear,2467.2,60
+2014-03-28,40,Duck Trousers,Babywear,20.11,1
+2014-03-28,43,Summer Shorts,Bath Clothes,78.42,6
+2014-03-28,72,Rossi Shorts,Bath Clothes,249.4,20
+2014-03-30,19,Squash Shorts,Sportwear,141.9,15
+2014-03-30,23,Dsw,Ladies´Footwear,178.2,18
+2014-03-30,35,La. Shorts,Bath Clothes,25.28,4
+2014-03-30,38,Le Baby Dress,Womens Wear,5111.82,60
+2014-03-30,39,Terence Top,Womens Wear,5286.96,80
+2014-03-30,40,Duck Trousers,Babywear,523.8,30
+2014-03-30,67,X-Dress,Womens Wear,972.15,15
+2014-04-01,11,Desperado Jeans,Men´S Clothes,343.44,12
+2014-04-01,42,Balett Shoes,Ladies´Footwear,140.4,10
+2014-04-01,72,Rossi Shorts,Bath Clothes,63.55,5
+2014-04-03,26,Bike Helmet,Sportwear,1378.16,40
+2014-04-03,38,Le Baby Dress,Womens Wear,5226.105,60
+2014-04-03,40,Duck Trousers,Babywear,1247.52,60
+2014-04-03,62,Sheat Shoes,Sportwear,1400.1275,45
+2014-04-04,32,Rossi Bikkini,Bath Clothes,410.4,20
+2014-04-04,41,Duck Shirt,Babywear,206.0,20
+2014-04-04,56,High Heels Shoes,Ladies´Footwear,1200.6,30
+2014-04-05,41,Duck Shirt,Babywear,95.9,10
+2014-04-05,51,Snake Boots,Men´S Footwear,3931.2175,35
+2014-04-05,62,Sheat Shoes,Sportwear,88.29,3
+2014-04-05,65,Stretch Oui-Pants,Womens Wear,163.3575,15
+2014-04-05,70,Us-Master Jeans,Men´S Clothes,180.78,6
+2014-04-06,16,Wimbledon T-Shirt,Sportwear,375.375,30
+2014-04-06,18,Deuce Shirt,Babywear,644.5,25
+2014-04-06,26,Bike Helmet,Sportwear,342.6,12
+2014-04-06,53,Jumpin Jack Flash Dress,Womens Wear,1328.8,20
+2014-04-07,31,Rossi Bermuda Shorts,Bath Clothes,165.6,20
+2014-04-07,39,Terence Top,Womens Wear,2433.9,42
+2014-04-07,49,Finnish Sport Blades,Sportwear,796.4,40
+2014-04-09,13,Aino Shoes,Babywear,543.4,20
+2014-04-09,21,Basket Shoes,Sportwear,415.8,40
+2014-04-09,31,Rossi Bermuda Shorts,Bath Clothes,79.0,10
+2014-04-09,56,High Heels Shoes,Ladies´Footwear,908.019,21
+2014-04-09,65,Stretch Oui-Pants,Womens Wear,115.038,12
+2014-04-10,12,Tiny Winy Hot Bikini,Bath Clothes,194.2,20
+2014-04-10,18,Deuce Shirt,Babywear,275.6,10
+2014-04-10,56,High Heels Shoes,Ladies´Footwear,180.1,5
+2014-04-11,19,Squash Shorts,Sportwear,20.18,2
+2014-04-11,35,La. Shorts,Bath Clothes,45.12,8
+2014-04-11,38,Le Baby Dress,Womens Wear,686.8,8
+2014-04-11,43,Summer Shorts,Bath Clothes,113.94,9
+2014-04-12,29,Davenport,Men´S Footwear,1124.088,8
+2014-04-12,30,Baby Dark Lounge Suit,Babywear,511.77,20
+2014-04-12,70,Us-Master Jeans,Men´S Clothes,212.52,7
+2014-04-12,72,Rossi Shorts,Bath Clothes,11.58,1
+2014-04-13,22,Ravellis Träskor,Ladies´Footwear,184.08,52
+2014-04-13,35,La. Shorts,Bath Clothes,38.28,6
+2014-04-13,57,Burned Rubber Shoes,Ladies´Footwear,462.48,24
+2014-04-13,60,Game Over T-Shirt,Sportwear,279.6,60
+2014-04-13,64,Wfs Shoes,Ladies´Footwear,948.9,30
+2014-04-14,2,Mr X Trousers,Men´S Clothes,1201.2,50
+2014-04-14,5,O-Man Underwear,Men´S Clothes,478.14,65
+2014-04-14,32,Rossi Bikkini,Bath Clothes,139.32,6
+2014-04-16,21,Basket Shoes,Sportwear,200.2,20
+2014-04-16,35,La. Shorts,Bath Clothes,131.2,20
+2014-04-17,11,Desperado Jeans,Men´S Clothes,381.45,15
+2014-04-17,43,Summer Shorts,Bath Clothes,55.45,5
+2014-04-17,68,Cap,Sportwear,265.4,20
+2014-04-17,70,Us-Master Jeans,Men´S Clothes,321.84,12
+2014-04-18,23,Dsw,Ladies´Footwear,721.49,70
+2014-04-18,35,La. Shorts,Bath Clothes,178.475,25
+2014-04-18,42,Balett Shoes,Ladies´Footwear,621.39,42
+2014-04-18,58,Ga-Ga Dress,Babywear,3315.84,60
+2014-04-18,64,Wfs Shoes,Ladies´Footwear,1654.08,48
+2014-04-19,21,Basket Shoes,Sportwear,475.68,40
+2014-04-19,32,Rossi Bikkini,Bath Clothes,1079.4,50
+2014-04-19,61,Adihash Running Shoe,Sportwear,460.26,15
+2014-04-20,16,Wimbledon T-Shirt,Sportwear,709.5,60
+2014-04-20,24,Samba Socker  Socks,Men´S Clothes,114.52,28
+2014-04-20,30,Baby Dark Lounge Suit,Babywear,1992.75,60
+2014-04-20,74,Nikee Running Shoes,Children´S Wear,1254.15,36
+2014-04-21,2,Mr X Trousers,Men´S Clothes,224.4,10
+2014-04-21,12,Tiny Winy Hot Bikini,Bath Clothes,44.256,4
+2014-04-23,12,Tiny Winy Hot Bikini,Bath Clothes,128.016,12
+2014-04-24,23,Dsw,Ladies´Footwear,344.0,40
+2014-04-24,71,Atles Lussekofta,Men´S Clothes,1780.2,60
+2014-04-24,72,Rossi Shorts,Bath Clothes,230.16,21
+2014-04-25,3,Chantell Shirt,Womens Wear,587.7,30
+2014-04-25,26,Bike Helmet,Sportwear,1294.125,35
+2014-04-25,29,Davenport,Men´S Footwear,1521.25,10
+2014-04-28,42,Balett Shoes,Ladies´Footwear,158.4,10
+2014-04-28,43,Summer Shorts,Bath Clothes,154.08,10
+2014-04-28,67,X-Dress,Womens Wear,1842.336,24
+2014-04-29,36,Mehmet-Tröja,Babywear,233.4,30
+2014-04-29,43,Summer Shorts,Bath Clothes,326.5,25
+2014-04-30,1,Lenin Jeansshorts,Men´S Clothes,476.1,20
+2014-04-30,53,Jumpin Jack Flash Dress,Womens Wear,197.97,3
+2014-04-30,58,Ga-Ga Dress,Babywear,617.274,12
+2014-05-01,1,Lenin Jeansshorts,Men´S Clothes,860.0,40
+2014-05-01,11,Desperado Jeans,Men´S Clothes,354.48,12
+2014-05-01,13,Aino Shoes,Babywear,235.0,10
+2014-05-01,19,Squash Shorts,Sportwear,60.48,7
+2014-05-01,20,Tennis Suit,Sportwear,1218.6,12
+2014-05-01,23,Dsw,Ladies´Footwear,419.0,50
+2014-05-01,38,Le Baby Dress,Womens Wear,3897.0,40
+2014-05-01,60,Game Over T-Shirt,Sportwear,463.75,70
+2014-05-01,68,Cap,Sportwear,273.6,20
+2014-05-01,72,Rossi Shorts,Bath Clothes,685.375,52
+2014-05-02,4,Oyaki Kimono,Womens Wear,1294.15,50
+2014-05-02,36,Mehmet-Tröja,Babywear,277.2,30
+2014-05-03,1,Lenin Jeansshorts,Men´S Clothes,1458.75,60
+2014-05-03,60,Game Over T-Shirt,Sportwear,156.5625,25
+2014-05-03,71,Atles Lussekofta,Men´S Clothes,623.4,20
+2014-05-03,72,Rossi Shorts,Bath Clothes,83.93,7
+2014-05-05,59,Rasta Wct,Sportwear,15.8,2
+2014-05-06,28,Rdl Suit,Children´S Wear,889.6,20
+2014-05-06,30,Baby Dark Lounge Suit,Babywear,369.9,15
+2014-05-06,46,Rodbye Troje,Babywear,256.83,21
+2014-05-06,62,Sheat Shoes,Sportwear,360.96,12
+2014-05-06,64,Wfs Shoes,Ladies´Footwear,717.2,20
+2014-05-06,66,Langoste Shirt,Womens Wear,449.28,24
+2014-05-07,13,Aino Shoes,Babywear,565.75,20
+2014-05-07,20,Tennis Suit,Sportwear,1718.22,20
+2014-05-07,43,Summer Shorts,Bath Clothes,380.1,24
+2014-05-07,60,Game Over T-Shirt,Sportwear,322.175,49
+2014-05-07,71,Atles Lussekofta,Men´S Clothes,1411.8125,35
+2014-05-08,31,Rossi Bermuda Shorts,Bath Clothes,441.1,44
+2014-05-08,62,Sheat Shoes,Sportwear,1023.0,30
+2014-05-08,68,Cap,Sportwear,1282.0,80
+2014-05-08,72,Rossi Shorts,Bath Clothes,626.5,50
+2014-05-08,73,Mehmet-Napp,Babywear,11.9,10
+2014-05-09,2,Mr X Trousers,Men´S Clothes,389.0,20
+2014-05-09,24,Samba Socker  Socks,Men´S Clothes,89.52,20
+2014-05-09,70,Us-Master Jeans,Men´S Clothes,883.2,30
+2014-05-09,77,Skirt,Womens Wear,342.25,25
+2014-05-10,25,Basket Vest,Sportwear,65.6,5
+2014-05-13,11,Desperado Jeans,Men´S Clothes,1041.6,40
+2014-05-13,15,Sumi Underwear,Womens Wear,130.6,20
+2014-05-13,19,Squash Shorts,Sportwear,165.24,18
+2014-05-13,38,Le Baby Dress,Womens Wear,3511.6,40
+2014-05-13,60,Game Over T-Shirt,Sportwear,181.3,35
+2014-05-13,72,Rossi Shorts,Bath Clothes,34.98,3
+2014-05-14,30,Baby Dark Lounge Suit,Babywear,428.2425,15
+2014-05-15,13,Aino Shoes,Babywear,682.962,28
+2014-05-15,69,Racing Truck  Socks,Sportwear,113.4,50
+2014-05-15,75,Bow Tie,Men´S Clothes,1064.7,120
+2014-05-16,29,Davenport,Men´S Footwear,10652.0,80
+2014-05-16,30,Baby Dark Lounge Suit,Babywear,945.72,36
+2014-05-17,39,Terence Top,Womens Wear,591.284,8
+2014-05-20,41,Duck Shirt,Babywear,267.6,30
+2014-05-20,71,Atles Lussekofta,Men´S Clothes,920.1,30
+2014-05-21,13,Aino Shoes,Babywear,1029.6,40
+2014-05-21,65,Stretch Oui-Pants,Womens Wear,223.02,21
+2014-05-21,68,Cap,Sportwear,255.4,20
+2014-05-22,21,Basket Shoes,Sportwear,123.165,10
+2014-05-22,51,Snake Boots,Men´S Footwear,2089.044,18
+2014-05-22,61,Adihash Running Shoe,Sportwear,363.3,15
+2014-05-23,7,Conserve Shoes,Children´S Wear,847.98,20
+2014-05-23,11,Desperado Jeans,Men´S Clothes,1275.0,40
+2014-05-23,19,Squash Shorts,Sportwear,100.92,12
+2014-05-23,29,Davenport,Men´S Footwear,9170.25,60
+2014-05-23,49,Finnish Sport Blades,Sportwear,202.7,10
+2014-05-23,52,Small Crocodile Boots,Ladies´Footwear,1150.569,14
+2014-05-23,61,Adihash Running Shoe,Sportwear,139.15,5
+2014-05-24,5,O-Man Underwear,Men´S Clothes,131.4,20
+2014-05-24,29,Davenport,Men´S Footwear,1890.45,15
+2014-05-24,49,Finnish Sport Blades,Sportwear,294.9,15
+2014-05-24,71,Atles Lussekofta,Men´S Clothes,750.75,25
+2014-05-24,77,Skirt,Womens Wear,134.9,10
+2014-05-28,17,Tiebreak Tennis Shoes,Men´S Footwear,345.3,15
+2014-05-28,24,Samba Socker  Socks,Men´S Clothes,166.25,35
+2014-05-28,50,Finnish Swimsuit,Sportwear,356.88,24
+2014-05-28,56,High Heels Shoes,Ladies´Footwear,139.36,4
+2014-06-02,20,Tennis Suit,Sportwear,410.7,5
+2014-06-02,52,Small Crocodile Boots,Ladies´Footwear,371.65,5
+2014-06-02,76,Minnki Pälsii,Womens Wear,7285.0,20
+2014-06-08,7,Conserve Shoes,Children´S Wear,308.56,8
+2014-06-08,13,Aino Shoes,Babywear,465.6,20
+2014-06-09,10,Sapporoo Gloves,Babywear,167.5,25
+2014-06-09,24,Samba Socker  Socks,Men´S Clothes,115.75,25
+2014-06-09,77,Skirt,Womens Wear,547.6,40
+2014-06-10,18,Deuce Shirt,Babywear,757.9,25
+2014-06-10,29,Davenport,Men´S Footwear,3133.35,25
+2014-06-10,39,Terence Top,Womens Wear,1889.25,30
+2014-06-10,59,Rasta Wct,Sportwear,33.12,4
+2014-06-16,7,Conserve Shoes,Children´S Wear,1769.85,45
+2014-06-16,13,Aino Shoes,Babywear,1826.44,77
+2014-06-16,24,Samba Socker  Socks,Men´S Clothes,58.0,10
+2014-06-16,41,Duck Shirt,Babywear,229.92,24
+2014-06-16,53,Jumpin Jack Flash Dress,Womens Wear,1155.4,20
+2014-06-16,69,Racing Truck  Socks,Sportwear,17.46,9
+2014-06-16,76,Minnki Pälsii,Womens Wear,16628.48,44
+2014-06-17,42,Balett Shoes,Ladies´Footwear,89.58,6
+2014-06-17,51,Snake Boots,Men´S Footwear,1553.12,16
+2014-06-17,69,Racing Truck  Socks,Sportwear,13.86,7
+2014-06-20,19,Squash Shorts,Sportwear,111.72,12
+2014-06-20,46,Rodbye Troje,Babywear,117.63,9
+2014-06-20,49,Finnish Sport Blades,Sportwear,746.8,40
+2014-06-21,29,Davenport,Men´S Footwear,1892.24,14
+2014-06-23,2,Mr X Trousers,Men´S Clothes,92.925,5
+2014-06-23,25,Basket Vest,Sportwear,138.285,10
+2014-06-23,57,Burned Rubber Shoes,Ladies´Footwear,200.445,10
+2014-06-23,59,Rasta Wct,Sportwear,390.285,42
+2014-06-26,30,Baby Dark Lounge Suit,Babywear,812.1875,25
+2014-06-26,51,Snake Boots,Men´S Footwear,4031.625,30
+2014-06-26,55,Feiss Fleece Trousers,Sportwear,2872.5,60
+2014-06-26,62,Sheat Shoes,Sportwear,175.3125,5
+2014-06-28,41,Duck Shirt,Babywear,191.2,20
+2014-06-28,76,Minnki Pälsii,Womens Wear,2214.96,6
+2014-07-01,52,Small Crocodile Boots,Ladies´Footwear,1560.4,20
+2014-07-04,26,Bike Helmet,Sportwear,178.08,6
+2014-07-04,76,Minnki Pälsii,Womens Wear,2377.44,6
+2014-07-05,8,Tuxedo,Womens Wear,616.5,30
+2014-07-05,29,Davenport,Men´S Footwear,1344.1,10
+2014-07-05,42,Balett Shoes,Ladies´Footwear,207.06,14
+2014-07-14,18,Deuce Shirt,Babywear,1191.36,40
+2014-07-14,42,Balett Shoes,Ladies´Footwear,181.56,10
+2014-07-14,47,Lundenhagen Boots,Men´S Footwear,471.744,16
+2014-07-17,1,Lenin Jeansshorts,Men´S Clothes,195.5,10
+2014-07-17,35,La. Shorts,Bath Clothes,366.6,60
+2014-07-17,42,Balett Shoes,Ladies´Footwear,399.6,30
+2014-07-17,54,Patamonia Fleece Jacket,Sportwear,373.0,10
+2014-07-22,8,Tuxedo,Womens Wear,316.48,16
+2014-07-22,75,Bow Tie,Men´S Clothes,83.8,10
+2014-07-23,8,Tuxedo,Womens Wear,458.16,20
+2014-07-23,21,Basket Shoes,Sportwear,460.92,40
+2014-07-23,40,Duck Trousers,Babywear,182.9,10
+2014-07-23,44,Okkaba Skin Jackets,Womens Wear,496.593,6
+2014-07-24,13,Aino Shoes,Babywear,2186.058,84
+2014-07-24,57,Burned Rubber Shoes,Ladies´Footwear,293.4,15
+2014-07-24,75,Bow Tie,Men´S Clothes,384.48,40
+2014-07-24,76,Minnki Pälsii,Womens Wear,21109.55,50
+2014-07-26,33,Car Boots,Sportwear,211.6,8
+2014-07-26,59,Rasta Wct,Sportwear,85.5945,9
+2014-07-27,2,Mr X Trousers,Men´S Clothes,566.208,24
+2014-07-27,31,Rossi Bermuda Shorts,Bath Clothes,585.984,56
+2014-07-27,36,Mehmet-Tröja,Babywear,362.88,40
+2014-07-27,55,Feiss Fleece Trousers,Sportwear,1800.96,40
+2014-07-30,59,Rasta Wct,Sportwear,155.169,18
+2014-07-30,64,Wfs Shoes,Ladies´Footwear,1084.5,30
+2014-07-30,75,Bow Tie,Men´S Clothes,157.6,20
+2014-08-06,6,Shagall Socks,Womens Wear,74.0,20
+2014-08-06,58,Ga-Ga Dress,Babywear,1931.16,40
+2014-08-06,71,Atles Lussekofta,Men´S Clothes,634.4,20
+2014-08-10,2,Mr X Trousers,Men´S Clothes,196.65,10
+2014-08-10,11,Desperado Jeans,Men´S Clothes,428.4,12
+2014-08-10,38,Le Baby Dress,Womens Wear,4524.0,50
+2014-08-10,46,Rodbye Troje,Babywear,454.71,30
+2014-08-10,76,Minnki Pälsii,Womens Wear,871.815,2
+2014-08-11,7,Conserve Shoes,Children´S Wear,669.375,15
+2014-08-11,13,Aino Shoes,Babywear,273.735,10
+2014-08-11,19,Squash Shorts,Sportwear,336.35,35
+2014-08-11,69,Racing Truck  Socks,Sportwear,62.1,30
+2014-08-20,5,O-Man Underwear,Men´S Clothes,184.8,30
+2014-08-20,9,Fuji Boots,Men´S Footwear,120.96,3
+2014-08-28,8,Tuxedo,Womens Wear,1432.2,70
+2014-08-28,19,Squash Shorts,Sportwear,806.4,80
+2014-08-28,30,Baby Dark Lounge Suit,Babywear,123.0,4
+2014-08-28,32,Rossi Bikkini,Bath Clothes,1016.5,50
+2014-08-28,39,Terence Top,Womens Wear,3596.076,54
+2014-08-28,41,Duck Shirt,Babywear,199.5,20
+2014-08-28,42,Balett Shoes,Ladies´Footwear,136.71,9
+2014-08-28,46,Rodbye Troje,Babywear,315.5,20
+2014-08-28,51,Snake Boots,Men´S Footwear,1550.9025,15
+2014-08-28,52,Small Crocodile Boots,Ladies´Footwear,1884.25,20
+2014-08-28,54,Patamonia Fleece Jacket,Sportwear,942.25,20
+2014-08-28,60,Game Over T-Shirt,Sportwear,282.535,55
+2014-08-28,77,Skirt,Womens Wear,265.482,21
+2014-09-01,19,Squash Shorts,Sportwear,203.07,21
+2014-09-01,42,Balett Shoes,Ladies´Footwear,743.0,50
+2014-09-02,2,Mr X Trousers,Men´S Clothes,796.4639999999999,36
+2014-09-02,3,Chantell Shirt,Womens Wear,87.4,4
+2014-09-02,4,Oyaki Kimono,Womens Wear,70.8,3
+2014-09-02,6,Shagall Socks,Womens Wear,223.89,50
+2014-09-02,7,Conserve Shoes,Children´S Wear,630.63,15
+2014-09-02,8,Tuxedo,Womens Wear,118.855,5
+2014-09-02,10,Sapporoo Gloves,Babywear,98.55,15
+2014-09-02,12,Tiny Winy Hot Bikini,Bath Clothes,112.665,10
+2014-09-02,13,Aino Shoes,Babywear,264.3,10
+2014-09-02,14,Kool Sunglasses,Children´S Wear,1274.11,50
+2014-09-02,16,Wimbledon T-Shirt,Sportwear,266.5125,25
+2014-09-02,20,Tennis Suit,Sportwear,1245.348,15
+2014-09-02,23,Dsw,Ladies´Footwear,132.58,14
+2014-09-02,32,Rossi Bikkini,Bath Clothes,189.8,10
+2014-09-02,39,Terence Top,Womens Wear,578.55,10
+2014-09-02,41,Duck Shirt,Babywear,69.76,8
+2014-09-02,46,Rodbye Troje,Babywear,514.5508,43
+2014-09-02,52,Small Crocodile Boots,Ladies´Footwear,662.64,8
+2014-09-02,55,Feiss Fleece Trousers,Sportwear,651.865,15
+2014-09-02,58,Ga-Ga Dress,Babywear,5094.72,80
+2014-09-02,60,Game Over T-Shirt,Sportwear,45.1984,8
+2014-09-02,62,Sheat Shoes,Sportwear,649.53,20
+2014-09-02,64,Wfs Shoes,Ladies´Footwear,1039.6680000000001,30
+2014-09-02,65,Stretch Oui-Pants,Womens Wear,229.761,21
+2014-09-02,66,Langoste Shirt,Womens Wear,162.8,8
+2014-09-02,71,Atles Lussekofta,Men´S Clothes,1907.4,50
+2014-09-02,73,Mehmet-Napp,Babywear,6.1105,5
+2014-09-02,75,Bow Tie,Men´S Clothes,114.66,14
+2014-09-02,77,Skirt,Womens Wear,119.8,10
+2014-09-03,7,Conserve Shoes,Children´S Wear,2568.6,60
+2014-09-03,21,Basket Shoes,Sportwear,386.28,36
+2014-09-03,22,Ravellis Träskor,Ladies´Footwear,95.5,25
+2014-09-03,27,Tracksuit,Sportwear,1039.5,25
+2014-09-03,46,Rodbye Troje,Babywear,328.5,25
+2014-09-03,55,Feiss Fleece Trousers,Sportwear,1410.3,31
+2014-09-03,58,Ga-Ga Dress,Babywear,1722.6,30
+2014-09-04,38,Le Baby Dress,Womens Wear,4796.4,60
+2014-09-04,55,Feiss Fleece Trousers,Sportwear,517.58,14
+2014-09-04,68,Cap,Sportwear,274.6,20
+2014-09-04,69,Racing Truck  Socks,Sportwear,20.6,10
+2014-09-07,41,Duck Shirt,Babywear,277.2,25
+2014-09-07,44,Okkaba Skin Jackets,Womens Wear,3298.56,40
+2014-09-07,59,Rasta Wct,Sportwear,98.928,9
+2014-09-09,24,Samba Socker  Socks,Men´S Clothes,47.3,10
+2014-09-09,31,Rossi Bermuda Shorts,Bath Clothes,310.1,35
+2014-09-09,54,Patamonia Fleece Jacket,Sportwear,871.7,20
+2014-09-09,57,Burned Rubber Shoes,Ladies´Footwear,280.95,15
+2014-09-10,3,Chantell Shirt,Womens Wear,538.25,25
+2014-09-10,6,Shagall Socks,Womens Wear,48.6,12
+2014-09-10,10,Sapporoo Gloves,Babywear,194.4,30
+2014-09-10,17,Tiebreak Tennis Shoes,Men´S Footwear,164.16,6
+2014-09-10,59,Rasta Wct,Sportwear,933.9,110
+2014-09-10,62,Sheat Shoes,Sportwear,1655.4,60
+2014-09-10,70,Us-Master Jeans,Men´S Clothes,952.8,30
+2014-09-12,43,Summer Shorts,Bath Clothes,196.8225,15
+2014-09-12,48,Root Boot,Men´S Footwear,551.1375,15
+2014-09-13,4,Oyaki Kimono,Womens Wear,114.3,5
+2014-09-13,30,Baby Dark Lounge Suit,Babywear,280.2,10
+2014-09-13,53,Jumpin Jack Flash Dress,Womens Wear,611.1,10
+2014-09-13,54,Patamonia Fleece Jacket,Sportwear,189.4,5
+2014-09-13,55,Feiss Fleece Trousers,Sportwear,1286.95,35
+2014-09-13,59,Rasta Wct,Sportwear,207.12,24
+2014-09-13,75,Bow Tie,Men´S Clothes,1163.25,150
+2014-09-14,30,Baby Dark Lounge Suit,Babywear,505.098,18
+2014-09-14,53,Jumpin Jack Flash Dress,Womens Wear,1341.12,20
+2014-09-14,60,Game Over T-Shirt,Sportwear,31.68,6
+2014-09-14,70,Us-Master Jeans,Men´S Clothes,814.5,30
+2014-09-17,18,Deuce Shirt,Babywear,152.4,6
+2014-09-17,38,Le Baby Dress,Womens Wear,436.4,5
+2014-09-17,69,Racing Truck  Socks,Sportwear,20.4,10
+2014-09-21,1,Lenin Jeansshorts,Men´S Clothes,603.4375,25
+2014-09-21,5,O-Man Underwear,Men´S Clothes,223.5,30
+2014-09-22,11,Desperado Jeans,Men´S Clothes,584.2,20
+2014-09-23,11,Desperado Jeans,Men´S Clothes,1600.5,50
+2014-09-23,51,Snake Boots,Men´S Footwear,1104.18,10
+2014-09-23,54,Patamonia Fleece Jacket,Sportwear,249.095,7
+2014-09-26,17,Tiebreak Tennis Shoes,Men´S Footwear,1247.0,40
+2014-09-26,29,Davenport,Men´S Footwear,3298.5,20
+2014-09-27,19,Squash Shorts,Sportwear,233.856,24
+2014-09-27,25,Basket Vest,Sportwear,223.1775,15
+2014-09-27,59,Rasta Wct,Sportwear,130.095,15
+2014-09-28,2,Mr X Trousers,Men´S Clothes,476.5,20
+2014-09-28,65,Stretch Oui-Pants,Womens Wear,18.94,2
+2014-09-28,74,Nikee Running Shoes,Children´S Wear,540.5625,15
+2014-09-29,13,Aino Shoes,Babywear,173.32,7
+2014-09-29,25,Basket Vest,Sportwear,67.15,5
+2014-09-29,52,Small Crocodile Boots,Ladies´Footwear,1454.8,20
+2014-09-29,56,High Heels Shoes,Ladies´Footwear,894.24,20
+2014-09-29,70,Us-Master Jeans,Men´S Clothes,132.45,5
+2014-09-29,76,Minnki Pälsii,Womens Wear,21077.2001,50

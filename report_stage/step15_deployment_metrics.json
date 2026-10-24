@@ -1,0 +1,37 @@
+{
+  "stage": 15,
+  "stage_name": "Deployment & Containerization",
+  "frontend_target": "Streamlit Community Cloud",
+  "frontend_url_pattern": "https://<subdomain>.streamlit.app",
+  "backend_target": "Render Web Service",
+  "backend_url_pattern": "https://salessight-ai-backend.onrender.com",
+  "containerization": {
+    "dockerfile_path": "Dockerfile",
+    "docker_compose_path": "docker-compose.yml",
+    "multi_stage": true,
+    "security_user": "appuser (UID/GID non-root)",
+    "exposed_ports": [8000, 8501],
+    "healthcheck_interval_seconds": 30
+  },
+  "render_iac": {
+    "manifest_file": "render.yaml",
+    "service_name": "salessight-ai-backend",
+    "service_type": "web",
+    "runtime": "python",
+    "start_command": "uvicorn src.api.main:app --host 0.0.0.0 --port $PORT",
+    "health_check_path": "/health",
+    "region": "oregon"
+  },
+  "streamlit_cloud_config": {
+    "config_file": ".streamlit/config.toml",
+    "theme_primary": "#2563EB",
+    "theme_background": "#0E1117",
+    "headless": true,
+    "cors_enabled": false
+  },
+  "environment_integration": {
+    "frontend_env_var": "API_URL",
+    "fallback_url": "http://127.0.0.1:8000",
+    "health_probe_sla_ms": 500
+  }
+}

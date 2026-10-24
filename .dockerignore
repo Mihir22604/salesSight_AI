@@ -1,0 +1,26 @@
+# Git version control
+.git
+.gitignore
+
+# Python compilation and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Development notebooks and reports
+*.ipynb
+report_stage/assets/*.png
+tests/
+
+# Temporary logs
+logs/*.log
